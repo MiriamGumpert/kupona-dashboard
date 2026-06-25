@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mein Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{--sun:#F5A623;--flame:#E8522A;--amber:#F7C948;--peach:#FDE8D0;--cream:#FFFBF4;--text:#2D1B00;--muted:#8B6840;--card:#fff;--border:#F0DFC0;--shadow:0 2px 16px rgba(229,130,60,.12)}
+  body{font-family:Inter,sans-serif;color:var(--text);min-height:100vh;position:relative;background:var(--cream)}
+  body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 70% 50% at 15% 20%, rgba(247,201,72,.18) 0%, transparent 70%),radial-gradient(ellipse 60% 60% at 85% 10%, rgba(232,82,42,.10) 0%, transparent 65%),radial-gradient(ellipse 80% 50% at 50% 90%, rgba(245,166,35,.13) 0%, transparent 70%),radial-gradient(ellipse 50% 40% at 90% 70%, rgba(255,220,100,.10) 0%, transparent 60%)}
+  #starCanvas{position:fixed;inset:0;z-index:2;pointer-events:none;opacity:1}
+  header,main{position:relative;z-index:3}
+  header{background:linear-gradient(120deg,#E8522A 0%,#F5A623 45%,#F7C948 75%,#FFE566 100%);padding:28px 36px 24px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;box-shadow:0 4px 20px rgba(232,82,42,.25)}
+  header .brand{display:flex;align-items:center;gap:12px}
+  header .logo{width:40px;height:40px;background:rgba(255,255,255,.25);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px}
+  header h1{font-family:'Playfair Display',serif;font-size:1.55rem;color:#fff;letter-spacing:-.3px}
+  header .date-pill{background:rgba(255,255,255,.2);color:#fff;border-radius:20px;padding:6px 16px;font-size:.82rem;font-weight:500}
+  main{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;padding:28px 32px 48px;max-width:1400px;margin:0 auto}
+  .card{background:var(--card);border-radius:18px;padding:24px;border:1.5px solid var(--border);box-shadow:var(--shadow);display:flex;flex-direction:column;gap:16px}
+  .card-title{display:flex;align-items:center;gap:10px;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--muted)}
+  .card-title .icon{width:32px;height:32px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+  .icon-sun{background:#FEF3C7}.icon-flame{background:#FFE4D6}.icon-amber{background:#FFF8DC}.icon-green{background:#D1FAE5}.icon-blue{background:#DBEAFE}.icon-pink{background:#FCE7F3}
+  .focus-block{grid-column:span 2}
+  .focus-input{width:100%;border:none;outline:none;font-size:1.45rem;font-family:'Playfair Display',serif;color:var(--text);background:transparent;border-bottom:2.5px solid var(--amber);padding-bottom:6px}
+  .focus-input::placeholder{color:#DFCAA8}.focus-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}.tag{font-size:.75rem;padding:4px 12px;border-radius:20px;font-weight:500;cursor:pointer;border:1.5px solid transparent}.tag.active{background:linear-gradient(135deg,#F7C948,#F5A623);color:#3D2000;border-color:#F5A623}.tag.inactive{background:#FFFDE7;color:#92400E;border-color:#F7C948}
+  .kpi-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.kpi-item{background:linear-gradient(135deg,#FFFDE7 0%,#FFF8C0 100%);border:1.5px solid #F7C948;border-radius:12px;padding:14px 16px;display:flex;flex-direction:column;gap:4px}.kpi-value{font-size:1.6rem;font-weight:700;color:var(--flame);line-height:1}.kpi-label{font-size:.72rem;color:var(--muted);font-weight:500}
+  .cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center}.cal-day-name{font-size:.65rem;font-weight:700;color:var(--muted);text-transform:uppercase;padding:4px 0}.cal-day{font-size:.8rem;padding:6px 3px;border-radius:8px;color:var(--text);font-weight:400}.cal-day.today{background:var(--flame);color:#fff;font-weight:700}.cal-day.has-event::after{content:'';display:block;width:4px;height:4px;background:var(--sun);border-radius:50%;margin:2px auto 0}.cal-nav{display:flex;align-items:center;justify-content:space-between;font-size:.85rem;font-weight:600;color:var(--text)}.cal-nav button,.add-btn{background:none;border:1.5px dashed var(--sun);border-radius:10px;padding:8px;font-size:.8rem;color:var(--sun);cursor:pointer;width:100%;font-weight:500}.cal-nav button{width:28px;height:28px;padding:0;border:none;background:#FDE8D0;border-radius:8px}.cal-nav button:hover,.add-btn:hover{background:#FFF8DC}
+  .termine-block{grid-column:span 1}.outlook-connect{display:flex;flex-direction:column;align-items:center;gap:12px;padding:20px;background:linear-gradient(135deg,#FFFDE7,#FFF8C0);border-radius:14px;border:1.5px dashed #F7C948;text-align:center}.outlook-btn{background:linear-gradient(135deg,#0078D4,#005A9E);color:#fff;border:none;border-radius:10px;padding:10px 20px;font-size:.85rem;font-weight:600;cursor:pointer;font-family:Inter,sans-serif;display:flex;align-items:center;gap:8px}
+  .asana-block{grid-column:span 1}
+  .asana-token-input,.notes-area{width:100%;border:1.5px solid var(--border);border-radius:12px;padding:14px;font:inherit;background:#FFFDF7}.notes-area{min-height:120px;resize:vertical}.asana-btn{background:linear-gradient(135deg,#F7C948,#F5A623);color:#3D2000;border:none;border-radius:10px;padding:10px 20px;font-size:.85rem;font-weight:600;cursor:pointer;font-family:Inter,sans-serif}
+  .task-list{display:flex;flex-direction:column;gap:8px}.task-item{display:flex;align-items:center;gap:10px;padding:11px 14px;border:1.5px solid transparent;border-radius:12px}.task-cb{width:18px;height:18px;border-radius:5px;border:2px solid var(--sun);background:#fff;flex-shrink:0}.task-cb.done{background:var(--sun);border-color:var(--sun)}.task-cb.done::after{content:"✓";font-size:.7rem;color:#fff;font-weight:700}.task-meta{display:flex;flex-direction:column;gap:2px;flex:1;min-width:0}.task-label{font-size:.85rem;font-weight:500}.task-next-due{font-size:.7rem;color:var(--muted)}
+  .task-actions{display:flex;gap:4px;align-items:center;flex-shrink:0}.task-action-btn{background:none;border:none;font-size:.85rem;cursor:pointer;padding:4px 5px;border-radius:7px;line-height:1}.task-action-btn:hover{background:var(--peach)}.task-action-del:hover{background:#FEE2E2}.task-set-date-btn{background:none;border:1.5px dashed var(--sun);border-radius:8px;font-size:.7rem;color:var(--sun);cursor:pointer;padding:3px 9px;white-space:nowrap;flex-shrink:0}
+  .task-item.due-urgent{border-color:#FCA5A5;background:#FFF5F5}.task-item.due-soon{border-color:#FDE68A;background:#FFFBEB}.task-next-due.urgent{color:#DC2626;font-weight:700}.task-next-due.soon{color:#D97706;font-weight:600}.task-next-due.ok{color:#059669}
+  .notif-card{position:relative;background:#fff;border-left:5px solid #F7C948;border-radius:14px;padding:14px 18px;box-shadow:0 6px 28px rgba(0,0,0,.15);display:flex;align-items:flex-start;gap:12px;animation:slideIn .35s cubic-bezier(.22,.68,0,1.2)}@keyframes slideIn{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}.notif-close{position:absolute;top:10px;right:10px;background:none;border:none;cursor:pointer;font-size:1rem;color:#ccc}.notif-close:hover{color:#E8522A}.notif-title{font-size:.85rem;font-weight:700;color:#2D1B00;margin-bottom:2px}.notif-text{font-size:.78rem;color:#8B6840;line-height:1.4}.notif-icon{font-size:1.4rem;flex-shrink:0;margin-top:2px}
+  .star-overlay{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.7}
+  #notifBanner{position:fixed;top:80px;right:24px;z-index:9999;display:flex;flex-direction:column;gap:10px;max-width:340px}
+  @media (max-width:900px){main{grid-template-columns:1fr 1fr}.focus-block,.kpi-block,.calendar-block,.termine-block,.tasks-block,.asana-block,.notes-block{grid-column:span 1}}
+  @media (max-width:580px){main{grid-template-columns:1fr;padding:16px;gap:14px}header{padding:18px 20px}}
+
+  .asana-task-row{display:flex;align-items:flex-start;gap:10px;padding:10px 12px;background:linear-gradient(135deg,#FFFDE7,#FFF8C0);border:1.5px solid #F7C948;border-radius:12px;cursor:pointer}
+  .asana-task-row:hover{background:#FFF3A0}
+  .asana-pill{font-size:.68rem;font-weight:700;padding:2px 8px;border-radius:999px;background:#FEF3C7;color:#92400E;white-space:nowrap}
+  .asana-task-name{font-size:.85rem;font-weight:600}
+  .asana-task-meta{font-size:.72rem;color:var(--muted)}
+  .asana-dot{width:10px;height:10px;border-radius:50%;margin-top:5px;flex-shrink:0}
+</style>
+</head>
+<body>
+<canvas id="starCanvas"></canvas>
+<div id="notifBanner"></div>
+<header>
+  <div class="brand"><div class="logo">☀️</div><h1>Mein Dashboard</h1></div>
+  <div class="date-pill" id="headerDate"></div>
+</header>
+<main>
+  <div class="card focus-block"><div class="card-title"><div class="icon icon-flame">🎯</div>Tages-Fokus</div><input class="focus-input" id="focusInput" placeholder="Was ist mein wichtigstes Ziel heute?" /><div class="focus-tags"><span class="tag active">Dringend</span><span class="tag inactive">Wichtig</span><span class="tag inactive">Planung</span><span class="tag inactive">Meeting</span><span class="tag inactive">Deep Work</span></div></div>
+  <div class="card kpi-block"><div class="card-title"><div class="icon icon-amber">📊</div>Meine KPIs</div><div class="kpi-grid"><div class="kpi-item"><div class="kpi-value">87%</div><div class="kpi-label">Aufgaben erledigt</div></div><div class="kpi-item"><div class="kpi-value">12</div><div class="kpi-label">Offene Asana-Tasks</div></div><div class="kpi-item"><div class="kpi-value">3</div><div class="kpi-label">Meetings heute</div></div><div class="kpi-item"><div class="kpi-value">5d</div><div class="kpi-label">Bis nächster Review</div></div></div></div>
+  <div class="card calendar-block"><div class="card-title"><div class="icon icon-sun">📅</div>Kalender</div><div class="cal-nav"><button onclick="changeMonth(-1)">‹</button><span id="calMonthLabel"></span><button onclick="changeMonth(1)">›</button></div><div class="cal-grid" id="calGrid"></div></div>
+  <div class="card termine-block"><div class="card-title"><div class="icon icon-pink">🗓️</div>Heutige Termine</div><div id="termineList"><div class="outlook-connect"><div style="font-size:2rem">📅</div><p>Verbinde Outlook, um deine heutigen Termine automatisch zu sehen.</p><button class="outlook-btn" onclick="outlookLogin()"><span>🔵</span>Mit Outlook verbinden</button></div></div></div>
+  <div class="card tasks-block"><div class="card-title"><div class="icon icon-green">✅</div>Wiederkehrende Aufgaben</div><div class="task-list" id="taskList"></div><button class="add-btn" onclick="addTask()">+ Aufgabe hinzufügen</button></div>
+  <div class="card asana-block"><div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap"><div class="card-title"><div class="icon icon-blue">🔗</div>Asana — Meine Aufgaben</div><div style="display:flex;gap:8px;align-items:center"><button class="asana-btn" onclick="loadAsanaTasks()" style="padding:8px 14px;font-size:.78rem">Aktualisieren</button><button class="asana-btn" onclick="disconnectAsana()" style="padding:8px 14px;font-size:.78rem;background:transparent;border:1.5px solid #FECACA;color:#B91C1C">Token löschen</button></div></div>
+  <div class="asana-token-form" style="display:flex;flex-direction:column;gap:10px">
+    <div class="asana-token-label">Personal Access Token</div>
+    <div style="display:flex;gap:10px;align-items:center">
+      <input class="asana-token-input" type="password" id="asanaTokenInput" placeholder="1/1234567890:abcdef..." />
+      <button class="asana-btn" onclick="connectAsana()">Verbinden</button>
+    </div>
+    <label style="display:flex;align-items:center;gap:8px;font-size:.78rem;color:var(--muted)">
+      <input type="checkbox" id="asanaRemember" checked /> Token merken (nur auf diesem Laptop)
+    </label>
+    <div id="asanaStatus" style="font-size:.78rem;color:var(--muted)"></div>
+  </div>
+  <div id="asanaTasks" style="display:flex;flex-direction:column;gap:8px;margin-top:10px"></div>
+</div>
+  <div class="card notes-block"><div class="card-title"><div class="icon icon-amber">📝</div>Schnellnotizen</div><textarea class="notes-area" id="notesArea" placeholder="Gedanken, Ideen, To-dos... einfach drauflos schreiben."></textarea><div style="font-size:.72rem;color:var(--muted);text-align:right" id="notesFooter">0 Zeichen</div></div>
+</main>
+<script>
+const today=new Date();const dayNames=['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];const monthNames=['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];document.getElementById('headerDate').textContent=`${dayNames[today.getDay()]}, ${today.getDate()}. ${monthNames[today.getMonth()]} ${today.getFullYear()}`;
+function renderCalendar(){const g=document.getElementById('calGrid'),l=document.getElementById('calMonthLabel');const d=new Date(today.getFullYear(),today.getMonth(),1);l.textContent=`${monthNames[d.getMonth()]} ${d.getFullYear()}`;let h=['Mo','Di','Mi','Do','Fr','Sa','So'].map(x=>`<div class="cal-day-name">${x}</div>`).join('');let o=d.getDay()-1;if(o<0)o=6;for(let i=0;i<o;i++)h+=`<div class="cal-day"></div>`;let n=new Date(d.getFullYear(),d.getMonth()+1,0).getDate();for(let i=1;i<=n;i++){const isToday=i===today.getDate();h+=`<div class="cal-day${isToday?' today':''}">${i}</div>`}g.innerHTML=h}function changeMonth(dir){today.setMonth(today.getMonth()+dir);renderCalendar()}renderCalendar();
+const tasksKey='dashboard_tasks';const defaultTasks=[{id:'t1',label:'📊 Reporting aktualisieren',badge:'badge-weekly',badgeLabel:'wöchentlich',nextDue:null},{id:'t2',label:'📦 Orderabgleich Magix',badge:'badge-biweekly',badgeLabel:'14-tägig',nextDue:null},{id:'t3',label:'📦 Orderabgleich Antelope',badge:'badge-biweekly',badgeLabel:'14-tägig',nextDue:null}];function loadTasks(){try{return JSON.parse(localStorage.getItem(tasksKey)||'null')||defaultTasks.map(x=>({...x}))}catch(e){return defaultTasks.map(x=>({...x}))}}function saveTasks(t){try{localStorage.setItem(tasksKey,JSON.stringify(t))}catch(e){}}
+function dueInfo(dateStr){if(!dateStr)return{text:'Nächstes Datum setzen',cls:'',urgent:false};const t=new Date();t.setHours(0,0,0,0);const d=new Date(dateStr);d.setHours(0,0,0,0);const diff=Math.round((d-t)/86400000);if(diff<0)return{text:`⚠️ Seit ${Math.abs(diff)}d überfällig!`,cls:'urgent',urgent:true};if(diff===0)return{text:'🔴 Heute fällig!',cls:'urgent',urgent:true};if(diff<=3)return{text:`🟡 In ${diff} Tag${diff===1?'':'en'} fällig`,cls:'soon',urgent:false};return{text:`✅ Nächster Termin: ${d.toLocaleDateString('de-DE')}`,cls:'ok',urgent:false}}
+function renderTasks(){const list=document.getElementById('taskList');list.innerHTML='';loadTasks().forEach(task=>{const di=dueInfo(task.nextDue);const div=document.createElement('div');div.className='task-item'+(di.urgent?' due-urgent':di.cls==='soon'?' due-soon':'');div.innerHTML=`<div class="task-cb" onclick="event.stopPropagation();toggleDone('${task.id}')"></div><div class="task-meta"><div class="task-label">${task.label}</div><div class="task-next-due ${di.cls}">${di.text}</div></div><span class="task-badge ${task.badge}">${task.badgeLabel}</span><div class="task-actions"><button class="task-set-date-btn" onclick="setNextDue('${task.id}')">📅 Datum</button><button class="task-action-btn" onclick="editTask('${task.id}')">✏️</button><button class="task-action-btn" onclick="copyTask('${task.id}')">📋</button><button class="task-action-btn task-action-del" onclick="deleteTask('${task.id}')">🗑️</button></div>`;list.appendChild(div)})}function setNextDue(id){const tasks=loadTasks();const t=tasks.find(x=>x.id===id);if(!t)return;const d=prompt('Nächstes Datum (YYYY-MM-DD):',t.nextDue||'');if(!d)return;t.nextDue=d;saveTasks(tasks);renderTasks()}function editTask(id){const tasks=loadTasks();const t=tasks.find(x=>x.id===id);if(!t)return;const label=prompt('Text anpassen:',t.label);if(!label)return;t.label=label;saveTasks(tasks);renderTasks()}function copyTask(id){const tasks=loadTasks();const t=tasks.find(x=>x.id===id);if(!t)return;tasks.push({id:'t'+Date.now(),label:t.label+' (Kopie)',badge:t.badge,badgeLabel:t.badgeLabel,nextDue:null});saveTasks(tasks);renderTasks()}function deleteTask(id){if(!confirm('Aufgabe wirklich löschen?'))return;saveTasks(loadTasks().filter(x=>x.id!==id));renderTasks()}function addTask(){const label=prompt('Aufgabe:');if(!label)return;saveTasks([...loadTasks(),{id:'t'+Date.now(),label,badge:'badge-weekly',badgeLabel:'wöchentlich',nextDue:null}]);renderTasks()}function toggleDone(id){const list=loadTasks();const t=list.find(x=>x.id===id);if(!t)return;const d=new Date();d.setDate(d.getDate()+(t.badgeLabel==='14-tägig'?14:7));t.nextDue=d.toISOString().slice(0,10);saveTasks(list);renderTasks()}renderTasks();
+function saveNotes(){document.getElementById('notesFooter').textContent=`${document.getElementById('notesArea').value.length} Zeichen`}document.getElementById('notesArea').addEventListener('input',saveNotes);
+function showNotification(title,text){const d=document.createElement('div');d.className='notif-card';d.innerHTML=`<div class="notif-icon">🔔</div><div><div class="notif-title">${title}</div><div class="notif-text">${text}</div></div><button class="notif-close" onclick="this.parentElement.remove()">✕</button>`;document.getElementById('notifBanner').appendChild(d);setTimeout(()=>d.remove(),12000)}window.addEventListener('load',()=>{showNotification('Erinnerung: 📊 Reporting aktualisieren','Wiederkehrende Aufgabe · Bitte heute erledigen!');showNotification('Erinnerung: 📦 Orderabgleich Magix','Wiederkehrende Aufgabe · Bitte heute erledigen!');showNotification('Erinnerung: 📦 Orderabgleich Antelope','Wiederkehrende Aufgabe · Bitte heute erledigen!')});
+
+// ── ASANA LIVE ──
+let asanaToken = '';
+let asanaWorkspaces = [];
+let asanaTasks = [];
+
+function setAsanaStatus(msg) {
+  const el = document.getElementById('asanaStatus');
+  if (el) el.textContent = msg;
+}
+
+function loadSavedAsanaToken() {
+  try {
+    const saved = localStorage.getItem('asana_token');
+    if (saved) {
+      asanaToken = saved;
+      const inp = document.getElementById('asanaTokenInput');
+      if (inp) inp.value = saved;
+      setAsanaStatus('Token geladen. Verbinde…');
+      connectAsana(true);
+    }
+  } catch(e) {}
+}
+
+async function asanaFetch(path, opts = {}) {
+  const res = await fetch('https://app.asana.com/api/1.0' + path, {
+    ...opts,
+    headers: {
+      'Authorization': 'Bearer ' + asanaToken,
+      'Accept': 'application/json',
+      ...(opts.headers || {})
+    }
+  });
+  const text = await res.text();
+  let data;
+  try { data = JSON.parse(text); } catch(e) { data = { raw: text }; }
+  if (!res.ok) {
+    const msg = data?.errors?.[0]?.message || ('HTTP ' + res.status);
+    throw new Error(msg);
+  }
+  return data;
+}
+
+async function connectAsana(silent = false) {
+  const inp = document.getElementById('asanaTokenInput');
+  const remember = document.getElementById('asanaRemember');
+  if (inp) asanaToken = (inp.value || '').trim();
+  if (!asanaToken) { setAsanaStatus('Bitte Token eingeben.'); return; }
+
+  setAsanaStatus('Verbinde mit Asana…');
+  try {
+    const me = await asanaFetch('/users/me?opt_fields=name,workspaces');
+    asanaWorkspaces = me.data.workspaces || [];
+
+    if (remember && remember.checked) {
+      try { localStorage.setItem('asana_token', asanaToken); } catch(e) {}
+    }
+
+    setAsanaStatus('Verbunden als ' + (me.data.name || 'du') + '. Lade Aufgaben…');
+    await loadAsanaTasks();
+  } catch(e) {
+    setAsanaStatus('Fehler: ' + e.message + ' (Hinweis: Asana blockiert direkte Browser-API-Zugriffe oft per CORS. Dann brauchst du weiterhin deine CORS-Extension.)');
+  }
+}
+
+async function loadAsanaTasks() {
+  if (!asanaToken) { setAsanaStatus('Kein Token.'); return; }
+  setAsanaStatus('Lade Aufgaben…');
+
+  try {
+    // If workspaces not loaded yet, fetch user
+    if (!asanaWorkspaces.length) {
+      const me = await asanaFetch('/users/me?opt_fields=name,workspaces');
+      asanaWorkspaces = me.data.workspaces || [];
+    }
+
+    const all = [];
+    for (const ws of asanaWorkspaces) {
+      const t = await asanaFetch(`/tasks?assignee=me&workspace=${ws.gid}&completed_since=now&limit=50&opt_fields=name,due_on,projects.name,permalink_url`);
+      all.push(...(t.data || []));
+    }
+
+    // Sort by due date (null last)
+    all.sort((a,b) => {
+      const da = a.due_on ? new Date(a.due_on) : new Date('9999-12-31');
+      const db = b.due_on ? new Date(b.due_on) : new Date('9999-12-31');
+      return da - db;
+    });
+
+    asanaTasks = all;
+    renderAsanaTasks();
+    setAsanaStatus('Aktualisiert: ' + asanaTasks.length + ' Aufgaben');
+  } catch(e) {
+    setAsanaStatus('Fehler beim Laden: ' + e.message);
+  }
+}
+
+function renderAsanaTasks() {
+  const wrap = document.getElementById('asanaTasks');
+  if (!wrap) return;
+  if (!asanaTasks.length) {
+    wrap.innerHTML = '<div style="font-size:.82rem;color:var(--muted);padding:10px 0">Keine offenen Aufgaben gefunden.</div>';
+    return;
+  }
+
+  const colors = ['#0078D4','#F5A623','#F7C948','#059669','#7C3AED','#E8522A'];
+  wrap.innerHTML = asanaTasks.slice(0,12).map((t,i) => {
+    const due = t.due_on ? new Date(t.due_on).toLocaleDateString('de-DE') : '—';
+    const proj = (t.projects && t.projects[0] && t.projects[0].name) ? t.projects[0].name : '—';
+    const dot = colors[i%colors.length];
+    return `
+      <div class="asana-task-row" onclick="window.open('${t.permalink_url}','_blank')">
+        <div class="asana-dot" style="background:${dot}"></div>
+        <div style="flex:1;min-width:0">
+          <div class="asana-task-name">${t.name}</div>
+          <div class="asana-task-meta">📁 ${proj} · 📅 ${due}</div>
+        </div>
+        <span class="asana-pill">Asana</span>
+      </div>`;
+  }).join('');
+}
+
+function disconnectAsana() {
+  asanaToken = '';
+  asanaWorkspaces = [];
+  asanaTasks = [];
+  try { localStorage.removeItem('asana_token'); } catch(e) {}
+  const inp = document.getElementById('asanaTokenInput');
+  if (inp) inp.value = '';
+  const wrap = document.getElementById('asanaTasks');
+  if (wrap) wrap.innerHTML = '';
+  setAsanaStatus('Token gelöscht.');
+}
+
+window.addEventListener('DOMContentLoaded', loadSavedAsanaToken);
+
+// Outlook OAuth PKCE no library
+const MS_CLIENT_ID='2d2c3217-be7c-42a1-8541-2f41406859a0';const MS_TENANT='6f55c80c-e11d-4f70-a981-2c5e3b375f13';const MS_REDIRECT='https://miriamgumpert.github.io/kupona-dashboard/';const MS_SCOPES='User.Read Calendars.Read';let outlookToken=null;async function sha256(p){const e=new TextEncoder().encode(p);const h=await crypto.subtle.digest('SHA-256',e);return btoa(String.fromCharCode(...new Uint8Array(h))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=/g,'')}function rs(l){const a=new Uint8Array(l);crypto.getRandomValues(a);return btoa(String.fromCharCode(...a)).replace(/[+/=]/g,'').slice(0,l)}async function outlookLogin(){const v=rs(64),c=await sha256(v),s=rs(16);sessionStorage.setItem('pkce_verifier',v);sessionStorage.setItem('pkce_state',s);const p=new URLSearchParams({client_id:MS_CLIENT_ID,response_type:'code',redirect_uri:MS_REDIRECT,scope:MS_SCOPES+' offline_access',state:s,code_challenge:c,code_challenge_method:'S256',response_mode:'query'});window.location.href=`https://login.microsoftonline.com/${MS_TENANT}/oauth2/v2.0/authorize?${p}`}async function handleOAuthCallback(){const p=new URLSearchParams(location.search);const code=p.get('code'),state=p.get('state'),error=p.get('error');if(error){console.error(error,p.get('error_description'));return}if(!code)return;if(state!==sessionStorage.getItem('pkce_state')){console.error('state mismatch');return}const body=new URLSearchParams({client_id:MS_CLIENT_ID,grant_type:'authorization_code',code,redirect_uri:MS_REDIRECT,code_verifier:sessionStorage.getItem('pkce_verifier')});const res=await fetch(`https://login.microsoftonline.com/${MS_TENANT}/oauth2/v2.0/token`,{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:body.toString()});const data=await res.json();if(data.access_token){outlookToken=data.access_token;sessionStorage.setItem('ms_token',outlookToken);loadOutlookEvents()}else console.error(data)}async function loadOutlookEvents(){if(!outlookToken)return;const list=document.getElementById('termineList');list.innerHTML='<div class="outlook-connect"><div style="font-size:2rem">⏳</div><p>Termine werden geladen…</p></div>';try{const now=new Date();const start=new Date(now.getFullYear(),now.getMonth(),now.getDate(),0,0,0).toISOString();const end=new Date(now.getFullYear(),now.getMonth(),now.getDate(),23,59,59).toISOString();const res=await fetch(`https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=${start}&endDateTime=${end}&$orderby=start/dateTime&$select=subject,start,end,location,onlineMeeting,isAllDay&$top=20`,{headers:{Authorization:'Bearer '+outlookToken}});const data=await res.json();const events=(data.value||[]).filter(e=>!e.isAllDay);const me=await (await fetch('https://graph.microsoft.com/v1.0/me?$select=displayName',{headers:{Authorization:'Bearer '+outlookToken}})).json();document.querySelector('#outlookHeaderBtn')?.replaceChildren();const headerBtn=document.getElementById('outlookHeaderBtn');if(headerBtn)headerBtn.innerHTML=`<span class="outlook-user-pill">👤 ${me.displayName||''}</span><button class="outlook-disconnect-btn" onclick="outlookDisconnect()" style="margin-left:6px;">Trennen</button>`;if(!events.length){list.innerHTML='<div class="outlook-connect"><div style="font-size:2rem">🎉</div><p>Heute keine Termine!</p></div>';return}const colors=['#0078D4','#F5A623','#F7C948','#059669','#7C3AED','#E8522A'];let html='';events.forEach((ev,i)=>{const s=new Date(ev.start.dateTime||ev.start.date);const time=s.toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'});let loc='';if(ev.onlineMeeting?.joinUrl)loc=`<div class="termin-location"><a href="${ev.onlineMeeting.joinUrl}" target="_blank">🔗 Online-Meeting öffnen</a></div>`;else if(ev.location?.displayName)loc=`<div class="termin-location">📍 ${ev.location.displayName}</div>`;html+=`<div class="task-item"><div class="task-cb" style="border-color:${colors[i%colors.length]};background:${colors[i%colors.length]}"></div><div class="task-meta"><div class="task-label">${ev.subject||'(kein Titel)'}</div><div class="task-next-due ok">${time}</div>${loc}</div></div>`});list.innerHTML=html}catch(e){list.innerHTML=`<div class="outlook-connect"><p>❌ Fehler: ${e.message}</p></div>`;console.error(e)}}function outlookDisconnect(){outlookToken=null;sessionStorage.removeItem('ms_token');document.getElementById('termineList').innerHTML=`<div class="outlook-connect"><div style="font-size:2rem">📅</div><p>Verbinde Outlook, um deine heutigen Termine automatisch zu sehen.</p><button class="outlook-btn" onclick="outlookLogin()"><span>🔵</span>Mit Outlook verbinden</button></div>`;document.getElementById('outlookHeaderBtn').innerHTML=''}window.addEventListener('DOMContentLoaded',()=>{renderCalendar();try{const s=sessionStorage.getItem('ms_token');if(s){outlookToken=s;loadOutlookEvents()}}catch(e){}if(location.search.includes('code='))handleOAuthCallback();});
+// Stars
+(function(){const c=document.getElementById('starCanvas'),x=c.getContext('2d');function resize(){c.width=innerWidth;c.height=innerHeight}resize();addEventListener('resize',resize);const stars=Array.from({length:45},()=>({x:Math.random(),y:Math.random(),size:4+Math.random()*14,points:Math.random()<.7?4:5,opacity:.18+Math.random()*0.32,speed:.00008+Math.random()*0.00014,phase:Math.random()*Math.PI*2,rotate:Math.random()*Math.PI*2,rotSpeed:(Math.random()-.5)*.004,color:Math.random()<.6?'#F7C948':(Math.random()<.5?'#F5A623':'#FFE566')}));function draw(cx,cy,points,outer,inner,angle,color,opacity){x.save();x.globalAlpha=opacity;x.translate(cx,cy);x.rotate(angle);x.beginPath();for(let i=0;i<points*2;i++){const r=i%2===0?outer:inner,a=i*Math.PI/points;i===0?x.moveTo(Math.cos(a)*r,Math.sin(a)*r):x.lineTo(Math.cos(a)*r,Math.sin(a)*r)}x.closePath();x.fillStyle=color;x.fill();x.restore()}let t=0;function anim(){x.clearRect(0,0,c.width,c.height);t++;stars.forEach(s=>{s.y-=s.speed;if(s.y<-0.05)s.y=1.05;s.rotate+=s.rotSpeed;const pulse=s.opacity*(.8+.2*Math.sin(t*.018+s.phase));draw(s.x*c.width,s.y*c.height,s.points,s.size,s.size*(s.points===4?.38:.42),s.rotate,s.color,pulse)});requestAnimationFrame(anim)}anim()})();
+</script>
+</body>
+</html>
