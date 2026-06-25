@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mein Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --sun:    #F5A623;
+    --flame:  #E8522A;
+    --amber:  #F7C948;
+    --peach:  #FDE8D0;
+    --cream:  #FFFBF4;
+    --text:   #2D1B00;
+    --muted:  #8B6840;
+    --card:   #FFFFFF;
+    --border: #F0DFC0;
+    --shadow: 0 2px 16px rgba(229,130,60,.12);
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 0;
+    position: relative;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(ellipse 70% 50% at 15% 20%, rgba(247,201,72,.18) 0%, transparent 70%),
+      radial-gradient(ellipse 60% 60% at 85% 10%, rgba(232,82,42,.10) 0%, transparent 65%),
+      radial-gradient(ellipse 80% 50% at 50% 90%, rgba(245,166,35,.13) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 40% at 90% 70%, rgba(255,220,100,.10) 0%, transparent 60%);
+    animation: bgShift 18s ease-in-out infinite alternate;
+  }
+  @keyframes bgShift {
+    0%   { opacity: 1; transform: scale(1) translateY(0px); }
+    50%  { opacity: .85; transform: scale(1.04) translateY(-12px); }
+    100% { opacity: 1; transform: scale(1) translateY(0px); }
+  }
+  main { position: relative; z-index: 3; }
+  header { position: sticky; top: 0; z-index: 100; }
+
+  /* ── HEADER ── */
+  header {
+    background: linear-gradient(120deg, #E8522A 0%, #F5A623 45%, #F7C948 75%, #FFE566 100%);
+    padding: 28px 36px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(232,82,42,.25);
+  }
+  header .brand { display: flex; align-items: center; gap: 12px; }
+  header .logo {
+    width: 40px; height: 40px;
+    background: rgba(255,255,255,.25);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 20px;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.55rem;
+    color: #fff;
+    letter-spacing: -.3px;
+  }
+  header .date-pill {
+    background: rgba(255,255,255,.2);
+    color: #fff;
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: .82rem;
+    font-weight: 500;
+    letter-spacing: .3px;
+  }
+
+  /* ── GRID ── */
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    padding: 28px 32px 48px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* ── CARDS ── */
+  .card {
+    background: var(--card);
+    border-radius: 18px;
+    padding: 24px;
+    border: 1.5px solid var(--border);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: .78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--muted);
+  }
+  .card-title .icon {
+    width: 32px; height: 32px;
+    border-radius: 9px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+  }
+  .icon-sun    { background: #FEF3C7; }
+  .icon-flame  { background: #FFE4D6; }
+  .icon-amber  { background: #FFF8DC; }
+  .icon-green  { background: #D1FAE5; }
+  .icon-blue   { background: #DBEAFE; }
+  .icon-pink   { background: #FCE7F3; }
+
+  /* ── FOCUS BLOCK (col-span 2) ── */
+  .focus-block { grid-column: span 2; }
+  .focus-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.45rem;
+    font-family: 'Playfair Display', serif;
+    color: var(--text);
+    background: transparent;
+    border-bottom: 2.5px solid var(--amber);
+    padding-bottom: 6px;
+  }
+  .focus-input::placeholder { color: #DFCAA8; }
+  .focus-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+  .tag {
+    font-size: .75rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1.5px solid transparent;
+    transition: all .18s;
+  }
+  .tag.active   { background: linear-gradient(135deg,#F7C948,#F5A623); color: #3D2000; border-color: #F5A623; }
+  .tag.inactive { background: #FFFDE7; color: #92400E; border-color: #F7C948; }
+  .tag:hover { opacity: .85; }
+
+  /* ── KPI BLOCK ── */
+  .kpi-block { grid-column: span 1; }
+  .kpi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .kpi-item {
+    background: linear-gradient(135deg, #FFFDE7 0%, #FFF8C0 100%);
+    border: 1.5px solid #F7C948;
+    border-radius: 12px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .kpi-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--flame);
+    line-height: 1;
+  }
+  .kpi-label {
+    font-size: .72rem;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  .kpi-edit {
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--flame);
+    width: 100%;
+    outline: none;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    cursor: text;
+  }
+
+  /* ── CALENDAR ── */
+  .calendar-block { grid-column: span 1; }
+  .cal-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    text-align: center;
+  }
+  .cal-day-name {
+    font-size: .65rem;
+    font-weight: 700;
+    color: var(--muted);
+    text-transform: uppercase;
+    padding: 4px 0;
+  }
+  .cal-day {
+    font-size: .8rem;
+    padding: 6px 3px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background .15s;
+    color: var(--text);
+    font-weight: 400;
+  }
+  .cal-day:hover { background: var(--peach); }
+  .cal-day.today {
+    background: var(--flame);
+    color: #fff;
+    font-weight: 700;
+  }
+  .cal-day.has-event::after {
+    content: '';
+    display: block;
+    width: 4px; height: 4px;
+    background: var(--sun);
+    border-radius: 50%;
+    margin: 2px auto 0;
+  }
+  .cal-day.empty { cursor: default; }
+  .cal-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .85rem;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .cal-nav button {
+    background: var(--peach);
+    border: none;
+    border-radius: 8px;
+    width: 28px; height: 28px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--flame);
+    transition: background .15s;
+  }
+  .cal-nav button:hover { background: #F8C5A8; }
+
+  /* ── TERMINE ── */
+  .termine-block { grid-column: span 1; }
+  .termine-list { display: flex; flex-direction: column; gap: 8px; }
+  .termin-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    background: linear-gradient(135deg, #FFFDE7, #FFF8C0);
+    border: 1.5px solid #F7C948;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background .15s;
+  }
+  .termin-item:hover { background: #FFF3A0; border-color: #F5A623; }
+  .termin-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .termin-time { font-size: .72rem; font-weight: 600; color: var(--muted); min-width: 38px; }
+  .termin-name { font-size: .85rem; font-weight: 500; color: var(--text); flex: 1; }
+  .add-btn {
+    background: none;
+    border: 1.5px dashed var(--sun);
+    border-radius: 10px;
+    padding: 8px;
+    font-size: .8rem;
+    color: var(--sun);
+    cursor: pointer;
+    width: 100%;
+    transition: background .15s;
+    font-weight: 500;
+  }
+  .add-btn:hover { background: #FFF8DC; }
+
+  /* ── TASKS ── */
+  .tasks-block { grid-column: span 1; }
+  .task-list { display: flex; flex-direction: column; gap: 8px; }
+  .task-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 14px;
+    border-radius: 12px;
+    transition: background .15s;
+    border: 1.5px solid transparent;
+  }
+  .task-item:hover { background: var(--peach); }
+  .task-item.due-urgent { border-color: #FCA5A5 !important; background: #FFF5F5 !important; }
+  .task-item.due-soon   { border-color: #FDE68A !important; background: #FFFBEB !important; }
+  .task-cb {
+    width: 18px; height: 18px;
+    border-radius: 5px;
+    border: 2px solid var(--sun);
+    background: #fff;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: all .18s;
+  }
+  .task-cb.done { background: var(--sun); border-color: var(--sun); }
+  .task-cb.done::after { content: "✓"; font-size: .7rem; color: #fff; font-weight: 700; }
+  .task-meta { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0; }
+  .task-label { font-size: .85rem; font-weight: 500; transition: color .18s; }
+  .task-label.done { text-decoration: line-through; color: var(--muted); }
+  .task-next-due {
+    font-size: .7rem;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+  .task-next-due.urgent { color: #DC2626; font-weight: 700; }
+  .task-next-due.soon   { color: #D97706; font-weight: 600; }
+  .task-next-due.ok     { color: #059669; }
+  .task-badge {
+    font-size: .65rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    flex-shrink: 0;
+  }
+  .badge-daily    { background: #FEF3C7; color: #92400E; }
+  .badge-weekly   { background: #DBEAFE; color: #1E40AF; }
+  .badge-biweekly { background: #EDE9FE; color: #5B21B6; }
+
+  .task-actions { display: flex; gap: 4px; align-items: center; flex-shrink: 0; }
+  .task-action-btn {
+    background: none;
+    border: none;
+    font-size: .85rem;
+    cursor: pointer;
+    padding: 4px 5px;
+    border-radius: 7px;
+    transition: background .15s;
+    line-height: 1;
+  }
+  .task-action-btn:hover { background: var(--peach); }
+  .task-action-del:hover { background: #FEE2E2; }
+
+  .task-set-date-btn {
+    background: none;
+    border: 1.5px dashed var(--sun);
+    border-radius: 8px;
+    font-size: .7rem;
+    color: var(--sun);
+    cursor: pointer;
+    padding: 3px 9px;
+    white-space: nowrap;
+    transition: background .15s;
+    flex-shrink: 0;
+    font-family: "Inter", sans-serif;
+  }
+  .task-set-date-btn:hover { background: #FFF8DC; }
+
+  /* ── ASANA ── */
+  .asana-block { grid-column: span 2; }
+  .asana-token-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .asana-token-label {
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--muted);
+  }
+  .asana-token-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .asana-token-input {
+    flex: 1;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: .85rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    outline: none;
+    background: #FFFDF7;
+    transition: border-color .18s;
+  }
+  .asana-token-input:focus { border-color: var(--sun); }
+  .asana-btn {
+    background: linear-gradient(135deg, #F7C948, #F5A623);
+    color: #3D2000;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: .85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity .18s;
+    font-family: 'Inter', sans-serif;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .asana-btn:hover { opacity: .88; }
+  .asana-btn:disabled { opacity: .5; cursor: not-allowed; }
+  .asana-hint {
+    font-size: .73rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .asana-hint a { color: var(--flame); text-decoration: none; }
+  .asana-hint a:hover { text-decoration: underline; }
+  .asana-status {
+    font-size: .78rem;
+    padding: 8px 14px;
+    border-radius: 8px;
+    display: none;
+  }
+  .asana-status.ok  { background: #D1FAE5; color: #065F46; display: block; }
+  .asana-status.err { background: #FEE2E2; color: #991B1B; display: block; }
+  .asana-status.loading { background: #FEF3C7; color: #92400E; display: block; }
+
+  .asana-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .asana-filter-select {
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: .78rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    background: #FFFDF7;
+    outline: none;
+    cursor: pointer;
+    flex: 1;
+    min-width: 120px;
+  }
+  .asana-refresh-btn {
+    background: var(--peach);
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: .78rem;
+    font-weight: 600;
+    color: var(--flame);
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: background .15s;
+  }
+  .asana-refresh-btn:hover { background: #F8C5A8; }
+  .asana-disconnect-btn {
+    background: none;
+    border: 1.5px solid #FECACA;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: .78rem;
+    font-weight: 600;
+    color: #DC2626;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: background .15s;
+  }
+  .asana-disconnect-btn:hover { background: #FEE2E2; }
+
+  .asana-tasks-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    max-height: 340px;
+    overflow-y: auto;
+  }
+  .asana-tasks-grid::-webkit-scrollbar { width: 5px; }
+  .asana-tasks-grid::-webkit-scrollbar-track { background: transparent; }
+  .asana-tasks-grid::-webkit-scrollbar-thumb { background: var(--border); border-radius: 10px; }
+
+  .asana-task {
+    display: grid;
+    grid-template-columns: 8px 1fr auto auto;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: var(--peach);
+    border-radius: 10px;
+    font-size: .83rem;
+    transition: background .15s;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+  }
+  .asana-task:hover { background: #F8C5A8; }
+  .asana-task.overdue { border-left-color: var(--flame); background: #FFF0EC; }
+  .asana-task.overdue:hover { background: #FFE4D6; }
+  .asana-task .priority {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+  .p-high   { background: var(--flame); }
+  .p-medium { background: var(--sun); }
+  .p-low    { background: #86EFAC; }
+  .p-none   { background: #D1D5DB; }
+  .asana-task-info { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .asana-task-name { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .asana-task-project { font-size: .7rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .asana-task-due {
+    font-size: .7rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 20px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .due-ok       { background: #D1FAE5; color: #065F46; }
+  .due-soon     { background: #FEF3C7; color: #92400E; }
+  .due-overdue  { background: #FEE2E2; color: #991B1B; }
+  .due-none     { background: var(--border); color: var(--muted); }
+  .asana-task-complete-btn {
+    width: 20px; height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--sun);
+    background: #fff;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    transition: all .18s;
+    font-size: .7rem;
+  }
+  .asana-task-complete-btn:hover { background: var(--sun); color: #fff; border-color: var(--sun); }
+
+  .asana-empty {
+    text-align: center;
+    padding: 28px 20px;
+    color: var(--muted);
+    font-size: .83rem;
+    line-height: 1.6;
+  }
+  .asana-stats {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .asana-stat {
+    background: linear-gradient(135deg, #FFFDE7, #FFF8C0);
+    border: 1.5px solid #F7C948;
+    border-radius: 10px;
+    padding: 10px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+    min-width: 80px;
+    text-align: center;
+  }
+  .asana-stat-val { font-size: 1.3rem; font-weight: 700; color: var(--flame); }
+  .asana-stat-lbl { font-size: .68rem; color: var(--muted); font-weight: 500; }
+
+  /* ── NOTES ── */
+  .notes-block { grid-column: span 1; }
+  .notes-area {
+    width: 100%;
+    min-height: 130px;
+    border: none;
+    outline: none;
+    background: #FFFDF7;
+    border-radius: 12px;
+    padding: 14px;
+    font-size: .85rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    resize: vertical;
+    line-height: 1.7;
+    border: 1.5px solid var(--border);
+  }
+  .notes-area::placeholder { color: #DDD0BA; }
+  .notes-footer { font-size: .72rem; color: var(--muted); text-align: right; }
+
+
+
+  /* ── OUTLOOK ── */
+  .outlook-connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    background: linear-gradient(135deg, #FFFDE7, #FFF8C0);
+    border-radius: 14px;
+    border: 1.5px dashed #F7C948;
+    text-align: center;
+  }
+  .outlook-connect p { font-size: .82rem; color: var(--muted); line-height: 1.5; }
+  .outlook-btn {
+    background: linear-gradient(135deg, #0078D4, #005A9E);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: .85rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity .18s;
+  }
+  .outlook-btn:hover { opacity: .88; }
+  .outlook-disconnect-btn {
+    background: none;
+    border: 1.5px solid #FECACA;
+    border-radius: 8px;
+    padding: 5px 12px;
+    font-size: .75rem;
+    font-weight: 600;
+    color: #DC2626;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    transition: background .15s;
+  }
+  .outlook-disconnect-btn:hover { background: #FEE2E2; }
+  .termin-list-inner { display: flex; flex-direction: column; gap: 8px; }
+  .termin-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 10px 14px;
+    background: linear-gradient(135deg, #FFFDE7, #FFF8C0);
+    border: 1.5px solid #F7C948;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background .15s;
+  }
+  .termin-item:hover { background: #FFF3A0; }
+  .termin-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+  .termin-time { font-size: .72rem; font-weight: 700; color: var(--muted); min-width: 42px; padding-top: 1px; }
+  .termin-info { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0; }
+  .termin-name { font-size: .85rem; font-weight: 600; color: var(--text); }
+  .termin-location { font-size: .72rem; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .termin-location a { color: #0078D4; text-decoration: none; }
+  .termin-location a:hover { text-decoration: underline; }
+  .termine-empty { text-align: center; padding: 20px; font-size: .83rem; color: var(--muted); }
+  .outlook-user-pill {
+    font-size: .72rem;
+    background: #EFF6FF;
+    color: #1D4ED8;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-weight: 500;
+  }
+
+  /* ── NOTIFICATION BANNER ── */
+  #notifBanner {
+    position: fixed;
+    top: 80px;
+    right: 24px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 340px;
+  }
+  .notif-card {
+    background: #fff;
+    border-left: 5px solid #F7C948;
+    border-radius: 14px;
+    padding: 14px 18px;
+    box-shadow: 0 6px 28px rgba(0,0,0,.15);
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    animation: slideIn .35s cubic-bezier(.22,.68,0,1.2);
+  }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateX(40px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+  .notif-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+  .notif-body { flex: 1; }
+  .notif-title { font-size: .85rem; font-weight: 700; color: #2D1B00; margin-bottom: 2px; }
+  .notif-text  { font-size: .78rem; color: #8B6840; line-height: 1.4; }
+  .notif-close {
+    background: none; border: none; cursor: pointer;
+    font-size: 1rem; color: #ccc; padding: 0; line-height: 1;
+    align-self: flex-start;
+  }
+  .notif-close:hover { color: #E8522A; }
+
+
+  /* ── STERNE ── */
+  #starCanvas {
+    position: fixed;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    opacity: 1;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    main { grid-template-columns: 1fr 1fr; }
+    .focus-block, .kpi-block, .calendar-block, .termine-block,
+    .tasks-block, .asana-block, .notes-block { grid-column: span 1; }
+  }
+  @media (max-width: 580px) {
+    main { grid-template-columns: 1fr; padding: 16px; gap: 14px; }
+    .focus-block, .kpi-block, .calendar-block, .termine-block,
+    .tasks-block, .asana-block, .notes-block { grid-column: span 1; }
+    header { padding: 18px 20px; }
+  }
+</style>
+  <script src="https://alcdn.msauth.net/browser/2.39.0/js/msal-browser.min.js">
+// ── OUTLOOK / MICROSOFT GRAPH ──
+const MSAL_CONFIG = {
+  auth: {
+    clientId: '2d2c3217-be7c-42a1-8541-2f41406859a0',
+    authority: 'https://login.microsoftonline.com/6f55c80c-e11d-4f70-a981-2c5e3b375f13',
+    redirectUri: 'https://miriamgumpert.github.io/kupona-dashboard/',
+  },
+  cache: { cacheLocation: 'sessionStorage', storeAuthStateInCookie: false }
+};
+
+const msalInstance = new msal.PublicClientApplication(MSAL_CONFIG);
+const GRAPH_SCOPES = ['User.Read', 'Calendars.Read'];
+
+let outlookAccount = null;
+
+// Handle redirect after login
+msalInstance.handleRedirectPromise().then(response => {
+  if (response && response.account) {
+    outlookAccount = response.account;
+    msalInstance.setActiveAccount(outlookAccount);
+    loadOutlookEvents();
+  }
+}).catch(e => {
+  console.error('MSAL redirect error', e);
+});
+
+// Check if already logged in (session)
+window.addEventListener('load', () => {
+  const accounts = msalInstance.getAllAccounts();
+  if (accounts.length > 0) {
+    outlookAccount = accounts[0];
+    msalInstance.setActiveAccount(outlookAccount);
+    loadOutlookEvents();
+  }
+});
+
+async function outlookLogin() {
+  try {
+    await msalInstance.loginRedirect({
+      scopes: GRAPH_SCOPES,
+      prompt: 'select_account'
+    });
+  } catch(e) {
+    console.error('Login error', e);
+  }
+}
+
+async function getGraphToken() {
+  try {
+    const result = await msalInstance.acquireTokenSilent({
+      scopes: GRAPH_SCOPES,
+      account: outlookAccount
+    });
+    return result.accessToken;
+  } catch(e) {
+    // Silent failed, try popup
+    const result = await msalInstance.acquireTokenPopup({ scopes: GRAPH_SCOPES });
+    return result.accessToken;
+  }
+}
+
+async function loadOutlookEvents() {
+  const list = document.getElementById('termineList');
+  list.innerHTML = '<div class="termine-empty">⏳ Termine werden geladen…</div>';
+
+  try {
+    const token = await getGraphToken();
+
+    // Today's date range
+    const now = new Date();
+    const start = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0).toISOString();
+    const end   = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59).toISOString();
+
+    const url = `https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=${start}&endDateTime=${end}&$orderby=start/dateTime&$select=subject,start,end,location,onlineMeeting,isAllDay&$top=20`;
+
+    const res = await fetch(url, {
+      headers: { 'Authorization': 'Bearer ' + token, 'Accept': 'application/json' }
+    });
+    const data = await res.json();
+    const events = data.value || [];
+
+    // Update header with user + disconnect
+    const headerBtn = document.getElementById('outlookHeaderBtn');
+    if (headerBtn) {
+      const name = outlookAccount.name || outlookAccount.username;
+      headerBtn.innerHTML = `
+        <span class="outlook-user-pill">👤 ${name}</span>
+        <button class="outlook-disconnect-btn" onclick="outlookDisconnect()" style="margin-left:6px;">Trennen</button>
+      `;
+    }
+
+    if (events.length === 0) {
+      list.innerHTML = '<div class="termine-empty">🎉 Heute keine Termine!</div>';
+      return;
+    }
+
+    const colors = ['#0078D4','#F5A623','#F7C948','#059669','#7C3AED','#E8522A'];
+    let html = '<div class="termin-list-inner">';
+    events.forEach((ev, i) => {
+      if (ev.isAllDay) return; // Ganztägige überspringen oder optional einblenden
+      const s = new Date(ev.start.dateTime || ev.start.date);
+      const e = new Date(ev.end.dateTime || ev.end.date);
+      const timeStr = s.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' }) +
+                      ' – ' + e.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
+      const color = colors[i % colors.length];
+
+      let location = '';
+      if (ev.onlineMeeting && ev.onlineMeeting.joinUrl) {
+        location = `<a href="${ev.onlineMeeting.joinUrl}" target="_blank">🔗 Online-Meeting öffnen</a>`;
+      } else if (ev.location && ev.location.displayName) {
+        location = '📍 ' + ev.location.displayName;
+      }
+
+      html += `
+        <div class="termin-item">
+          <div class="termin-dot" style="background:${color}"></div>
+          <div class="termin-time">${timeStr.split(' – ')[0]}</div>
+          <div class="termin-info">
+            <div class="termin-name">${ev.subject || '(kein Titel)'}</div>
+            ${location ? `<div class="termin-location">${location}</div>` : ''}
+          </div>
+        </div>`;
+    });
+    html += '</div>';
+    html += '<button class="add-btn" onclick="loadOutlookEvents()" style="margin-top:8px;">🔄 Aktualisieren</button>';
+    list.innerHTML = html;
+
+  } catch(e) {
+    list.innerHTML = `<div class="termine-empty">❌ Fehler: ${e.message}</div>`;
+    console.error(e);
+  }
+}
+
+function outlookDisconnect() {
+  msalInstance.getAllAccounts().forEach(a => msalInstance.logoutSilent({ account: a }));
+  outlookAccount = null;
+  document.getElementById('termineList').innerHTML = `
+    <div class="outlook-connect">
+      <div style="font-size:2rem;">📅</div>
+      <p>Verbinde Outlook, um deine heutigen Termine automatisch zu sehen.</p>
+      <button class="outlook-btn" onclick="outlookLogin()">
+        <span style="font-size:1.1rem;">🔵</span> Mit Outlook verbinden
+      </button>
+    </div>`;
+  const h = document.getElementById('outlookHeaderBtn');
+  if (h) h.innerHTML = '';
+}
+
+</script>
+</head>
+<body>
+
+<canvas id="starCanvas"></canvas>
+<div id="notifBanner"></div>
+<header>
+  <div class="brand">
+    <div class="logo">☀️</div>
+    <h1>Mein Dashboard</h1>
+  </div>
+  <div class="date-pill" id="headerDate"></div>
+</header>
+
+<main>
+
+  <!-- FOCUS BLOCK -->
+  <div class="card focus-block">
+    <div class="card-header">
+      <div class="card-title">
+        <div class="icon icon-flame">🎯</div>
+        Tages-Fokus
+      </div>
+    </div>
+    <input class="focus-input" type="text" placeholder="Was ist mein wichtigstes Ziel heute?" id="focusInput" />
+    <div>
+      <div class="focus-tags" id="focusTags">
+        <span class="tag active" onclick="toggleTag(this)">Dringend</span>
+        <span class="tag inactive" onclick="toggleTag(this)">Wichtig</span>
+        <span class="tag inactive" onclick="toggleTag(this)">Planung</span>
+        <span class="tag inactive" onclick="toggleTag(this)">Meeting</span>
+        <span class="tag inactive" onclick="toggleTag(this)">Deep Work</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- KPI BLOCK -->
+  <div class="card kpi-block">
+    <div class="card-header">
+      <div class="card-title">
+        <div class="icon icon-amber">📊</div>
+        Meine KPIs
+      </div>
+    </div>
+    <div class="kpi-grid" id="kpiGrid">
+      <div class="kpi-item">
+        <input class="kpi-edit" value="87%" title="Klicken zum Bearbeiten" />
+        <div class="kpi-label">Aufgaben erledigt</div>
+      </div>
+      <div class="kpi-item">
+        <input class="kpi-edit" value="12" title="Klicken zum Bearbeiten" />
+        <div class="kpi-label">Offene Asana-Tasks</div>
+      </div>
+      <div class="kpi-item">
+        <input class="kpi-edit" value="3" title="Klicken zum Bearbeiten" />
+        <div class="kpi-label">Meetings heute</div>
+      </div>
+      <div class="kpi-item">
+        <input class="kpi-edit" value="5d" title="Klicken zum Bearbeiten" />
+        <div class="kpi-label">Bis nächster Review</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CALENDAR -->
+  <div class="card calendar-block">
+    <div class="card-header">
+      <div class="card-title">
+        <div class="icon icon-sun">📅</div>
+        Kalender
+      </div>
+    </div>
+    <div class="cal-nav">
+      <button onclick="changeMonth(-1)">‹</button>
+      <span id="calMonthLabel"></span>
+      <button onclick="changeMonth(1)">›</button>
+    </div>
+    <div class="cal-grid" id="calGrid"></div>
+  </div>
+
+  <!-- TERMINE -->
+  <div class="card termine-block">
+    <div class="card-header">
+      <div class="card-title">
+        <div class="icon icon-pink">🗓️</div>
+        Heutige Termine
+      </div>
+      <div id="outlookHeaderBtn"></div>
+    </div>
+    <div id="termineList">
+      <div class="outlook-connect">
+        <div style="font-size:2rem;">📅</div>
+        <p>Verbinde Outlook, um deine heutigen Termine automatisch zu sehen.</p>
+        <button class="outlook-btn" onclick="outlookLogin()">
+          <span style="font-size:1.1rem;">🔵</span> Mit Outlook verbinden
+        </button>
+      </div>
+    </div>
+  </div>
+
+<!-- TASKS -->
+  <div class="card tasks-block">
+    <div class="card-header">
+      <div class="card-title">
+        <div class="icon icon-green">✅</div>
+        Wiederkehrende Aufgaben
+      </div>
+    </div>
+    <div class="task-list" id="taskList"></div>
+    <button class="add-btn" onclick="addTask()">+ Aufgabe hinzufügen</button>
+  </div>
+
+  <!-- ASANA -->
+  <div class="card asana-block" id="asanaCard">
+    <div class="card-header">
+      <div class="card-title">
+        <div class="icon icon-blue">🔗</div>
+        Asana — Meine Aufgaben
+      </div>
+      <div id="asanaHeaderActions"></div>
+    </div>
+    <div id="asanaContent">
+      <!-- TOKEN FORM (default view) -->
+      <div class="asana-token-form" id="asanaTokenForm">
+        <div class="asana-token-label">Personal Access Token eingeben</div>
+        <div class="asana-token-row">
+          <div style="position:relative;flex:1;display:flex;align-items:center;">
+            <input
+              class="asana-token-input"
+              type="password"
+              id="asanaTokenInput"
+              placeholder="1/1234567890:abcdef1234567890abcdef..."
+              autocomplete="off"
+              style="width:100%;padding-right:40px;"
+            />
+            <button onclick="toggleTokenVisibility()" title="Token anzeigen/verbergen" style="position:absolute;right:10px;background:none;border:none;cursor:pointer;font-size:1rem;color:var(--muted);padding:0;line-height:1;" id="eyeBtn">👁️</button>
+          </div>
+          <button class="asana-btn" onclick="connectAsana()" id="asanaConnectBtn">Verbinden</button>
+        </div>
+        <div class="asana-hint">
+          Token erstellen: <a href="https://app.asana.com/0/my-apps" target="_blank">app.asana.com/0/my-apps</a>
+          → „+ Neues persönliches Zugriffstoken" → kopieren &amp; hier einfügen.<br/>
+          🔒 Der Token verlässt deinen Browser nicht — er wird nur lokal gespeichert.
+        </div>
+        <div class="asana-status" id="asanaStatus"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- NOTES -->
+  <div class="card notes-block">
+    <div class="card-header">
+      <div class="card-title">
+        <div class="icon icon-amber">📝</div>
+        Schnellnotizen
+      </div>
+    </div>
+    <textarea class="notes-area" id="notesArea" placeholder="Gedanken, Ideen, To-dos... einfach drauflos schreiben." oninput="saveNotes()"></textarea>
+    <div class="notes-footer" id="notesFooter">0 Zeichen</div>
+  </div>
+
+</main>
+
+<script>
+// ── DATE HEADER ──
+const today = new Date();
+const dayNames = ['Sonntag','Montag','Dienstag','Mittwoch','Donnerstag','Freitag','Samstag'];
+const monthNames = ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
+document.getElementById('headerDate').textContent =
+  `${dayNames[today.getDay()]}, ${today.getDate()}. ${monthNames[today.getMonth()]} ${today.getFullYear()}`;
+
+// ── FOCUS TAG TOGGLE ──
+function toggleTag(el) {
+  el.classList.toggle('active');
+  el.classList.toggle('inactive');
+}
+
+// ── TASKS ──
+// ── TASK DATA ──
+const TASK_STORAGE_KEY = 'dashboard_tasks';
+const DEFAULT_TASKS = [
+  { id: 't1', label: '📊 Reporting aktualisieren', badge: 'badge-weekly', badgeLabel: 'wöchentlich', nextDue: null },
+  { id: 't2', label: '📦 Orderabgleich Kunde 1',   badge: 'badge-biweekly', badgeLabel: '14-tägig',  nextDue: null },
+  { id: 't3', label: '📦 Orderabgleich Kunde 2',   badge: 'badge-biweekly', badgeLabel: '14-tägig',  nextDue: null },
+];
+
+function loadTasks() {
+  try {
+    const saved = localStorage.getItem(TASK_STORAGE_KEY);
+    return saved ? JSON.parse(saved) : DEFAULT_TASKS.map(t => ({...t}));
+  } catch(e) { return DEFAULT_TASKS.map(t => ({...t})); }
+}
+
+function saveTasks(tasks) {
+  try { localStorage.setItem(TASK_STORAGE_KEY, JSON.stringify(tasks)); } catch(e) {}
+}
+
+function getDueLabelInfo(dateStr) {
+  if (!dateStr) return { text: 'Nächstes Datum setzen', cls: '', urgent: false };
+  const today = new Date(); today.setHours(0,0,0,0);
+  const due = new Date(dateStr); due.setHours(0,0,0,0);
+  const diff = Math.round((due - today) / 86400000);
+  if (diff < 0)  return { text: `⚠️ Seit ${Math.abs(diff)}d überfällig!`, cls: 'urgent', urgent: true };
+  if (diff === 0) return { text: '🔴 Heute fällig!', cls: 'urgent', urgent: true };
+  if (diff <= 3)  return { text: `🟡 In ${diff} Tag${diff===1?'':'en'} fällig`, cls: 'soon', urgent: false };
+  const d = new Date(dateStr);
+  return { text: `✅ Nächster Termin: ${d.getDate().toString().padStart(2,'0')}.${(d.getMonth()+1).toString().padStart(2,'0')}.${d.getFullYear()}`, cls: 'ok', urgent: false };
+}
+
+function renderTasks() {
+  const tasks = loadTasks();
+  const list = document.getElementById('taskList');
+  list.innerHTML = '';
+  tasks.forEach(task => {
+    const dueInfo = getDueLabelInfo(task.nextDue);
+    const div = document.createElement('div');
+    div.className = 'task-item' + (dueInfo.urgent ? ' due-urgent' : (dueInfo.cls === 'soon' ? ' due-soon' : ''));
+    div.dataset.id = task.id;
+    div.innerHTML = `
+      <div class="task-cb" onclick="event.stopPropagation();toggleTaskDone('${task.id}')"></div>
+      <div class="task-meta">
+        <div class="task-label">${task.label}</div>
+        <div class="task-next-due ${dueInfo.cls}">${dueInfo.text}</div>
+      </div>
+      <span class="task-badge ${task.badge}">${task.badgeLabel}</span>
+      <div class="task-actions" onclick="event.stopPropagation()">
+        <button class="task-action-btn" title="Datum setzen" onclick="setNextDue('${task.id}')">📅</button>
+        <button class="task-action-btn" title="Bearbeiten" onclick="editTask('${task.id}')">✏️</button>
+        <button class="task-action-btn" title="Kopieren" onclick="copyTask('${task.id}')">📋</button>
+        <button class="task-action-btn task-action-del" title="Löschen" onclick="deleteTask('${task.id}')">🗑️</button>
+      </div>
+    `;
+    list.appendChild(div);
+  });
+}
+
+function toggleTaskDone(id) {
+  const tasks = loadTasks();
+  const task = tasks.find(t => t.id === id);
+  if (!task) return;
+  // Mark done: ask for next due date
+  setNextDue(id, true);
+}
+
+function setNextDue(id, afterDone = false) {
+  const tasks = loadTasks();
+  const task = tasks.find(t => t.id === id);
+  if (!task) return;
+
+  // Create modal
+  const overlay = document.createElement('div');
+  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:10000;display:flex;align-items:center;justify-content:center;';
+  const modal = document.createElement('div');
+  modal.style.cssText = 'background:#fff;border-radius:20px;padding:28px 32px;max-width:360px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,.2);font-family:Inter,sans-serif;';
+
+  const today = new Date();
+  const defaultDate = new Date(today);
+  defaultDate.setDate(today.getDate() + (task.badgeLabel === '14-tägig' ? 14 : 7));
+  const defaultStr = defaultDate.toISOString().split('T')[0];
+
+  modal.innerHTML = `
+    <div style="font-size:1.1rem;font-weight:700;color:#2D1B00;margin-bottom:6px;">${afterDone ? '✅ Erledigt!' : '📅 Nächsten Termin setzen'}</div>
+    <div style="font-size:.83rem;color:#8B6840;margin-bottom:18px;">${task.label}</div>
+    <label style="font-size:.78rem;font-weight:600;color:#8B6840;display:block;margin-bottom:8px;">Nächste Fälligkeit:</label>
+    <input type="date" id="nextDueInput" value="${defaultStr}"
+      style="width:100%;border:1.5px solid #F0DFC0;border-radius:10px;padding:10px 14px;font-size:.95rem;font-family:inherit;outline:none;color:#2D1B00;margin-bottom:18px;"/>
+    <div style="display:flex;gap:10px;">
+      <button onclick="confirmNextDue('${id}',${afterDone})" style="flex:1;background:linear-gradient(135deg,#F7C948,#F5A623);color:#3D2000;border:none;border-radius:10px;padding:11px;font-size:.9rem;font-weight:700;cursor:pointer;font-family:inherit;">Speichern</button>
+      <button onclick="document.getElementById('dueOverlay').remove()" style="flex:1;background:#F5F5F5;color:#666;border:none;border-radius:10px;padding:11px;font-size:.9rem;cursor:pointer;font-family:inherit;">Abbrechen</button>
+    </div>
+  `;
+  overlay.id = 'dueOverlay';
+  overlay.appendChild(modal);
+  document.body.appendChild(overlay);
+  overlay.addEventListener('click', e => { if(e.target===overlay) overlay.remove(); });
+}
+
+function confirmNextDue(id, markDone) {
+  const dateVal = document.getElementById('nextDueInput').value;
+  const tasks = loadTasks();
+  const task = tasks.find(t => t.id === id);
+  if (task && dateVal) {
+    task.nextDue = dateVal;
+  }
+  saveTasks(tasks);
+  const overlay = document.getElementById('dueOverlay');
+  if (overlay) overlay.remove();
+  renderTasks();
+}
+
+function openTaskModal({ id = null, label = '', badge = 'badge-weekly', badgeLabel = 'wöchentlich', nextDue = null } = {}) {
+  const isEdit = !!id;
+  const overlay = document.createElement('div');
+  overlay.id = 'taskModalOverlay';
+  overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:10000;display:flex;align-items:center;justify-content:center;';
+
+  const freqOptions = [
+    { val: 'badge-daily',    lbl: 'täglich' },
+    { val: 'badge-weekly',   lbl: 'wöchentlich' },
+    { val: 'badge-biweekly', lbl: '14-tägig' },
+  ];
+
+  overlay.innerHTML = `
+    <div style="background:#fff;border-radius:20px;padding:28px 30px;max-width:380px;width:92%;box-shadow:0 20px 60px rgba(0,0,0,.2);font-family:Inter,sans-serif;">
+      <div style="font-size:1.05rem;font-weight:700;color:#2D1B00;margin-bottom:18px;">${isEdit ? '✏️ Aufgabe bearbeiten' : '➕ Neue Aufgabe'}</div>
+      
+      <label style="font-size:.78rem;font-weight:600;color:#8B6840;display:block;margin-bottom:6px;">Bezeichnung</label>
+      <input id="taskModalName" type="text" value="${label.replace(/"/g,'&quot;')}"
+        placeholder="z.B. Orderabgleich Mustermann GmbH"
+        style="width:100%;border:1.5px solid #F0DFC0;border-radius:10px;padding:10px 14px;font-size:.9rem;font-family:inherit;outline:none;color:#2D1B00;margin-bottom:16px;box-sizing:border-box;"/>
+
+      <label style="font-size:.78rem;font-weight:600;color:#8B6840;display:block;margin-bottom:6px;">Häufigkeit</label>
+      <div style="display:flex;gap:8px;margin-bottom:16px;">
+        ${freqOptions.map(f => `
+          <label style="flex:1;cursor:pointer;">
+            <input type="radio" name="taskFreq" value="${f.val}" ${badge===f.val?'checked':''} style="display:none;" />
+            <div class="freq-opt ${badge===f.val?'freq-selected':''}" data-val="${f.val}" onclick="selectFreq(this)"
+              style="text-align:center;padding:8px 4px;border-radius:10px;font-size:.78rem;font-weight:600;border:1.5px solid ${badge===f.val?'#F5A623':'#F0DFC0'};background:${badge===f.val?'#FFF8DC':'#fff'};color:${badge===f.val?'#92400E':'#8B6840'};transition:all .15s;cursor:pointer;">
+              ${f.lbl}
+            </div>
+          </label>`).join('')}
+      </div>
+
+      <label style="font-size:.78rem;font-weight:600;color:#8B6840;display:block;margin-bottom:6px;">Nächste Fälligkeit <span style="font-weight:400;color:#ccc;">(optional)</span></label>
+      <input id="taskModalDate" type="date" value="${nextDue||''}"
+        style="width:100%;border:1.5px solid #F0DFC0;border-radius:10px;padding:10px 14px;font-size:.9rem;font-family:inherit;outline:none;color:#2D1B00;margin-bottom:22px;box-sizing:border-box;"/>
+
+      <div style="display:flex;gap:10px;">
+        <button onclick="saveTaskModal('${id||''}')" style="flex:1;background:linear-gradient(135deg,#F7C948,#F5A623);color:#3D2000;border:none;border-radius:10px;padding:12px;font-size:.9rem;font-weight:700;cursor:pointer;font-family:inherit;">${isEdit ? 'Speichern' : 'Hinzufügen'}</button>
+        <button onclick="document.getElementById('taskModalOverlay').remove()" style="flex:1;background:#F5F5F5;color:#666;border:none;border-radius:10px;padding:12px;font-size:.9rem;cursor:pointer;font-family:inherit;">Abbrechen</button>
+      </div>
+    </div>`;
+
+  document.body.appendChild(overlay);
+  overlay.addEventListener('click', e => { if(e.target===overlay) overlay.remove(); });
+  setTimeout(() => document.getElementById('taskModalName').focus(), 50);
+}
+
+function selectFreq(el) {
+  document.querySelectorAll('.freq-opt').forEach(o => {
+    o.style.border = '1.5px solid #F0DFC0';
+    o.style.background = '#fff';
+    o.style.color = '#8B6840';
+  });
+  el.style.border = '1.5px solid #F5A623';
+  el.style.background = '#FFF8DC';
+  el.style.color = '#92400E';
+}
+
+function getSelectedFreq() {
+  const selected = document.querySelector('.freq-opt[style*="F5A623"]');
+  if (!selected) return { badge: 'badge-weekly', badgeLabel: 'wöchentlich' };
+  const map = { 'badge-daily': 'täglich', 'badge-weekly': 'wöchentlich', 'badge-biweekly': '14-tägig' };
+  const val = selected.dataset.val;
+  return { badge: val, badgeLabel: map[val] || 'wöchentlich' };
+}
+
+function saveTaskModal(existingId) {
+  const name = document.getElementById('taskModalName').value.trim();
+  if (!name) { document.getElementById('taskModalName').style.border = '1.5px solid #FCA5A5'; return; }
+  const dateVal = document.getElementById('taskModalDate').value || null;
+  const { badge, badgeLabel } = getSelectedFreq();
+  const tasks = loadTasks();
+
+  if (existingId) {
+    const task = tasks.find(t => t.id === existingId);
+    if (task) { task.label = name; task.badge = badge; task.badgeLabel = badgeLabel; task.nextDue = dateVal; }
+  } else {
+    tasks.push({ id: 't' + Date.now(), label: name, badge, badgeLabel, nextDue: dateVal });
+  }
+  saveTasks(tasks);
+  document.getElementById('taskModalOverlay').remove();
+  renderTasks();
+}
+
+function addTask() { openTaskModal(); }
+
+function editTask(id) {
+  const tasks = loadTasks();
+  const task = tasks.find(t => t.id === id);
+  if (task) openTaskModal(task);
+}
+
+function copyTask(id) {
+  const tasks = loadTasks();
+  const task = tasks.find(t => t.id === id);
+  if (!task) return;
+  openTaskModal({ label: task.label + ' (Kopie)', badge: task.badge, badgeLabel: task.badgeLabel, nextDue: null });
+}
+
+function deleteTask(id) {
+  if (!confirm('Aufgabe wirklich löschen?')) return;
+  let tasks = loadTasks();
+  tasks = tasks.filter(t => t.id !== id);
+  saveTasks(tasks);
+  renderTasks();
+}
+
+// Initial render
+renderTasks();
+
+// ── TERMINE ──
+function addTermin() {
+  const time = prompt('Uhrzeit (z.B. 10:00):');
+  if (!time) return;
+  const name = prompt('Terminname:');
+  if (!name) return;
+  const colors = ['#E8522A','#F5A623','#F7C948','#86EFAC','#93C5FD'];
+  const color = colors[Math.floor(Math.random() * colors.length)];
+  const list = document.getElementById('termineList');
+  const div = document.createElement('div');
+  div.className = 'termin-item';
+  div.innerHTML = `<div class="termin-dot" style="background:${color}"></div><div class="termin-time">${time}</div><div class="termin-name">${name}</div>`;
+  list.appendChild(div);
+}
+
+// ── ASANA VARIABLEN ──
+let asanaToken = '';
+let asanaWorkspaces = [];
+let asanaTasks = [];
+let asanaFilterProject = 'all';
+
+// Auto-connect wenn Token gespeichert
+try {
+  const saved = localStorage.getItem('asana_token');
+  if (saved) {
+    asanaToken = saved;
+    setTimeout(() => {
+      const inp = document.getElementById('asanaTokenInput');
+      if (inp) inp.value = asanaToken;
+      connectAsana(true);
+    }, 400);
+  }
+} catch(e) {}
+
+// ── ASANA REAL API ──
+async function asanaFetch(path) {
+  const target = 'https://app.asana.com/api/1.0' + path;
+
+  // Methode 1: Direkt (klappt mit CORS-Extension im Browser)
+  try {
+    const res = await fetch(target, {
+      headers: { 'Authorization': 'Bearer ' + asanaToken, 'Accept': 'application/json' }
+    });
+    if (res.ok) return res.json();
+    const err = await res.json().catch(() => ({}));
+    // Echter API-Fehler (z.B. 401 = falscher Token)
+    throw new Error(err.errors ? err.errors[0].message : 'HTTP ' + res.status);
+  } catch(e) {
+    if (e.message && e.message !== 'Failed to fetch' && !e.message.includes('NetworkError')) throw e;
+  }
+
+  // Methode 2: corsproxy.io
+  try {
+    const res = await fetch('https://corsproxy.io/?url=' + encodeURIComponent(target), {
+      headers: { 'Authorization': 'Bearer ' + asanaToken, 'Accept': 'application/json' }
+    });
+    if (res.ok) return res.json();
+  } catch(e2) {}
+
+  throw new Error('CORS_BLOCKED');
+}
+function setAsanaStatus(msg, type) {
+  const el = document.getElementById('asanaStatus');
+  if (!el) return;
+  el.className = `asana-status ${type}`;
+  el.textContent = msg;
+}
+
+async function connectAsana(silent = false) {
+  const input = document.getElementById('asanaTokenInput');
+  if (input) asanaToken = input.value.trim();
+  if (!asanaToken) { setAsanaStatus('Bitte Token eingeben.', 'err'); return; }
+
+  const btn = document.getElementById('asanaConnectBtn');
+  if (btn) { btn.disabled = true; btn.textContent = 'Verbinde…'; }
+  setAsanaStatus('Verbinde mit Asana…', 'loading');
+
+  try {
+    const meData = await asanaFetch('/users/me?opt_fields=name,email,workspaces');
+    const user = meData.data;
+    asanaWorkspaces = user.workspaces || [];
+    try { localStorage.setItem('asana_token', asanaToken); } catch(e) {}
+    setAsanaStatus(`✅ Verbunden als ${user.name}`, 'ok');
+    await loadAsanaTasks();
+  } catch(e) {
+    if (btn) { btn.disabled = false; btn.textContent = 'Verbinden'; }
+    if (e.message === 'CORS_BLOCKED') {
+      setAsanaStatus('⚠️ Browser blockiert die Verbindung (CORS). Bitte lies die Anleitung unten.', 'err');
+      showCorsHelp();
+    } else {
+      setAsanaStatus('❌ Fehler: ' + e.message, 'err');
+    }
+  }
+}
+
+async function loadAsanaTasks() {
+  setAsanaStatus('Lade Aufgaben…', 'loading');
+  try {
+    const allTasks = [];
+    for (const ws of asanaWorkspaces) {
+      const tasksData = await asanaFetch(
+        `/tasks?assignee=me&workspace=${ws.gid}&completed_since=now&limit=100&opt_fields=name,due_on,due_at,projects.name,custom_fields,permalink_url,resource_subtype`
+      );
+      allTasks.push(...(tasksData.data || []));
+    }
+    asanaTasks = allTasks;
+    renderAsanaDashboard();
+  } catch(e) {
+    setAsanaStatus(`❌ Aufgaben konnten nicht geladen werden: ${e.message}`, 'err');
+  }
+}
+
+function getPriority(task) {
+  const cf = (task.custom_fields || []).find(f =>
+    f.name && f.name.toLowerCase().includes('priorit') && f.display_value
+  );
+  if (!cf) return 'none';
+  const val = cf.display_value.toLowerCase();
+  if (val.includes('hoch') || val.includes('high') || val.includes('dringend') || val.includes('urgent')) return 'high';
+  if (val.includes('mittel') || val.includes('medium') || val.includes('normal')) return 'medium';
+  if (val.includes('niedrig') || val.includes('low')) return 'low';
+  return 'medium';
+}
+
+function getDueInfo(due_on) {
+  if (!due_on) return { label: 'Kein Datum', cls: 'due-none', overdue: false, daysLeft: null };
+  const today = new Date(); today.setHours(0,0,0,0);
+  const due = new Date(due_on); due.setHours(0,0,0,0);
+  const diff = Math.round((due - today) / 86400000);
+  if (diff < 0)  return { label: `${Math.abs(diff)}d überfällig`, cls: 'due-overdue', overdue: true, daysLeft: diff };
+  if (diff === 0) return { label: 'Heute', cls: 'due-soon', overdue: false, daysLeft: 0 };
+  if (diff <= 3)  return { label: `${diff}d`, cls: 'due-soon', overdue: false, daysLeft: diff };
+  const d = new Date(due_on);
+  return { label: `${d.getDate()}.${d.getMonth()+1}.`, cls: 'due-ok', overdue: false, daysLeft: diff };
+}
+
+function renderAsanaDashboard() {
+  const content = document.getElementById('asanaContent');
+  const headerActions = document.getElementById('asanaHeaderActions');
+
+  const total = asanaTasks.length;
+  const overdue = asanaTasks.filter(t => t.due_on && getDueInfo(t.due_on).overdue).length;
+  const dueToday = asanaTasks.filter(t => t.due_on && getDueInfo(t.due_on).daysLeft === 0).length;
+
+  // Collect projects for filter
+  const projects = new Map();
+  asanaTasks.forEach(t => (t.projects || []).forEach(p => projects.set(p.gid, p.name)));
+
+  let filterOptions = `<option value="all">Alle Projekte</option>`;
+  projects.forEach((name, gid) => {
+    filterOptions += `<option value="${gid}" ${asanaFilterProject===gid?'selected':''}>${name}</option>`;
+  });
+
+  headerActions.innerHTML = `
+    <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+      <button class="asana-refresh-btn" onclick="loadAsanaTasks()">🔄 Aktualisieren</button>
+      <button class="asana-disconnect-btn" onclick="disconnectAsana()">Trennen</button>
+    </div>`;
+
+  // Filter tasks
+  let filtered = asanaTasks;
+  if (asanaFilterProject !== 'all') {
+    filtered = asanaTasks.filter(t => (t.projects||[]).some(p => p.gid === asanaFilterProject));
+  }
+  // Sort: overdue first, then by due date, then no date
+  filtered.sort((a, b) => {
+    const da = a.due_on ? new Date(a.due_on) : new Date('9999-12-31');
+    const db = b.due_on ? new Date(b.due_on) : new Date('9999-12-31');
+    return da - db;
+  });
+
+  const taskRows = filtered.length === 0
+    ? `<div class="asana-empty">🎉 Keine offenen Aufgaben – oder Filter anpassen!</div>`
+    : filtered.map(t => {
+        const due = getDueInfo(t.due_on);
+        const prio = getPriority(t);
+        const project = (t.projects||[])[0]?.name || '—';
+        const url = t.permalink_url || '#';
+        return `
+          <div class="asana-task${due.overdue?' overdue':''}" onclick="window.open('${url}','_blank')">
+            <div class="priority p-${prio}"></div>
+            <div class="asana-task-info">
+              <div class="asana-task-name">${t.name}</div>
+              <div class="asana-task-project">📁 ${project}</div>
+            </div>
+            <div class="asana-task-due ${due.cls}">${due.label}</div>
+            <div class="asana-task-complete-btn" title="Als erledigt markieren" onclick="event.stopPropagation();completeAsanaTask('${t.gid}',this)">✓</div>
+          </div>`;
+      }).join('');
+
+  content.innerHTML = `
+    <div class="asana-stats">
+      <div class="asana-stat"><div class="asana-stat-val">${total}</div><div class="asana-stat-lbl">Offen gesamt</div></div>
+      <div class="asana-stat"><div class="asana-stat-val" style="color:var(--flame)">${overdue}</div><div class="asana-stat-lbl">Überfällig</div></div>
+      <div class="asana-stat"><div class="asana-stat-val" style="color:#D97706">${dueToday}</div><div class="asana-stat-lbl">Heute fällig</div></div>
+      <div class="asana-stat" style="flex:2;min-width:160px;">
+        <select class="asana-filter-select" onchange="asanaFilterProject=this.value;renderAsanaDashboard()">${filterOptions}</select>
+        <div class="asana-stat-lbl" style="text-align:left;margin-top:4px;">Filter nach Projekt</div>
+      </div>
+    </div>
+    <div class="asana-tasks-grid">${taskRows}</div>
+    <div class="asana-hint" style="margin-top:4px;">Klick auf eine Aufgabe öffnet sie in Asana · ✓ markiert sie als erledigt</div>
+  `;
+
+  // Update KPI: Offene Asana-Tasks
+  const kpiEdits = document.querySelectorAll('.kpi-edit');
+  if (kpiEdits[1]) kpiEdits[1].value = total;
+}
+
+async function completeAsanaTask(gid, btn) {
+  btn.textContent = '…';
+  btn.style.background = '#86EFAC';
+  try {
+    await fetch(`https://app.asana.com/api/1.0/tasks/${gid}`, {
+      method: 'PUT',
+      headers: {
+        'Authorization': `Bearer ${asanaToken}`,
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({ data: { completed: true } })
+    });
+    // Remove from local list and re-render
+    asanaTasks = asanaTasks.filter(t => t.gid !== gid);
+    renderAsanaDashboard();
+  } catch(e) {
+    btn.textContent = '✓';
+    btn.style.background = '';
+  }
+}
+
+function showCorsHelp() {
+  const existing = document.getElementById('corsHelp');
+  if (existing) return;
+  const div = document.createElement('div');
+  div.id = 'corsHelp';
+  div.style.cssText = 'margin-top:12px;padding:16px;background:#FFF8DC;border:1.5px solid #F7C948;border-radius:12px;font-size:.8rem;line-height:1.7;color:#5a3e00;';
+  div.innerHTML = `
+    <strong>🛠️ So löst du das in 1 Minute:</strong><br/><br/>
+    <b>Chrome / Edge:</b><br/>
+    1. Gehe zu: <a href="https://chromewebstore.google.com/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf" target="_blank" style="color:#E8522A;">CORS Unblock (Chrome Web Store)</a><br/>
+    2. Extension installieren → oben rechts das Icon klicken → aktivieren (wird orange/grün)<br/>
+    3. Seite neu laden → nochmal „Verbinden" klicken ✅<br/><br/>
+    <b>Alternativ Firefox:</b><br/>
+    <a href="https://addons.mozilla.org/de/firefox/addon/cors-everywhere/" target="_blank" style="color:#E8522A;">CORS Everywhere Add-on</a> installieren → aktivieren → neu laden
+  `;
+  const form = document.getElementById('asanaTokenForm') || document.getElementById('asanaContent');
+  if (form) form.appendChild(div);
+}
+
+function disconnectAsana() {
+  asanaToken = '';
+  asanaTasks = [];
+  asanaWorkspaces = [];
+  try { localStorage.removeItem('asana_token'); } catch(e) {}
+  document.getElementById('asanaHeaderActions').innerHTML = '';
+  document.getElementById('asanaContent').innerHTML = `
+    <div class="asana-token-form" id="asanaTokenForm">
+      <div class="asana-token-label">Personal Access Token eingeben</div>
+      <div class="asana-token-row">
+        <input class="asana-token-input" type="password" id="asanaTokenInput" placeholder="1/1234567890:abcdef..." autocomplete="off"/>
+        <button class="asana-btn" onclick="connectAsana()" id="asanaConnectBtn">Verbinden</button>
+      </div>
+      <div class="asana-hint">
+        Token erstellen: <a href="https://app.asana.com/0/my-apps" target="_blank">app.asana.com/0/my-apps</a><br/>
+        🔒 Der Token verlässt deinen Browser nicht — er wird nur lokal gespeichert.
+      </div>
+      <div class="asana-status" id="asanaStatus"></div>
+    </div>`;
+}
+
+function toggleTokenVisibility() {
+  const inp = document.getElementById('asanaTokenInput');
+  const btn = document.getElementById('eyeBtn');
+  if (inp.type === 'password') {
+    inp.type = 'text';
+    btn.textContent = '🙈';
+  } else {
+    inp.type = 'password';
+    btn.textContent = '👁️';
+  }
+}
+
+// Legacy stub (no longer used)
+function toggleAsana() {}
+
+// ── CALENDAR ──
+let calDate = new Date(today.getFullYear(), today.getMonth(), 1);
+const eventDays = [3, 7, 12, 18, 25];
+
+function renderCalendar() {
+  const grid = document.getElementById('calGrid');
+  const label = document.getElementById('calMonthLabel');
+  label.textContent = `${monthNames[calDate.getMonth()]} ${calDate.getFullYear()}`;
+  const dayAbbr = ['Mo','Di','Mi','Do','Fr','Sa','So'];
+  let html = dayAbbr.map(d => `<div class="cal-day-name">${d}</div>`).join('');
+  const firstDay = new Date(calDate.getFullYear(), calDate.getMonth(), 1);
+  let startOffset = firstDay.getDay() - 1;
+  if (startOffset < 0) startOffset = 6;
+  for (let i = 0; i < startOffset; i++) html += `<div class="cal-day empty"></div>`;
+  const daysInMonth = new Date(calDate.getFullYear(), calDate.getMonth() + 1, 0).getDate();
+  for (let d = 1; d <= daysInMonth; d++) {
+    const isToday = d === today.getDate() && calDate.getMonth() === today.getMonth() && calDate.getFullYear() === today.getFullYear();
+    const hasEvent = eventDays.includes(d);
+    html += `<div class="cal-day${isToday ? ' today' : ''}${hasEvent ? ' has-event' : ''}">${d}</div>`;
+  }
+  grid.innerHTML = html;
+}
+
+function changeMonth(dir) {
+  calDate.setMonth(calDate.getMonth() + dir);
+  renderCalendar();
+}
+renderCalendar();
+
+// ── NOTES ──
+function saveNotes() {
+  const area = document.getElementById('notesArea');
+  document.getElementById('notesFooter').textContent = `${area.value.length} Zeichen`;
+}
+
+// ── BENACHRICHTIGUNGEN ──
+const TODOS = [
+  { label: '📊 Reporting aktualisieren', freq: 'wöchentlich' },
+  { label: '📦 Orderabgleich Kunde 1', freq: '14-tägig' },
+  { label: '📦 Orderabgleich Kunde 2', freq: '14-tägig' },
+];
+
+function showNotifications() {
+  // Browser-Benachrichtigungen anfordern
+  if ('Notification' in window && Notification.permission === 'default') {
+    Notification.requestPermission();
+  }
+
+  const banner = document.getElementById('notifBanner');
+  banner.innerHTML = '';
+
+  TODOS.forEach((todo, i) => {
+    setTimeout(() => {
+      // In-App Karte
+      const card = document.createElement('div');
+      card.className = 'notif-card';
+      card.innerHTML = `
+        <div class="notif-icon">🔔</div>
+        <div class="notif-body">
+          <div class="notif-title">Erinnerung: ${todo.label}</div>
+          <div class="notif-text">Wiederkehrende Aufgabe · ${todo.freq} · Bitte heute erledigen!</div>
+        </div>
+        <button class="notif-close" onclick="this.closest('.notif-card').remove()">✕</button>
+      `;
+      banner.appendChild(card);
+
+      // Auto-close nach 12 Sekunden
+      setTimeout(() => card.remove(), 12000);
+
+      // Browser-Push (wenn erlaubt)
+      if ('Notification' in window && Notification.permission === 'granted') {
+        new Notification('Dashboard Erinnerung 🔔', {
+          body: todo.label + ' · ' + todo.freq,
+          icon: 'https://www.google.com/s2/favicons?domain=asana.com'
+        });
+      }
+    }, i * 800);
+  });
+}
+
+// Beim Öffnen sofort anzeigen
+window.addEventListener('load', () => {
+  setTimeout(showNotifications, 1200);
+});
+
+
+// ── STERNE ──
+(function() {
+  const canvas = document.getElementById('starCanvas');
+  const ctx = canvas.getContext('2d');
+
+  function resize() {
+    canvas.width  = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  // Generate stars
+  const STAR_COUNT = 45;
+  const stars = Array.from({ length: STAR_COUNT }, () => ({
+    x:       Math.random(),
+    y:       Math.random(),
+    size:    4 + Math.random() * 14,
+    points:  Math.random() < .7 ? 4 : 5,          // mix of 4- and 5-pointed
+    opacity: .18 + Math.random() * .32,
+    speed:   .00008 + Math.random() * .00014,
+    phase:   Math.random() * Math.PI * 2,
+    rotate:  Math.random() * Math.PI * 2,
+    rotSpeed:(Math.random() - .5) * .004,
+    color:   Math.random() < .6 ? '#F7C948' : (Math.random() < .5 ? '#F5A623' : '#FFE566'),
+  }));
+
+  function drawStar(cx, cy, points, outer, inner, angle, color, opacity) {
+    ctx.save();
+    ctx.globalAlpha = opacity;
+    ctx.translate(cx, cy);
+    ctx.rotate(angle);
+    ctx.beginPath();
+    for (let i = 0; i < points * 2; i++) {
+      const r = i % 2 === 0 ? outer : inner;
+      const a = (i * Math.PI) / points;
+      i === 0 ? ctx.moveTo(Math.cos(a) * r, Math.sin(a) * r)
+              : ctx.lineTo(Math.cos(a) * r, Math.sin(a) * r);
+    }
+    ctx.closePath();
+    ctx.fillStyle = color;
+    ctx.fill();
+    ctx.restore();
+  }
+
+  let t = 0;
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    t += 1;
+    stars.forEach(s => {
+      // gentle float upward, wrap around
+      s.y -= s.speed;
+      if (s.y < -0.05) s.y = 1.05;
+      s.rotate += s.rotSpeed;
+
+      const pulse = s.opacity * (.8 + .2 * Math.sin(t * .018 + s.phase));
+      const inner = s.size * (s.points === 4 ? .38 : .42);
+      drawStar(
+        s.x * canvas.width,
+        s.y * canvas.height,
+        s.points, s.size, inner,
+        s.rotate, s.color, pulse
+      );
+    });
+    requestAnimationFrame(animate);
+  }
+  animate();
+})();
+
+
+// ── OUTLOOK / MICROSOFT GRAPH ──
+const MSAL_CONFIG = {
+  auth: {
+    clientId: '2d2c3217-be7c-42a1-8541-2f41406859a0',
+    authority: 'https://login.microsoftonline.com/6f55c80c-e11d-4f70-a981-2c5e3b375f13',
+    redirectUri: 'https://miriamgumpert.github.io/kupona-dashboard/',
+  },
+  cache: { cacheLocation: 'sessionStorage', storeAuthStateInCookie: false }
+};
+
+const msalInstance = new msal.PublicClientApplication(MSAL_CONFIG);
+const GRAPH_SCOPES = ['User.Read', 'Calendars.Read'];
+
+let outlookAccount = null;
+
+// Handle redirect after login
+msalInstance.handleRedirectPromise().then(response => {
+  if (response && response.account) {
+    outlookAccount = response.account;
+    msalInstance.setActiveAccount(outlookAccount);
+    loadOutlookEvents();
+  }
+}).catch(e => {
+  console.error('MSAL redirect error', e);
+});
+
+// Check if already logged in (session)
+window.addEventListener('load', () => {
+  const accounts = msalInstance.getAllAccounts();
+  if (accounts.length > 0) {
+    outlookAccount = accounts[0];
+    msalInstance.setActiveAccount(outlookAccount);
+    loadOutlookEvents();
+  }
+});
+
+async function outlookLogin() {
+  try {
+    await msalInstance.loginRedirect({
+      scopes: GRAPH_SCOPES,
+      prompt: 'select_account'
+    });
+  } catch(e) {
+    console.error('Login error', e);
+  }
+}
+
+async function getGraphToken() {
+  try {
+    const result = await msalInstance.acquireTokenSilent({
+      scopes: GRAPH_SCOPES,
+      account: outlookAccount
+    });
+    return result.accessToken;
+  } catch(e) {
+    // Silent failed, try popup
+    const result = await msalInstance.acquireTokenPopup({ scopes: GRAPH_SCOPES });
+    return result.accessToken;
+  }
+}
+
+async function loadOutlookEvents() {
+  const list = document.getElementById('termineList');
+  list.innerHTML = '<div class="termine-empty">⏳ Termine werden geladen…</div>';
+
+  try {
+    const token = await getGraphToken();
+
+    // Today's date range
+    const now = new Date();
+    const start = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0).toISOString();
+    const end   = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59).toISOString();
+
+    const url = `https://graph.microsoft.com/v1.0/me/calendarView?startDateTime=${start}&endDateTime=${end}&$orderby=start/dateTime&$select=subject,start,end,location,onlineMeeting,isAllDay&$top=20`;
+
+    const res = await fetch(url, {
+      headers: { 'Authorization': 'Bearer ' + token, 'Accept': 'application/json' }
+    });
+    const data = await res.json();
+    const events = data.value || [];
+
+    // Update header with user + disconnect
+    const headerBtn = document.getElementById('outlookHeaderBtn');
+    if (headerBtn) {
+      const name = outlookAccount.name || outlookAccount.username;
+      headerBtn.innerHTML = `
+        <span class="outlook-user-pill">👤 ${name}</span>
+        <button class="outlook-disconnect-btn" onclick="outlookDisconnect()" style="margin-left:6px;">Trennen</button>
+      `;
+    }
+
+    if (events.length === 0) {
+      list.innerHTML = '<div class="termine-empty">🎉 Heute keine Termine!</div>';
+      return;
+    }
+
+    const colors = ['#0078D4','#F5A623','#F7C948','#059669','#7C3AED','#E8522A'];
+    let html = '<div class="termin-list-inner">';
+    events.forEach((ev, i) => {
+      if (ev.isAllDay) return; // Ganztägige überspringen oder optional einblenden
+      const s = new Date(ev.start.dateTime || ev.start.date);
+      const e = new Date(ev.end.dateTime || ev.end.date);
+      const timeStr = s.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' }) +
+                      ' – ' + e.toLocaleTimeString('de-DE', { hour: '2-digit', minute: '2-digit' });
+      const color = colors[i % colors.length];
+
+      let location = '';
+      if (ev.onlineMeeting && ev.onlineMeeting.joinUrl) {
+        location = `<a href="${ev.onlineMeeting.joinUrl}" target="_blank">🔗 Online-Meeting öffnen</a>`;
+      } else if (ev.location && ev.location.displayName) {
+        location = '📍 ' + ev.location.displayName;
+      }
+
+      html += `
+        <div class="termin-item">
+          <div class="termin-dot" style="background:${color}"></div>
+          <div class="termin-time">${timeStr.split(' – ')[0]}</div>
+          <div class="termin-info">
+            <div class="termin-name">${ev.subject || '(kein Titel)'}</div>
+            ${location ? `<div class="termin-location">${location}</div>` : ''}
+          </div>
+        </div>`;
+    });
+    html += '</div>';
+    html += '<button class="add-btn" onclick="loadOutlookEvents()" style="margin-top:8px;">🔄 Aktualisieren</button>';
+    list.innerHTML = html;
+
+  } catch(e) {
+    list.innerHTML = `<div class="termine-empty">❌ Fehler: ${e.message}</div>`;
+    console.error(e);
+  }
+}
+
+function outlookDisconnect() {
+  msalInstance.getAllAccounts().forEach(a => msalInstance.logoutSilent({ account: a }));
+  outlookAccount = null;
+  document.getElementById('termineList').innerHTML = `
+    <div class="outlook-connect">
+      <div style="font-size:2rem;">📅</div>
+      <p>Verbinde Outlook, um deine heutigen Termine automatisch zu sehen.</p>
+      <button class="outlook-btn" onclick="outlookLogin()">
+        <span style="font-size:1.1rem;">🔵</span> Mit Outlook verbinden
+      </button>
+    </div>`;
+  const h = document.getElementById('outlookHeaderBtn');
+  if (h) h.innerHTML = '';
+}
+
+</script>
+</body>
+</html>
