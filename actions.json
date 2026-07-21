@@ -8,25 +8,5 @@
     "code": "coupsport",
     "uplift": "+2%",
     "notes": "\"Gutschein der Kategorie “Fitness & Sport” +\nNewsletter-Logo-Platzierung\""
-  },
-  {
-    "customer": "Antelope",
-    "name": "testaktion",
-    "partner": "a",
-    "start": "2026-07-27",
-    "end": "2026-08-02",
-    "code": "a",
-    "uplift": "a",
-    "notes": ""
-  },
-  {
-    "customer": "Magix",
-    "name": "testaktion 2",
-    "partner": "1",
-    "start": "2026-07-27",
-    "end": "2026-08-02",
-    "code": "1",
-    "uplift": "1",
-    "notes": "1"
   }
 ]
