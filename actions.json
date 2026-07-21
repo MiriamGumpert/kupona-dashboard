@@ -58,5 +58,15 @@
     "code": "SHOPPING10, SHOPPINGMiete5",
     "uplift": "+2%",
     "notes": "10% Rabatt auf alles (Kaufprodukte), 5% Rabatt auf Miete"
+  },
+  {
+    "customer": "Magix",
+    "name": "Magix intern: Champions Sale",
+    "partner": "Magix",
+    "start": "2026-06-09",
+    "end": "2026-07-20",
+    "code": "-",
+    "uplift": "",
+    "notes": ""
   }
 ]
