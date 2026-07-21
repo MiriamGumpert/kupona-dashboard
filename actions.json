@@ -28,5 +28,15 @@
     "code": "coupsummersale",
     "uplift": "+2%",
     "notes": "15% Rabatt"
+  },
+  {
+    "customer": "Antelope",
+    "name": "Aktionspush",
+    "partner": "advancedstore",
+    "start": "2026-05-18",
+    "end": "2026-09-18",
+    "code": "-",
+    "uplift": "15% CPO",
+    "notes": ""
   }
 ]
