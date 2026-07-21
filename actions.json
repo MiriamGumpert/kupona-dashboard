@@ -48,5 +48,15 @@
     "code": "VRSOMMER10",
     "uplift": "CPOi (auf 12%)",
     "notes": "Highlightplatzierung, Newsletterplatzierung"
+  },
+  {
+    "customer": "Antelope",
+    "name": "Aktionspush",
+    "partner": "shoparize",
+    "start": "2026-07-14",
+    "end": "2026-12-31",
+    "code": "SHOPPING10, SHOPPINGMiete5",
+    "uplift": "+2%",
+    "notes": "10% Rabatt auf alles (Kaufprodukte), 5% Rabatt auf Miete"
   }
 ]
