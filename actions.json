@@ -68,5 +68,15 @@
     "code": "-",
     "uplift": "",
     "notes": ""
+  },
+  {
+    "customer": "Antelope",
+    "name": "test1",
+    "partner": "shoop",
+    "start": "2026-07-27",
+    "end": "2026-08-02",
+    "code": "",
+    "uplift": "",
+    "notes": ""
   }
 ]
