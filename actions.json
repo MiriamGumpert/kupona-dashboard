@@ -18,5 +18,15 @@
     "code": "coupsummerfit",
     "uplift": "+2%",
     "notes": "10% Rabatt"
+  },
+  {
+    "customer": "Antelope",
+    "name": "\"Top Gutschein im “Goodbye Summer” Special + Newsletter-Logo-Platzierung\"",
+    "partner": "Coupons.de",
+    "start": "2026-09-07",
+    "end": "2026-09-20",
+    "code": "coupsummersale",
+    "uplift": "+2%",
+    "notes": "15% Rabatt"
   }
 ]
