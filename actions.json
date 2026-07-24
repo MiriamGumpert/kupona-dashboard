@@ -68,5 +68,15 @@
     "code": "-",
     "uplift": "",
     "notes": ""
+  },
+  {
+    "customer": "Antelope",
+    "name": "Vatago Pushaktion",
+    "partner": "Vatago",
+    "start": "2026-07-27",
+    "end": "2026-08-09",
+    "code": "Antelopestart10",
+    "uplift": "",
+    "notes": "10% auf Kauf\nLogoplatzierung Gutscheinbox"
   }
 ]
