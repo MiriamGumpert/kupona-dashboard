@@ -88,5 +88,15 @@
     "code": "Antelopestart10 + Antelopestart5",
     "uplift": "",
     "notes": "10% auf Kauf\nLogoplatzierung auf Gutscheinbox"
+  },
+  {
+    "customer": "Magix",
+    "name": "VR Marketing Aktionspush",
+    "partner": "VR Marketing",
+    "start": "2026-06-15",
+    "end": "2026-07-31",
+    "code": "",
+    "uplift": "+ Provisionserhöhung",
+    "notes": "Topdeal + Newsletterplatzierung"
   }
 ]
