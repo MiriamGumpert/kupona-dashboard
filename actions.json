@@ -98,5 +98,15 @@
     "code": "",
     "uplift": "+ Provisionserhöhung",
     "notes": "Topdeal + Newsletterplatzierung"
+  },
+  {
+    "customer": "Magix UK",
+    "name": "Redbrain Performance Test",
+    "partner": "redbrain",
+    "start": "2026-07-29",
+    "end": "2026-10-31",
+    "code": "",
+    "uplift": "18% Provision +CSS Google & Bing",
+    "notes": ""
   }
 ]
