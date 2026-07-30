@@ -8,5 +8,10 @@
     "id": "event_1785412431435",
     "title": "testtermin 1 berlin",
     "date": "2026-07-31"
+  },
+  {
+    "id": "event_1785412447625",
+    "title": "testtermin2",
+    "date": "2026-07-31"
   }
 ]
