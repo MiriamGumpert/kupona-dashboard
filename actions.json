@@ -59,6 +59,22 @@
   },
   {
     "customer": "Antelope DE",
+    "name": "advanced store Aktionspush – Kopie",
+    "partner": "advancedstore",
+    "start": "2026-05-18",
+    "end": "2026-09-18",
+    "periods": [
+      {
+        "start": "2026-05-18",
+        "end": "2026-09-18"
+      }
+    ],
+    "code": "-",
+    "uplift": "15% CPO",
+    "notes": ""
+  },
+  {
+    "customer": "Antelope DE",
     "name": "VR Marketing Aktionspush",
     "partner": "VR Marketing",
     "start": "2026-07-13",
