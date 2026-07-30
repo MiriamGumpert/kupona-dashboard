@@ -1,7 +1,12 @@
 [
   {
-    "id": "event_1785411533853",
+    "id": "event_1785411193581",
     "title": "Affiliate Conference Berlin",
     "date": "2026-11-09"
+  },
+  {
+    "id": "event_1785412431435",
+    "title": "testtermin 1 berlin",
+    "date": "2026-07-31"
   }
 ]
