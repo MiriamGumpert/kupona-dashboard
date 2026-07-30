@@ -202,5 +202,21 @@
     "code": "",
     "uplift": "18%",
     "notes": ""
+  },
+  {
+    "customer": "Magix IT",
+    "name": "Redbrain Performance Test",
+    "partner": "redbrain",
+    "start": "2026-07-30",
+    "end": "2026-10-31",
+    "periods": [
+      {
+        "start": "2026-07-30",
+        "end": "2026-10-31"
+      }
+    ],
+    "code": "",
+    "uplift": "18%",
+    "notes": ""
   }
 ]
