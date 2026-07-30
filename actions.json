@@ -47,10 +47,16 @@
   },
   {
     "customer": "Antelope DE",
-    "name": "Aktionspush",
+    "name": "VR Marketing Aktionspush",
     "partner": "VR Marketing",
     "start": "2026-07-13",
     "end": "2026-09-15",
+    "periods": [
+      {
+        "start": "2026-07-13",
+        "end": "2026-09-15"
+      }
+    ],
     "code": "VRSOMMER10",
     "uplift": "CPOi (auf 12%)",
     "notes": "Highlightplatzierung, Newsletterplatzierung"
