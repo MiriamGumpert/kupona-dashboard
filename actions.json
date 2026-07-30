@@ -162,9 +162,23 @@
     "name": "Maxrebates Aktionspush",
     "partner": "Maxrebates",
     "start": "2026-08-10",
-    "end": "2026-08-13",
+    "end": "2026-10-02",
+    "periods": [
+      {
+        "start": "2026-08-10",
+        "end": "2026-08-13"
+      },
+      {
+        "start": "2026-08-31",
+        "end": "2026-09-03"
+      },
+      {
+        "start": "2026-09-29",
+        "end": "2026-10-02"
+      }
+    ],
     "code": "",
     "uplift": "+5%",
-    "notes": ""
+    "notes": "Sticky Deals, Hot Stores, New stores"
   }
 ]
