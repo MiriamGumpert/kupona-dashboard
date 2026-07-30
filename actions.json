@@ -63,10 +63,16 @@
   },
   {
     "customer": "Antelope DE",
-    "name": "Aktionspush",
+    "name": "Shoparize Aktionspush",
     "partner": "shoparize",
     "start": "2026-07-14",
     "end": "2026-12-31",
+    "periods": [
+      {
+        "start": "2026-07-14",
+        "end": "2026-12-31"
+      }
+    ],
     "code": "SHOPPING10, SHOPPINGMiete5",
     "uplift": "+2%",
     "notes": "10% Rabatt auf alles (Kaufprodukte), 5% Rabatt auf Miete"
