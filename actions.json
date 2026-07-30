@@ -108,5 +108,15 @@
     "code": "",
     "uplift": "18% Provision +CSS Google & Bing",
     "notes": ""
+  },
+  {
+    "customer": "Magix IT",
+    "name": "Maxrebates Aktionspush",
+    "partner": "Maxrebates",
+    "start": "2026-08-10",
+    "end": "2026-08-13",
+    "code": "",
+    "uplift": "+5%",
+    "notes": ""
   }
 ]
