@@ -11,13 +11,19 @@
   },
   {
     "customer": "Antelope",
-    "name": "\"Gutschein der Kategorie “Fitness & Sport” + Newsletter-Logo-Platzierung\"",
+    "name": "Coupons.de Aktion",
     "partner": "Coupons.de",
     "start": "2026-08-10",
     "end": "2026-08-23",
+    "periods": [
+      {
+        "start": "2026-08-10",
+        "end": "2026-08-23"
+      }
+    ],
     "code": "coupsummerfit",
     "uplift": "+2%",
-    "notes": "10% Rabatt"
+    "notes": "10% Rabatt\n\"Gutschein der Kategorie “Fitness & Sport” + Newsletter-Logo-Platzierung\""
   },
   {
     "customer": "Antelope",
