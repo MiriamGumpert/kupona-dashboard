@@ -98,11 +98,15 @@
     "name": "Vatago Pushaktion",
     "partner": "Vatago",
     "start": "2026-07-27",
-    "end": "2026-08-09",
+    "end": "2026-09-06",
     "periods": [
       {
         "start": "2026-07-27",
         "end": "2026-08-09"
+      },
+      {
+        "start": "2026-08-24",
+        "end": "2026-09-06"
       }
     ],
     "code": "Antelopestart10 + Antelopestart5",
