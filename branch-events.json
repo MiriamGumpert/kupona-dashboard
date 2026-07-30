@@ -4,5 +4,11 @@
     "title": "Affiliate Conference",
     "date": "2026-11-09",
     "place": "Berlin"
+  },
+  {
+    "id": "event_1785412978176",
+    "title": "testtermin1",
+    "date": "2026-07-31",
+    "place": ""
   }
 ]
