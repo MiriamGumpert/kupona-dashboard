@@ -218,5 +218,25 @@
     "code": "",
     "uplift": "18%",
     "notes": ""
+  },
+  {
+    "customer": "Antelope DE",
+    "name": "LLG Media Aktionspush",
+    "partner": "LLG Media",
+    "start": "2026-08-10",
+    "end": "2026-10-04",
+    "periods": [
+      {
+        "start": "2026-08-10",
+        "end": "2026-08-23"
+      },
+      {
+        "start": "2026-09-21",
+        "end": "2026-10-04"
+      }
+    ],
+    "code": "Antelopestart10, Antelopestart5",
+    "uplift": "",
+    "notes": ""
   }
 ]
