@@ -238,5 +238,21 @@
     "code": "Antelopestart10, Antelopestart5",
     "uplift": "",
     "notes": ""
+  },
+  {
+    "customer": "Magix DACH",
+    "name": "RobinsRealsWorld Starttest",
+    "partner": "Robinsrealworld",
+    "start": "2026-07-27",
+    "end": "2026-08-31",
+    "periods": [
+      {
+        "start": "2026-07-27",
+        "end": "2026-08-31"
+      }
+    ],
+    "code": "A5AKTION06",
+    "uplift": "",
+    "notes": ""
   }
 ]
