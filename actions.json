@@ -254,5 +254,21 @@
     "code": "A5AKTION06",
     "uplift": "",
     "notes": ""
+  },
+  {
+    "customer": "Antelope DE",
+    "name": "Offerix Aktionspush Miete",
+    "partner": "Offerix",
+    "start": "2026-09-07",
+    "end": "2026-09-20",
+    "periods": [
+      {
+        "start": "2026-09-07",
+        "end": "2026-09-20"
+      }
+    ],
+    "code": "Antelopestart5",
+    "uplift": "",
+    "notes": "Homepage placement on our website throughout the campaign period to maximize visibility.\nPPC promotion to help drive targeted traffic and generate additional sales during the campaign."
   }
 ]
