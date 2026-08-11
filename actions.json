@@ -270,5 +270,21 @@
     "code": "Antelopestart5",
     "uplift": "",
     "notes": "Homepage placement on our website throughout the campaign period to maximize visibility.\nPPC promotion to help drive targeted traffic and generate additional sales during the campaign."
+  },
+  {
+    "customer": "Magix UK",
+    "name": "Topcashback Pushaktion",
+    "partner": "Topcashback",
+    "start": "2026-08-11",
+    "end": "2026-09-13",
+    "periods": [
+      {
+        "start": "2026-08-11",
+        "end": "2026-09-13"
+      }
+    ],
+    "code": "-",
+    "uplift": "+5% Provisionserhöhung",
+    "notes": "nur Provisionserhöhung 4 Wochen"
   }
 ]
