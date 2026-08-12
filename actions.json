@@ -315,5 +315,16 @@
     "code": "",
     "uplift": "",
     "notes": ""
+  },
+  {
+    "customer": "Magix UK",
+    "actionType": "customer",
+    "name": "Magix Summer Sale",
+    "partner": "",
+    "start": "2026-08-04",
+    "end": "2026-09-07",
+    "code": "",
+    "uplift": "",
+    "notes": ""
   }
 ]
