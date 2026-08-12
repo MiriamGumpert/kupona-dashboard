@@ -282,5 +282,16 @@
     "code": "-",
     "uplift": "+5% Provisionserhöhung",
     "notes": "nur Provisionserhöhung 4 Wochen"
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "customer",
+    "name": "Magix Summer Sale",
+    "partner": "",
+    "start": "2026-08-04",
+    "end": "2026-09-07",
+    "code": "",
+    "uplift": "",
+    "notes": ""
   }
 ]
