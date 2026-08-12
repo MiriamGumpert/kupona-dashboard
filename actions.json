@@ -326,5 +326,16 @@
     "code": "",
     "uplift": "",
     "notes": ""
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "partner",
+    "name": "Rabattcorner Aktionspush",
+    "partner": "Rabattcorner",
+    "start": "2026-08-12",
+    "end": "2026-09-13",
+    "code": "",
+    "uplift": "+5% Provisionserhöhung",
+    "notes": ""
   }
 ]
