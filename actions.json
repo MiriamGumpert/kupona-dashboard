@@ -348,5 +348,16 @@
     "code": "SOMMER26",
     "uplift": "",
     "notes": ""
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "Shopback Aktionspush",
+    "partner": "Shopback",
+    "start": "2026-06-22",
+    "end": "2026-07-19",
+    "code": "",
+    "uplift": "+5% Provisionserhöhung (also 12%)",
+    "notes": ""
   }
 ]
