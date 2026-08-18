@@ -359,5 +359,16 @@
     "code": "",
     "uplift": "+5% Provisionserhöhung (also 12%)",
     "notes": ""
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "Shopback Aktionspush",
+    "partner": "Shopback",
+    "start": "2026-08-25",
+    "end": "2026-08-31",
+    "code": "",
+    "uplift": "CPOi (auf 12%)",
+    "notes": ""
   }
 ]
