@@ -365,6 +365,16 @@
     "actionType": "partner",
     "name": "Shopback Aktionspush",
     "partner": "Shopback",
+    "periods": [
+      {
+        "start": "2026-08-25",
+        "end": "2026-08-31"
+      },
+      {
+        "start": "2026-09-22",
+        "end": "2026-09-28"
+      }
+    ],
     "start": "2026-08-25",
     "end": "2026-08-31",
     "code": "",
