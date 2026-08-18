@@ -370,5 +370,16 @@
     "code": "",
     "uplift": "CPOi (auf 12%)",
     "notes": ""
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "partner",
+    "name": "Shopback Aktionspush",
+    "partner": "Shopback",
+    "start": "2026-08-25",
+    "end": "2026-08-31",
+    "code": "",
+    "uplift": "+5% (20% Provision)",
+    "notes": ""
   }
 ]
