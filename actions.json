@@ -409,5 +409,22 @@
     "code": "",
     "uplift": "+5% (20% Provision)",
     "notes": ""
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "partner",
+    "name": "LLG Media Aktionspush",
+    "partner": "LLG Media",
+    "periods": [
+      {
+        "start": "2026-08-19",
+        "end": "2026-09-30"
+      }
+    ],
+    "start": "2026-08-19",
+    "end": "2026-09-30",
+    "code": "A10Aktion07",
+    "uplift": "",
+    "notes": "exklusiver 10% RabattCode"
   }
 ]
