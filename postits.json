@@ -17,12 +17,5 @@
     "side": "left",
     "color": "#B7FF8A",
     "text": "testtask\nWarten auf: hallo\nwarten"
-  },
-  {
-    "id": 1787223703446,
-    "waitingId": "waiting-1787223703408-f6izw1",
-    "side": "left",
-    "color": "#B7FF8A",
-    "text": "test2\nWarten auf: a\nwait"
   }
 ]
