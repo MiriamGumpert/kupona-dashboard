@@ -460,5 +460,22 @@
     "code": "A5AKTION03",
     "uplift": "+5% Provisionserhöhung (also 20%)",
     "notes": ""
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "partner",
+    "name": "Coupons.de Q4 Aktionen",
+    "partner": "Coupons.de",
+    "periods": [
+      {
+        "start": "2026-09-07",
+        "end": "2026-09-20"
+      }
+    ],
+    "start": "2026-09-07",
+    "end": "2026-09-20",
+    "code": "A10AKTION01",
+    "uplift": "+5 (also 25%)",
+    "notes": ""
   }
 ]
