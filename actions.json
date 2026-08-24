@@ -443,5 +443,22 @@
     "code": "A5AKTION08",
     "uplift": "+5% (20% Provision)",
     "notes": ""
+  },
+  {
+    "customer": "Magix IT",
+    "actionType": "partner",
+    "name": "BuyOn & Condiesconto Pushaktionen",
+    "partner": "BuyOn & Condiesconto",
+    "periods": [
+      {
+        "start": "2026-09-01",
+        "end": "2026-10-31"
+      }
+    ],
+    "start": "2026-09-01",
+    "end": "2026-10-31",
+    "code": "A5AKTION03",
+    "uplift": "+5% Provisionserhöhung (also 20%)",
+    "notes": ""
   }
 ]
