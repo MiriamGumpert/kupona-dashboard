@@ -501,5 +501,22 @@
     "code": "A10AKTION01",
     "uplift": "+5 (also 25%)",
     "notes": ""
+  },
+  {
+    "customer": "Magix FR",
+    "actionType": "partner",
+    "name": "Coupons.de Aktionsplan Q4",
+    "partner": "Coupons.de",
+    "periods": [
+      {
+        "start": "2026-09-07",
+        "end": "2026-09-20"
+      }
+    ],
+    "start": "2026-09-07",
+    "end": "2026-09-20",
+    "code": "A10AKTION01",
+    "uplift": "25% Provision",
+    "notes": ""
   }
 ]
