@@ -20,5 +20,13 @@
     "side": "left",
     "color": "#B7FF7A",
     "text": "WARTEN AUF\nMagix Orderabgleich & Reporting"
+  },
+  {
+    "id": 1789390677932,
+    "waitingId": "waiting-1789390676951-d9i3n0",
+    "source": "waiting",
+    "side": "left",
+    "color": "#B7FF7A",
+    "text": "WARTEN AUF\nAntelope Reporting"
   }
 ]
