@@ -6,5 +6,29 @@
     "due": "2026-09-15",
     "note": "Planung bei Burda",
     "done": false
+  },
+  {
+    "id": "waiting-1789543167706-0a0u3f",
+    "topic": "Antelope : Liste vonPartner Mietrabatte",
+    "person": "",
+    "due": "2026-09-16",
+    "note": "welche Partner sollen einen neuen Miet-rabattcode (optimiert) bekommen, liste an raphaela",
+    "done": false
+  },
+  {
+    "id": "waiting-1789543649240-53r5pi",
+    "topic": "Antelope Programmbeschreibung FR und weiteres eintragen",
+    "person": "",
+    "due": "",
+    "note": "",
+    "done": false
+  },
+  {
+    "id": "waiting-1789554469734-molxip",
+    "topic": "Magix | TRC Rechnung überweisen als Bonus",
+    "person": "",
+    "due": "2026-09-16",
+    "note": "",
+    "done": false
   }
 ]
