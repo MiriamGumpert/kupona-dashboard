@@ -117,10 +117,9 @@
   },
   {
     "customer": "Magix DACH",
+    "actionType": "partner",
     "name": "VR Marketing Aktionspush",
     "partner": "VR Marketing",
-    "start": "2026-06-15",
-    "end": "2026-10-18",
     "periods": [
       {
         "start": "2026-06-15",
@@ -139,9 +138,23 @@
         "end": "2026-10-18"
       }
     ],
+    "start": "2026-06-15",
+    "end": "2026-07-31",
     "code": "A10AKTION06",
     "uplift": "+5% Provisionserhöhung",
-    "notes": "Topdeal + Newsletterplatzierung"
+    "notes": "Topdeal + Newsletterplatzierung",
+    "checklist": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
   },
   {
     "customer": "Magix UK",
