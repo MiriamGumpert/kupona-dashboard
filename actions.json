@@ -539,5 +539,34 @@
     "code": "A10AKTION01",
     "uplift": "25% Provision",
     "notes": ""
+  },
+  {
+    "customer": "Magix FR",
+    "actionType": "partner",
+    "name": "Widilo Aktionspush",
+    "partner": "Widilo",
+    "periods": [
+      {
+        "start": "2026-09-21",
+        "end": "2026-12-31"
+      }
+    ],
+    "start": "2026-09-21",
+    "end": "2026-12-31",
+    "code": "",
+    "uplift": "+5% Provisionserhöhung also 20%",
+    "notes": "Perfect, a 20% total commission rate through the end of the year works for us.\n\nI can propose the following plan from now until the end of December, against a +5% CPAi increase:\n\nWidilo CASHBACK - Widilo.fr \n\n🥉 Bronze pack\nAdvertiser Specific Category page\nCategory on Event page",
+    "checklist": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false
+    ]
   }
 ]
