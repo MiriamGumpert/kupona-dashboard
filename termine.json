@@ -72,5 +72,14 @@
     "date": "2026-08-20",
     "time": "09:30",
     "place": ""
+  },
+  {
+    "id": "termin_1789977802933",
+    "name": "Checkout Charlie Termin",
+    "date": "2026-09-22",
+    "time": "10:30",
+    "context": "",
+    "prep": "Halle 07.1 Stand E08&E019",
+    "notes": ""
   }
 ]
