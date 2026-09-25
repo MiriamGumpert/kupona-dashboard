@@ -162,5 +162,14 @@
     "context": "Antelope",
     "prep": "Eigener Stand bei Awin",
     "notes": ""
+  },
+  {
+    "id": "termin_1790318615501",
+    "name": "Antelope Kunden JF",
+    "date": "2026-09-25",
+    "time": "09:30",
+    "context": "Antelope",
+    "prep": "",
+    "notes": ""
   }
 ]
