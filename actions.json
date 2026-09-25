@@ -568,5 +568,34 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Magix IT",
+    "actionType": "partner",
+    "name": "Webravo Pushaktion",
+    "partner": "Bravopromo",
+    "periods": [
+      {
+        "start": "2026-09-25",
+        "end": "2026-12-31"
+      }
+    ],
+    "start": "2026-09-25",
+    "end": "2026-12-31",
+    "code": "A10AKTION09",
+    "uplift": "+5% Provisionserhöhung (20%)",
+    "notes": "PPC Rights",
+    "checklist": [
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
   }
 ]
