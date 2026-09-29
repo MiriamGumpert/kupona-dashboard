@@ -637,5 +637,34 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Magix IT",
+    "actionType": "partner",
+    "name": "Edlook Ltd Aktionspush",
+    "partner": "Edlook Ltd",
+    "periods": [
+      {
+        "start": "2026-10-01",
+        "end": "2026-10-31"
+      }
+    ],
+    "start": "2026-10-01",
+    "end": "2026-10-31",
+    "code": "",
+    "uplift": "+5% Provisionserhöhung (also 20%)",
+    "notes": "",
+    "checklist": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
   }
 ]
