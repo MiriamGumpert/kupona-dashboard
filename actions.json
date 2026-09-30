@@ -811,5 +811,34 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "Gutscheinsammler Aktion",
+    "partner": "Coupons.de",
+    "periods": [
+      {
+        "start": "2026-12-21",
+        "end": "2026-12-31"
+      }
+    ],
+    "start": "2026-12-21",
+    "end": "2026-12-31",
+    "code": "GSchristmas",
+    "uplift": "+2% (also 9%)",
+    "notes": "10% Rabattcode",
+    "checklist": [
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
   }
 ]
