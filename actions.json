@@ -724,5 +724,34 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "Coupons.de Aktion",
+    "partner": "Coupons.de",
+    "periods": [
+      {
+        "start": "2026-11-09",
+        "end": "2026-11-30"
+      }
+    ],
+    "start": "2026-11-09",
+    "end": "2026-11-30",
+    "code": "coupblackpre / coupblack",
+    "uplift": "+2% (also 9%)",
+    "notes": "15%Rabatt",
+    "checklist": [
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
   }
 ]
