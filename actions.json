@@ -753,5 +753,34 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "Gutscheinsammler Aktion",
+    "partner": "Coupons.de",
+    "periods": [
+      {
+        "start": "2026-11-23",
+        "end": "2026-11-29"
+      }
+    ],
+    "start": "2026-11-23",
+    "end": "2026-11-29",
+    "code": "GSblack",
+    "uplift": "+2% (also 9%)",
+    "notes": "15% Rabattcode",
+    "checklist": [
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
   }
 ]
