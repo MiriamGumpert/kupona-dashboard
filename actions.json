@@ -666,5 +666,34 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "Gutscheinsammler Aktion",
+    "partner": "Coupons.de",
+    "periods": [
+      {
+        "start": "2026-10-01",
+        "end": "2026-10-11"
+      }
+    ],
+    "start": "2026-10-01",
+    "end": "2026-10-11",
+    "code": "GSoktober",
+    "uplift": "+2% (also 9%)",
+    "notes": "",
+    "checklist": [
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
   }
 ]
