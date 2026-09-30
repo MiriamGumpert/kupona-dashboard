@@ -782,5 +782,34 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "Coupons.de Aktion",
+    "partner": "Coupons.de",
+    "periods": [
+      {
+        "start": "2026-12-07",
+        "end": "2026-12-16"
+      }
+    ],
+    "start": "2026-12-07",
+    "end": "2026-12-16",
+    "code": "coupfit26",
+    "uplift": "+2% (also 9%)",
+    "notes": "10% Rabatt 7.12.-20.12.",
+    "checklist": [
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
   }
 ]
