@@ -840,5 +840,34 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "customer",
+    "name": "Halloween Aktion",
+    "partner": "",
+    "periods": [
+      {
+        "start": "2026-10-26",
+        "end": "2026-11-01"
+      }
+    ],
+    "start": "2026-10-26",
+    "end": "2026-11-01",
+    "code": "A10AKTION12",
+    "uplift": "",
+    "notes": "10% Rabatt, nicht mit anderen Gutscheinen kombinierbar",
+    "checklist": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
   }
 ]
