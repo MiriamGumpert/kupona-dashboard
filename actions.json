@@ -869,5 +869,42 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "VR Marketing Aktionspush",
+    "partner": "VR Marketing",
+    "periods": [
+      {
+        "start": "2026-10-12",
+        "end": "2026-10-25"
+      },
+      {
+        "start": "2026-11-02",
+        "end": "2026-11-15"
+      },
+      {
+        "start": "2026-12-01",
+        "end": "2026-12-15"
+      }
+    ],
+    "start": "2026-10-12",
+    "end": "2026-10-25",
+    "code": "VRGutschein10",
+    "uplift": "+2% (also 9%)",
+    "notes": "",
+    "checklist": [
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
   }
 ]
