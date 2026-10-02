@@ -906,5 +906,38 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "partner",
+    "name": "VR Marketing Aktionspush",
+    "partner": "VR Marketing",
+    "periods": [
+      {
+        "start": "2026-10-26",
+        "end": "2026-11-09"
+      },
+      {
+        "start": "2026-12-01",
+        "end": "2026-12-15"
+      }
+    ],
+    "start": "2026-10-26",
+    "end": "2026-11-09",
+    "code": "A10AKTION06",
+    "uplift": "+5% Provisionserhöhung (also 20%)",
+    "notes": "",
+    "checklist": [
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
   }
 ]
