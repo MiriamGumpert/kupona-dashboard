@@ -939,5 +939,50 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "LLG Media Aktionspush",
+    "partner": "LLG Media",
+    "periods": [
+      {
+        "start": "2026-10-19",
+        "end": "2026-10-25"
+      },
+      {
+        "start": "2026-10-26",
+        "end": "2026-11-01"
+      },
+      {
+        "start": "2026-11-16",
+        "end": "2026-11-22"
+      },
+      {
+        "start": "2026-12-14",
+        "end": "2026-12-20"
+      },
+      {
+        "start": "2026-12-21",
+        "end": "2026-12-27"
+      }
+    ],
+    "start": "2026-10-19",
+    "end": "2026-10-25",
+    "code": "Rausch10",
+    "uplift": "10% Provision",
+    "notes": "",
+    "checklist": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
   }
 ]
