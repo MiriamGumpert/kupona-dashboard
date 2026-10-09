@@ -984,5 +984,50 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "partner",
+    "name": "LLG Media Aktionspush",
+    "partner": "LLG Media",
+    "periods": [
+      {
+        "start": "2026-10-19",
+        "end": "2026-10-25"
+      },
+      {
+        "start": "2026-10-26",
+        "end": "2026-11-01"
+      },
+      {
+        "start": "2026-11-16",
+        "end": "2026-11-22"
+      },
+      {
+        "start": "2026-12-14",
+        "end": "2026-12-20"
+      },
+      {
+        "start": "2026-12-28",
+        "end": "2027-01-03"
+      }
+    ],
+    "start": "2026-10-19",
+    "end": "2026-10-25",
+    "code": "A10AKTION11",
+    "uplift": "+5% Provisionserhöhung (also 20%)",
+    "notes": "",
+    "checklist": [
+      false,
+      false,
+      true,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false
+    ]
   }
 ]
