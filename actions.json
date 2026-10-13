@@ -969,20 +969,19 @@
     ],
     "start": "2026-10-19",
     "end": "2026-10-25",
-    "code": "Rausch10",
+    "code": "RAUSCH10",
     "uplift": "10% Provision",
     "notes": "",
     "checklist": [
       true,
       false,
       false,
-      false,
-      false,
       true,
       true,
       false,
+      true,
       false,
-      false
+      true
     ]
   },
   {
