@@ -70,19 +70,31 @@
   },
   {
     "customer": "Antelope DE",
+    "actionType": "partner",
     "name": "Shoparize Aktionspush",
     "partner": "shoparize",
-    "start": "2026-07-17",
-    "end": "2027-01-03",
     "periods": [
       {
         "start": "2026-07-14",
-        "end": "2026-12-31"
+        "end": "2026-09-30"
       }
     ],
+    "start": "2026-07-14",
+    "end": "2026-09-30",
     "code": "SHOPPING10, SHOPPINGMiete5",
     "uplift": "+2%",
-    "notes": "10% Rabatt auf alles (Kaufprodukte), 5% Rabatt auf Miete"
+    "notes": "10% Rabatt auf alles (Kaufprodukte), 5% Rabatt auf Miete\n\nsollte eigentlich bis Jahresende laufen, allerdings pausiert, da nicht rentabel",
+    "checklist": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
   },
   {
     "customer": "Magix DACH",
