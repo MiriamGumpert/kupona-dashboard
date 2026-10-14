@@ -1057,5 +1057,33 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "partner",
+    "name": "Groupon Aktion",
+    "partner": "Groupon",
+    "periods": [
+      {
+        "start": "2026-10-14",
+        "end": "2026-10-31"
+      }
+    ],
+    "start": "2026-10-14",
+    "end": "2026-10-31",
+    "code": "A10AKTION13",
+    "uplift": "+5% Provisionserhöhung (also 20%)",
+    "notes": "",
+    "checklist": [
+      true,
+      true,
+      false,
+      true,
+      true,
+      false,
+      true,
+      false,
+      true
+    ]
   }
 ]
