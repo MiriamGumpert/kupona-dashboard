@@ -1111,9 +1111,9 @@
     ],
     "start": "2026-10-05",
     "end": "2026-12-31",
-    "code": "",
+    "code": "A10AKTION09",
     "uplift": "+5% Provisionserhöhung (also 20%)",
-    "notes": "",
+    "notes": "10% Rabattcode",
     "checklist": [
       true,
       false,
