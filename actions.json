@@ -1097,5 +1097,33 @@
       true,
       true
     ]
+  },
+  {
+    "customer": "Magix FR",
+    "actionType": "partner",
+    "name": "Bravopromo Aktion",
+    "partner": "Bravogutschein",
+    "periods": [
+      {
+        "start": "2026-10-05",
+        "end": "2026-12-31"
+      }
+    ],
+    "start": "2026-10-05",
+    "end": "2026-12-31",
+    "code": "",
+    "uplift": "+5% Provisionserhöhung (also 20%)",
+    "notes": "",
+    "checklist": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      true,
+      false,
+      true
+    ]
   }
 ]
