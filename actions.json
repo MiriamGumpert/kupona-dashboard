@@ -1189,5 +1189,41 @@
       false,
       true
     ]
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "partner",
+    "name": "Shopclever Aktion",
+    "partner": "Shopclever",
+    "periods": [
+      {
+        "start": "2026-10-11",
+        "end": "2026-10-14"
+      },
+      {
+        "start": "2026-10-26",
+        "end": "2026-11-08"
+      },
+      {
+        "start": "2026-11-24",
+        "end": "2026-12-31"
+      }
+    ],
+    "start": "2026-10-11",
+    "end": "2026-10-14",
+    "code": "A10AKTION10",
+    "uplift": "+5% Provisionserhöhung (also 20%)",
+    "notes": "",
+    "checklist": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false,
+      true
+    ]
   }
 ]
