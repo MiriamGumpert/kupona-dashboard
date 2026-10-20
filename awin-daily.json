@@ -1,5 +1,2341 @@
 [
   {
+    "program": "Antelope DE",
+    "date": "2026-01-01",
+    "clicks": 210,
+    "tx": 2,
+    "revenue": 80.83,
+    "commission": 8.08
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-02",
+    "clicks": 110,
+    "tx": 1,
+    "revenue": 6.29,
+    "commission": 0.44
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-03",
+    "clicks": 84,
+    "tx": 5,
+    "revenue": 2664.56,
+    "commission": 196.01
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-04",
+    "clicks": 172,
+    "tx": 3,
+    "revenue": 360.92,
+    "commission": 29.34
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-05",
+    "clicks": 125,
+    "tx": 3,
+    "revenue": 132.37,
+    "commission": 13.05
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-06",
+    "clicks": 161,
+    "tx": 3,
+    "revenue": 260.08,
+    "commission": 29.2
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-07",
+    "clicks": 179,
+    "tx": 4,
+    "revenue": 2567.66,
+    "commission": 114.01
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-08",
+    "clicks": 181,
+    "tx": 1,
+    "revenue": 102.48,
+    "commission": 7.17
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-09",
+    "clicks": 172,
+    "tx": 3,
+    "revenue": 1387.55,
+    "commission": 187.35
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-10",
+    "clicks": 160,
+    "tx": 4,
+    "revenue": 962.89,
+    "commission": 142.3
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-11",
+    "clicks": 160,
+    "tx": 1,
+    "revenue": 84.03,
+    "commission": 8.4
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-12",
+    "clicks": 168,
+    "tx": 3,
+    "revenue": 253.76,
+    "commission": 25.38
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-13",
+    "clicks": 165,
+    "tx": 2,
+    "revenue": 43.01,
+    "commission": 34.2
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-14",
+    "clicks": 198,
+    "tx": 3,
+    "revenue": 7051.77,
+    "commission": 825.09
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-15",
+    "clicks": 177,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-16",
+    "clicks": 116,
+    "tx": 6,
+    "revenue": 260.81,
+    "commission": 1371.61
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-17",
+    "clicks": 128,
+    "tx": 3,
+    "revenue": 842.93,
+    "commission": 85.39
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-18",
+    "clicks": 134,
+    "tx": 4,
+    "revenue": 1639.64,
+    "commission": 151.06
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-19",
+    "clicks": 104,
+    "tx": 1,
+    "revenue": 42.49,
+    "commission": 5.31
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-20",
+    "clicks": 126,
+    "tx": 5,
+    "revenue": 1121.5,
+    "commission": 88.01
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-21",
+    "clicks": 170,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 25
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-22",
+    "clicks": 142,
+    "tx": 2,
+    "revenue": 66.91,
+    "commission": 6.24
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-23",
+    "clicks": 129,
+    "tx": 2,
+    "revenue": 47.21,
+    "commission": 30.01
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-24",
+    "clicks": 154,
+    "tx": 5,
+    "revenue": 1045.08,
+    "commission": 123.09
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-25",
+    "clicks": 72,
+    "tx": 2,
+    "revenue": 92.75,
+    "commission": 10.31
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-26",
+    "clicks": 83,
+    "tx": 3,
+    "revenue": 963.85,
+    "commission": 33.94
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-27",
+    "clicks": 89,
+    "tx": 1,
+    "revenue": 42.49,
+    "commission": 4.25
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-28",
+    "clicks": 141,
+    "tx": 6,
+    "revenue": 400.58,
+    "commission": 41.85
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-29",
+    "clicks": 127,
+    "tx": 1,
+    "revenue": 51.24,
+    "commission": 3.59
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-30",
+    "clicks": 148,
+    "tx": 1,
+    "revenue": 41.51,
+    "commission": 5.19
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-01-31",
+    "clicks": 146,
+    "tx": 3,
+    "revenue": 170.06,
+    "commission": 76.81
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-01",
+    "clicks": 172,
+    "tx": 4,
+    "revenue": 1024.21,
+    "commission": 2.28
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-02",
+    "clicks": 152,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 50
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-03",
+    "clicks": 124,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-04",
+    "clicks": 181,
+    "tx": 1,
+    "revenue": 51.24,
+    "commission": 3.59
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-05",
+    "clicks": 214,
+    "tx": 2,
+    "revenue": 44.69,
+    "commission": 34.37
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-06",
+    "clicks": 254,
+    "tx": 2,
+    "revenue": 87.38,
+    "commission": 8.74
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-07",
+    "clicks": 228,
+    "tx": 2,
+    "revenue": 85.2,
+    "commission": 9.56
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-08",
+    "clicks": 261,
+    "tx": 8,
+    "revenue": 2076.98,
+    "commission": 188.38
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-09",
+    "clicks": 500,
+    "tx": 6,
+    "revenue": 1064.51,
+    "commission": 93.96
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-10",
+    "clicks": 202,
+    "tx": 1,
+    "revenue": 51.24,
+    "commission": 3.59
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-11",
+    "clicks": 251,
+    "tx": 4,
+    "revenue": 112.58,
+    "commission": 39.13
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-12",
+    "clicks": 184,
+    "tx": 1,
+    "revenue": 43.69,
+    "commission": 5.46
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-13",
+    "clicks": 188,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 50
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-14",
+    "clicks": 202,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-15",
+    "clicks": 216,
+    "tx": 4,
+    "revenue": 130.06,
+    "commission": 42.73
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-16",
+    "clicks": 189,
+    "tx": 5,
+    "revenue": 969.22,
+    "commission": 150.23
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-17",
+    "clicks": 217,
+    "tx": 2,
+    "revenue": 11.41,
+    "commission": 50.73
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-18",
+    "clicks": 169,
+    "tx": 1,
+    "revenue": 20.92,
+    "commission": 2.09
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-19",
+    "clicks": 164,
+    "tx": 1,
+    "revenue": 65.67,
+    "commission": 6.57
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-20",
+    "clicks": 139,
+    "tx": 1,
+    "revenue": 41.92,
+    "commission": 4.19
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-21",
+    "clicks": 166,
+    "tx": 1,
+    "revenue": 43.69,
+    "commission": 4.37
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-22",
+    "clicks": 148,
+    "tx": 2,
+    "revenue": 87.79,
+    "commission": 8.78
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-23",
+    "clicks": 136,
+    "tx": 1,
+    "revenue": 48.65,
+    "commission": 3.41
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-24",
+    "clicks": 136,
+    "tx": 4,
+    "revenue": 1682.33,
+    "commission": 121.59
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-25",
+    "clicks": 132,
+    "tx": 3,
+    "revenue": 962.38,
+    "commission": 146.14
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-26",
+    "clicks": 89,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 30
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-27",
+    "clicks": 129,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-02-28",
+    "clicks": 95,
+    "tx": 1,
+    "revenue": 168.06,
+    "commission": 16.81
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-01",
+    "clicks": 143,
+    "tx": 2,
+    "revenue": 50.98,
+    "commission": 33.5
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-02",
+    "clicks": 82,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 120
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-03",
+    "clicks": 43,
+    "tx": 2,
+    "revenue": 50.98,
+    "commission": 33.5
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-04",
+    "clicks": 66,
+    "tx": 2,
+    "revenue": 87.38,
+    "commission": 7.43
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-05",
+    "clicks": 56,
+    "tx": 1,
+    "revenue": 831.18,
+    "commission": 108.05
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-06",
+    "clicks": 67,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 30
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-07",
+    "clicks": 42,
+    "tx": 1,
+    "revenue": 785,
+    "commission": 78.5
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-08",
+    "clicks": 73,
+    "tx": 5,
+    "revenue": 284.18,
+    "commission": 24.85
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-09",
+    "clicks": 63,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-10",
+    "clicks": 48,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-11",
+    "clicks": 65,
+    "tx": 5,
+    "revenue": 824.89,
+    "commission": 159.01
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-12",
+    "clicks": 128,
+    "tx": 5,
+    "revenue": 6012.29,
+    "commission": 725.5
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-13",
+    "clicks": 77,
+    "tx": 1,
+    "revenue": 46.97,
+    "commission": 3.29
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-14",
+    "clicks": 93,
+    "tx": 3,
+    "revenue": 1470.12,
+    "commission": 176.92
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-15",
+    "clicks": 81,
+    "tx": 4,
+    "revenue": 99.38,
+    "commission": 136.82
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-16",
+    "clicks": 77,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-17",
+    "clicks": 71,
+    "tx": 1,
+    "revenue": 42.01,
+    "commission": 4.2
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-18",
+    "clicks": 80,
+    "tx": 1,
+    "revenue": 369.83,
+    "commission": 36.98
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-19",
+    "clicks": 60,
+    "tx": 1,
+    "revenue": 43.69,
+    "commission": 4.37
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-20",
+    "clicks": 56,
+    "tx": 2,
+    "revenue": 1007.56,
+    "commission": 73.05
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-21",
+    "clicks": 64,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 50
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-22",
+    "clicks": 77,
+    "tx": 2,
+    "revenue": 99.06,
+    "commission": 6.94
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-23",
+    "clicks": 80,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-24",
+    "clicks": 75,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-25",
+    "clicks": 94,
+    "tx": 3,
+    "revenue": 2081.52,
+    "commission": 145.71
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-26",
+    "clicks": 88,
+    "tx": 2,
+    "revenue": 890.74,
+    "commission": 63.89
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-27",
+    "clicks": 71,
+    "tx": 2,
+    "revenue": 289.95,
+    "commission": 25.71
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-28",
+    "clicks": 74,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-29",
+    "clicks": 73,
+    "tx": 4,
+    "revenue": 1472.34,
+    "commission": 104.33
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-30",
+    "clicks": 63,
+    "tx": 1,
+    "revenue": 10.41,
+    "commission": 0.73
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-03-31",
+    "clicks": 71,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 50
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-01",
+    "clicks": 62,
+    "tx": 2,
+    "revenue": 11.41,
+    "commission": 120.73
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-02",
+    "clicks": 64,
+    "tx": 1,
+    "revenue": 713.57,
+    "commission": 64.22
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-03",
+    "clicks": 71,
+    "tx": 1,
+    "revenue": 420.71,
+    "commission": 42.07
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-04",
+    "clicks": 60,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-05",
+    "clicks": 78,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-06",
+    "clicks": 72,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-07",
+    "clicks": 89,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 120
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-08",
+    "clicks": 70,
+    "tx": 2,
+    "revenue": 714.57,
+    "commission": 81.36
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-09",
+    "clicks": 93,
+    "tx": 1,
+    "revenue": 51.24,
+    "commission": 3.59
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-10",
+    "clicks": 72,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-11",
+    "clicks": 70,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 50
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-12",
+    "clicks": 84,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 30
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-13",
+    "clicks": 69,
+    "tx": 6,
+    "revenue": 6874.51,
+    "commission": 700.09
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-14",
+    "clicks": 52,
+    "tx": 2,
+    "revenue": 44.69,
+    "commission": 68.06
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-15",
+    "clicks": 68,
+    "tx": 12,
+    "revenue": 2207.86,
+    "commission": 240.17
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-16",
+    "clicks": 60,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-17",
+    "clicks": 67,
+    "tx": 1,
+    "revenue": 839.5,
+    "commission": 83.95
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-18",
+    "clicks": 69,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-19",
+    "clicks": 58,
+    "tx": 3,
+    "revenue": 3,
+    "commission": 130
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-20",
+    "clicks": 97,
+    "tx": 4,
+    "revenue": 932.72,
+    "commission": 91.36
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-21",
+    "clicks": 88,
+    "tx": 1,
+    "revenue": 44.99,
+    "commission": 4.5
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-22",
+    "clicks": 74,
+    "tx": 3,
+    "revenue": 852.17,
+    "commission": 109.59
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-23",
+    "clicks": 67,
+    "tx": 1,
+    "revenue": 84.03,
+    "commission": 8.4
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-24",
+    "clicks": 67,
+    "tx": 1,
+    "revenue": 860.5,
+    "commission": 60.24
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-25",
+    "clicks": 61,
+    "tx": 2,
+    "revenue": 1763.03,
+    "commission": 123.42
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-26",
+    "clicks": 67,
+    "tx": 3,
+    "revenue": 988.3,
+    "commission": 99.12
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-27",
+    "clicks": 89,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-28",
+    "clicks": 62,
+    "tx": 1,
+    "revenue": 755.55,
+    "commission": 68
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-29",
+    "clicks": 66,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-04-30",
+    "clicks": 51,
+    "tx": 1,
+    "revenue": 1518.12,
+    "commission": 151.81
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-01",
+    "clicks": 67,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-02",
+    "clicks": 50,
+    "tx": 2,
+    "revenue": 716.51,
+    "commission": 102.76
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-03",
+    "clicks": 57,
+    "tx": 2,
+    "revenue": 834.28,
+    "commission": 83.43
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-04",
+    "clicks": 72,
+    "tx": 2,
+    "revenue": 786,
+    "commission": 128.5
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-05",
+    "clicks": 74,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 50
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-06",
+    "clicks": 78,
+    "tx": 2,
+    "revenue": 50.99,
+    "commission": 155
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-07",
+    "clicks": 69,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-08",
+    "clicks": 55,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-09",
+    "clicks": 55,
+    "tx": 1,
+    "revenue": 877.35,
+    "commission": 87.74
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-10",
+    "clicks": 76,
+    "tx": 2,
+    "revenue": 762.22,
+    "commission": 76.23
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-11",
+    "clicks": 125,
+    "tx": 2,
+    "revenue": 1673.34,
+    "commission": 145.17
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-12",
+    "clicks": 64,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-13",
+    "clicks": 55,
+    "tx": 2,
+    "revenue": 47.97,
+    "commission": 33.29
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-14",
+    "clicks": 59,
+    "tx": 1,
+    "revenue": 43.69,
+    "commission": 4.37
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-15",
+    "clicks": 71,
+    "tx": 1,
+    "revenue": 19.24,
+    "commission": 1.35
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-16",
+    "clicks": 47,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 50
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-17",
+    "clicks": 58,
+    "tx": 1,
+    "revenue": 84.03,
+    "commission": 8.4
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-18",
+    "clicks": 72,
+    "tx": 1,
+    "revenue": 62.47,
+    "commission": 4.37
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-19",
+    "clicks": 69,
+    "tx": 4,
+    "revenue": 420.23,
+    "commission": 71.92
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-20",
+    "clicks": 63,
+    "tx": 3,
+    "revenue": 143.25,
+    "commission": 64.23
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-21",
+    "clicks": 65,
+    "tx": 4,
+    "revenue": 121.95,
+    "commission": 92
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-22",
+    "clicks": 57,
+    "tx": 1,
+    "revenue": 42.1,
+    "commission": 4.21
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-23",
+    "clicks": 47,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-24",
+    "clicks": 65,
+    "tx": 1,
+    "revenue": 41.92,
+    "commission": 6.29
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-25",
+    "clicks": 60,
+    "tx": 3,
+    "revenue": 889.86,
+    "commission": 87.53
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-26",
+    "clicks": 57,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-27",
+    "clicks": 58,
+    "tx": 2,
+    "revenue": 828.51,
+    "commission": 82.85
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-28",
+    "clicks": 53,
+    "tx": 1,
+    "revenue": 1099,
+    "commission": 0.01
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-29",
+    "clicks": 53,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-30",
+    "clicks": 48,
+    "tx": 3,
+    "revenue": 89.27,
+    "commission": 158.06
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-05-31",
+    "clicks": 42,
+    "tx": 2,
+    "revenue": 42.92,
+    "commission": 34.19
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-01",
+    "clicks": 60,
+    "tx": 2,
+    "revenue": 672.43,
+    "commission": 97
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-02",
+    "clicks": 310,
+    "tx": 3,
+    "revenue": 2296.17,
+    "commission": 229.61
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-03",
+    "clicks": 290,
+    "tx": 1,
+    "revenue": 839.5,
+    "commission": 58.77
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-04",
+    "clicks": 284,
+    "tx": 1,
+    "revenue": 42.01,
+    "commission": 2.94
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-05",
+    "clicks": 181,
+    "tx": 2,
+    "revenue": 118.13,
+    "commission": 8.27
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-06",
+    "clicks": 286,
+    "tx": 3,
+    "revenue": 95.1,
+    "commission": 107.9
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-07",
+    "clicks": 279,
+    "tx": 2,
+    "revenue": 919.36,
+    "commission": 109.48
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-08",
+    "clicks": 295,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-09",
+    "clicks": 304,
+    "tx": 1,
+    "revenue": 15.89,
+    "commission": 1.59
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-10",
+    "clicks": 287,
+    "tx": 1,
+    "revenue": 43.69,
+    "commission": 3.06
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-11",
+    "clicks": 300,
+    "tx": 2,
+    "revenue": 85.03,
+    "commission": 128.4
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-12",
+    "clicks": 318,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 210
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-13",
+    "clicks": 332,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-14",
+    "clicks": 320,
+    "tx": 1,
+    "revenue": 1166.39,
+    "commission": 116.64
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-15",
+    "clicks": 354,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-16",
+    "clicks": 341,
+    "tx": 3,
+    "revenue": 3500.42,
+    "commission": 308.4
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-17",
+    "clicks": 630,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-18",
+    "clicks": 137,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 50
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-19",
+    "clicks": 97,
+    "tx": 2,
+    "revenue": 857.9,
+    "commission": 77.4
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-20",
+    "clicks": 96,
+    "tx": 3,
+    "revenue": 401.12,
+    "commission": 68.7
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-21",
+    "clicks": 190,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 100
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-22",
+    "clicks": 145,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-23",
+    "clicks": 143,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-24",
+    "clicks": 217,
+    "tx": 1,
+    "revenue": 100.83,
+    "commission": 7.06
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-25",
+    "clicks": 110,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 50
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-26",
+    "clicks": 83,
+    "tx": 2,
+    "revenue": 1587.73,
+    "commission": 261.07
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-27",
+    "clicks": 68,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-28",
+    "clicks": 105,
+    "tx": 1,
+    "revenue": 42.01,
+    "commission": 2.94
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-29",
+    "clicks": 94,
+    "tx": 6,
+    "revenue": 3972.54,
+    "commission": 428.67
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-06-30",
+    "clicks": 187,
+    "tx": 2,
+    "revenue": 72.43,
+    "commission": 57.14
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-01",
+    "clicks": 175,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 50
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-02",
+    "clicks": 100,
+    "tx": 4,
+    "revenue": 1038.01,
+    "commission": 133.7
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-03",
+    "clicks": 121,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-04",
+    "clicks": 87,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-05",
+    "clicks": 134,
+    "tx": 2,
+    "revenue": 142.84,
+    "commission": 14.28
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-06",
+    "clicks": 175,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-07",
+    "clicks": 125,
+    "tx": 1,
+    "revenue": 797.52,
+    "commission": 79.75
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-08",
+    "clicks": 139,
+    "tx": 1,
+    "revenue": 41.26,
+    "commission": 4.13
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-09",
+    "clicks": 129,
+    "tx": 2,
+    "revenue": 62.93,
+    "commission": 4.98
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-10",
+    "clicks": 101,
+    "tx": 1,
+    "revenue": 2113.28,
+    "commission": 211.32
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-11",
+    "clicks": 105,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 30
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-12",
+    "clicks": 169,
+    "tx": 2,
+    "revenue": 542.98,
+    "commission": 54.3
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-13",
+    "clicks": 144,
+    "tx": 4,
+    "revenue": 1324.71,
+    "commission": 162.37
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-14",
+    "clicks": 145,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-15",
+    "clicks": 232,
+    "tx": 5,
+    "revenue": 3723.2,
+    "commission": 390.96
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-16",
+    "clicks": 131,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-17",
+    "clicks": 135,
+    "tx": 1,
+    "revenue": 43.69,
+    "commission": 3.93
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-18",
+    "clicks": 134,
+    "tx": 2,
+    "revenue": 756.55,
+    "commission": 102.89
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-19",
+    "clicks": 151,
+    "tx": 2,
+    "revenue": 135.27,
+    "commission": 13.52
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-20",
+    "clicks": 119,
+    "tx": 2,
+    "revenue": 2,
+    "commission": 60
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-21",
+    "clicks": 115,
+    "tx": 1,
+    "revenue": 43.69,
+    "commission": 4.37
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-22",
+    "clicks": 204,
+    "tx": 1,
+    "revenue": 178.57,
+    "commission": 17.86
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-23",
+    "clicks": 94,
+    "tx": 2,
+    "revenue": 1658.52,
+    "commission": 143.51
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-24",
+    "clicks": 105,
+    "tx": 1,
+    "revenue": 569.37,
+    "commission": 56.94
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-25",
+    "clicks": 123,
+    "tx": 1,
+    "revenue": 43.69,
+    "commission": 4.37
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-26",
+    "clicks": 123,
+    "tx": 2,
+    "revenue": 1418.57,
+    "commission": 111.05
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-27",
+    "clicks": 110,
+    "tx": 1,
+    "revenue": 48.65,
+    "commission": 4.87
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-28",
+    "clicks": 101,
+    "tx": 1,
+    "revenue": 209.24,
+    "commission": 14.65
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-29",
+    "clicks": 144,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-30",
+    "clicks": 110,
+    "tx": 2,
+    "revenue": 923.53,
+    "commission": 67.17
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-07-31",
+    "clicks": 106,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 30
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-01",
+    "clicks": 113,
+    "tx": 1,
+    "revenue": 877.35,
+    "commission": 87.74
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-02",
+    "clicks": 130,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-03",
+    "clicks": 128,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 100
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-04",
+    "clicks": 112,
+    "tx": 2,
+    "revenue": 798.86,
+    "commission": 109.79
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-05",
+    "clicks": 139,
+    "tx": 2,
+    "revenue": 73.51,
+    "commission": 7.35
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-06",
+    "clicks": 127,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-07",
+    "clicks": 106,
+    "tx": 2,
+    "revenue": 1099.5,
+    "commission": 104.06
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-08",
+    "clicks": 132,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-09",
+    "clicks": 139,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-10",
+    "clicks": 133,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-11",
+    "clicks": 106,
+    "tx": 1,
+    "revenue": 50.4,
+    "commission": 5.04
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-12",
+    "clicks": 114,
+    "tx": 2,
+    "revenue": 883.19,
+    "commission": 63.14
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-13",
+    "clicks": 135,
+    "tx": 2,
+    "revenue": 44.69,
+    "commission": 34.37
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-14",
+    "clicks": 80,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-15",
+    "clicks": 65,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 100
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-16",
+    "clicks": 84,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-17",
+    "clicks": 86,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-18",
+    "clicks": 64,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-19",
+    "clicks": 59,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 30
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-20",
+    "clicks": 88,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-21",
+    "clicks": 76,
+    "tx": 1,
+    "revenue": 797.52,
+    "commission": 79.75
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-22",
+    "clicks": 66,
+    "tx": 1,
+    "revenue": 251.26,
+    "commission": 37.69
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-23",
+    "clicks": 112,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-24",
+    "clicks": 75,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-25",
+    "clicks": 89,
+    "tx": 2,
+    "revenue": 878.35,
+    "commission": 117.74
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-26",
+    "clicks": 59,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-27",
+    "clicks": 84,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-28",
+    "clicks": 129,
+    "tx": 2,
+    "revenue": 91.49,
+    "commission": 9.15
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-29",
+    "clicks": 101,
+    "tx": 1,
+    "revenue": 54.66,
+    "commission": 5.47
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-30",
+    "clicks": 102,
+    "tx": 1,
+    "revenue": 43.69,
+    "commission": 4.37
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-08-31",
+    "clicks": 124,
+    "tx": 3,
+    "revenue": 1008.56,
+    "commission": 173.05
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-01",
+    "clicks": 97,
+    "tx": 2,
+    "revenue": 714.57,
+    "commission": 171.36
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-02",
+    "clicks": 74,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 50
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-03",
+    "clicks": 94,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 10
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-04",
+    "clicks": 58,
+    "tx": 1,
+    "revenue": 755.55,
+    "commission": 52.89
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-05",
+    "clicks": 58,
+    "tx": 1,
+    "revenue": 1678.99,
+    "commission": 117.53
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-06",
+    "clicks": 74,
+    "tx": 2,
+    "revenue": 845.79,
+    "commission": 89.14
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-07",
+    "clicks": 55,
+    "tx": 1,
+    "revenue": 420.71,
+    "commission": 29.45
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-08",
+    "clicks": 78,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-09",
+    "clicks": 65,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-10",
+    "clicks": 63,
+    "tx": 4,
+    "revenue": 6169.72,
+    "commission": 609.14
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-11",
+    "clicks": 58,
+    "tx": 5,
+    "revenue": 2067.98,
+    "commission": 235.27
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-12",
+    "clicks": 57,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 50
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-13",
+    "clicks": 65,
+    "tx": 2,
+    "revenue": 68.23,
+    "commission": 36.72
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-14",
+    "clicks": 71,
+    "tx": 1,
+    "revenue": 84.03,
+    "commission": 8.4
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-15",
+    "clicks": 54,
+    "tx": 2,
+    "revenue": 1082.44,
+    "commission": 75.77
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-16",
+    "clicks": 53,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-17",
+    "clicks": 73,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-18",
+    "clicks": 76,
+    "tx": 1,
+    "revenue": 44.29,
+    "commission": 4.43
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-19",
+    "clicks": 64,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-20",
+    "clicks": 84,
+    "tx": 2,
+    "revenue": 44.74,
+    "commission": 104.37
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-21",
+    "clicks": 79,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-22",
+    "clicks": 74,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-23",
+    "clicks": 161,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-24",
+    "clicks": 94,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-25",
+    "clicks": 65,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-26",
+    "clicks": 77,
+    "tx": 1,
+    "revenue": 744.28,
+    "commission": 74.43
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-27",
+    "clicks": 81,
+    "tx": 1,
+    "revenue": 57.46,
+    "commission": 5.75
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-28",
+    "clicks": 53,
+    "tx": 2,
+    "revenue": 559.76,
+    "commission": 55.97
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-29",
+    "clicks": 87,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-09-30",
+    "clicks": 75,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 150
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-01",
+    "clicks": 65,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-02",
+    "clicks": 67,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-03",
+    "clicks": 62,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-04",
+    "clicks": 57,
+    "tx": 1,
+    "revenue": 84.03,
+    "commission": 8.4
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-05",
+    "clicks": 75,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-06",
+    "clicks": 173,
+    "tx": 7,
+    "revenue": 1988.28,
+    "commission": 153.25
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-07",
+    "clicks": 125,
+    "tx": 5,
+    "revenue": 2316.82,
+    "commission": 260.31
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-08",
+    "clicks": 76,
+    "tx": 3,
+    "revenue": 1230.46,
+    "commission": 195.7
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-09",
+    "clicks": 47,
+    "tx": 1,
+    "revenue": 713.57,
+    "commission": 71.36
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-10",
+    "clicks": 65,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 30
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-11",
+    "clicks": 59,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-12",
+    "clicks": 70,
+    "tx": 1,
+    "revenue": 1,
+    "commission": 10
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-13",
+    "clicks": 77,
+    "tx": 1,
+    "revenue": 1510.92,
+    "commission": 105.76
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-14",
+    "clicks": 75,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-15",
+    "clicks": 89,
+    "tx": 2,
+    "revenue": 915.89,
+    "commission": 66.41
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-16",
+    "clicks": 111,
+    "tx": 1,
+    "revenue": 84.03,
+    "commission": 5.88
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-17",
+    "clicks": 96,
+    "tx": 1,
+    "revenue": 50.41,
+    "commission": 4.54
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-18",
+    "clicks": 139,
+    "tx": 1,
+    "revenue": 71.43,
+    "commission": 7.14
+  },
+  {
+    "program": "Antelope DE",
+    "date": "2026-10-19",
+    "clicks": 172,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
     "program": "Magix DACH",
     "date": "2026-01-01",
     "clicks": 553,
