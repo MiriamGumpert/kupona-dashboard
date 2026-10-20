@@ -1,0 +1,2338 @@
+[
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-01",
+    "clicks": 553,
+    "tx": 8,
+    "revenue": 314.13,
+    "commission": 52.5
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-02",
+    "clicks": 607,
+    "tx": 12,
+    "revenue": 457.07,
+    "commission": 70.14
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-03",
+    "clicks": 537,
+    "tx": 13,
+    "revenue": 412.63,
+    "commission": 62.65
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-04",
+    "clicks": 701,
+    "tx": 14,
+    "revenue": 866.84,
+    "commission": 133.31
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-05",
+    "clicks": 511,
+    "tx": 11,
+    "revenue": 467.13,
+    "commission": 76.78
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-06",
+    "clicks": 555,
+    "tx": 7,
+    "revenue": 481.05,
+    "commission": 73.81
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-07",
+    "clicks": 952,
+    "tx": 11,
+    "revenue": 613.37,
+    "commission": 91.99
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-08",
+    "clicks": 523,
+    "tx": 12,
+    "revenue": 681.59,
+    "commission": 106.85
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-09",
+    "clicks": 598,
+    "tx": 17,
+    "revenue": 1085.48,
+    "commission": 192.23
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-10",
+    "clicks": 543,
+    "tx": 13,
+    "revenue": 629.57,
+    "commission": 109.13
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-11",
+    "clicks": 656,
+    "tx": 21,
+    "revenue": 1219.79,
+    "commission": 194.44
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-12",
+    "clicks": 667,
+    "tx": 8,
+    "revenue": 367.86,
+    "commission": 56.72
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-13",
+    "clicks": 881,
+    "tx": 7,
+    "revenue": 448.15,
+    "commission": 67.22
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-14",
+    "clicks": 665,
+    "tx": 7,
+    "revenue": 499.53,
+    "commission": 91.73
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-15",
+    "clicks": 501,
+    "tx": 9,
+    "revenue": 484.19,
+    "commission": 81.07
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-16",
+    "clicks": 528,
+    "tx": 11,
+    "revenue": 472.94,
+    "commission": 79.87
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-17",
+    "clicks": 503,
+    "tx": 7,
+    "revenue": 364.65,
+    "commission": 73.44
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-18",
+    "clicks": 592,
+    "tx": 9,
+    "revenue": 259.99,
+    "commission": 41.51
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-19",
+    "clicks": 615,
+    "tx": 6,
+    "revenue": 181.67,
+    "commission": 33.12
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-20",
+    "clicks": 968,
+    "tx": 12,
+    "revenue": 592.5,
+    "commission": 94.02
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-21",
+    "clicks": 562,
+    "tx": 12,
+    "revenue": 429.01,
+    "commission": 72.44
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-22",
+    "clicks": 679,
+    "tx": 14,
+    "revenue": 718.76,
+    "commission": 115.69
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-23",
+    "clicks": 460,
+    "tx": 10,
+    "revenue": 357.44,
+    "commission": 53.6
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-24",
+    "clicks": 432,
+    "tx": 17,
+    "revenue": 702.65,
+    "commission": 122.28
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-25",
+    "clicks": 569,
+    "tx": 7,
+    "revenue": 532.2,
+    "commission": 79.82
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-26",
+    "clicks": 540,
+    "tx": 8,
+    "revenue": 255.1,
+    "commission": 40.49
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-27",
+    "clicks": 1746,
+    "tx": 11,
+    "revenue": 432.69,
+    "commission": 71.21
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-28",
+    "clicks": 1256,
+    "tx": 8,
+    "revenue": 370.38,
+    "commission": 62.86
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-29",
+    "clicks": 1352,
+    "tx": 7,
+    "revenue": 414.04,
+    "commission": 62.09
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-30",
+    "clicks": 1141,
+    "tx": 9,
+    "revenue": 266.62,
+    "commission": 49.23
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-01-31",
+    "clicks": 1253,
+    "tx": 9,
+    "revenue": 488.8,
+    "commission": 85.13
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-01",
+    "clicks": 1273,
+    "tx": 6,
+    "revenue": 159.99,
+    "commission": 24
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-02",
+    "clicks": 1363,
+    "tx": 6,
+    "revenue": 147.75,
+    "commission": 22.17
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-03",
+    "clicks": 1436,
+    "tx": 6,
+    "revenue": 293.28,
+    "commission": 44
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-04",
+    "clicks": 747,
+    "tx": 10,
+    "revenue": 388.2,
+    "commission": 57.1
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-05",
+    "clicks": 687,
+    "tx": 11,
+    "revenue": 401.59,
+    "commission": 62.74
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-06",
+    "clicks": 642,
+    "tx": 17,
+    "revenue": 861.35,
+    "commission": 129.2
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-07",
+    "clicks": 742,
+    "tx": 9,
+    "revenue": 399.59,
+    "commission": 57.97
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-08",
+    "clicks": 732,
+    "tx": 3,
+    "revenue": 189.98,
+    "commission": 28.5
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-09",
+    "clicks": 806,
+    "tx": 9,
+    "revenue": 552.06,
+    "commission": 89.11
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-10",
+    "clicks": 910,
+    "tx": 19,
+    "revenue": 631.54,
+    "commission": 98.92
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-11",
+    "clicks": 786,
+    "tx": 17,
+    "revenue": 713.59,
+    "commission": 123.03
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-12",
+    "clicks": 684,
+    "tx": 10,
+    "revenue": 287.43,
+    "commission": 43.1
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-13",
+    "clicks": 1012,
+    "tx": 14,
+    "revenue": 455.02,
+    "commission": 68.04
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-14",
+    "clicks": 859,
+    "tx": 14,
+    "revenue": 547.91,
+    "commission": 84.07
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-15",
+    "clicks": 757,
+    "tx": 12,
+    "revenue": 341.35,
+    "commission": 61.93
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-16",
+    "clicks": 614,
+    "tx": 10,
+    "revenue": 479.88,
+    "commission": 76.64
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-17",
+    "clicks": 1542,
+    "tx": 14,
+    "revenue": 598.71,
+    "commission": 98.09
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-18",
+    "clicks": 542,
+    "tx": 8,
+    "revenue": 258.64,
+    "commission": 40.47
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-19",
+    "clicks": 495,
+    "tx": 10,
+    "revenue": 399.1,
+    "commission": 63.64
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-20",
+    "clicks": 511,
+    "tx": 8,
+    "revenue": 207.44,
+    "commission": 35.32
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-21",
+    "clicks": 555,
+    "tx": 6,
+    "revenue": 316.92,
+    "commission": 55.52
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-22",
+    "clicks": 667,
+    "tx": 9,
+    "revenue": 550.36,
+    "commission": 93.47
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-23",
+    "clicks": 551,
+    "tx": 12,
+    "revenue": 666.41,
+    "commission": 131.55
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-24",
+    "clicks": 622,
+    "tx": 8,
+    "revenue": 302.98,
+    "commission": 48.47
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-25",
+    "clicks": 686,
+    "tx": 15,
+    "revenue": 676.38,
+    "commission": 124.24
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-26",
+    "clicks": 721,
+    "tx": 10,
+    "revenue": 346.38,
+    "commission": 55.31
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-27",
+    "clicks": 581,
+    "tx": 5,
+    "revenue": 187.36,
+    "commission": 30.96
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-02-28",
+    "clicks": 479,
+    "tx": 9,
+    "revenue": 697.63,
+    "commission": 108
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-01",
+    "clicks": 419,
+    "tx": 8,
+    "revenue": 497.42,
+    "commission": 77.64
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-02",
+    "clicks": 527,
+    "tx": 4,
+    "revenue": 151.72,
+    "commission": 24.18
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-03",
+    "clicks": 465,
+    "tx": 8,
+    "revenue": 569.52,
+    "commission": 86.58
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-04",
+    "clicks": 455,
+    "tx": 11,
+    "revenue": 592.94,
+    "commission": 95.03
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-05",
+    "clicks": 382,
+    "tx": 6,
+    "revenue": 180.82,
+    "commission": 30.7
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-06",
+    "clicks": 416,
+    "tx": 14,
+    "revenue": 587.73,
+    "commission": 87.19
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-07",
+    "clicks": 532,
+    "tx": 10,
+    "revenue": 507.68,
+    "commission": 79.94
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-08",
+    "clicks": 474,
+    "tx": 11,
+    "revenue": 788.77,
+    "commission": 116.21
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-09",
+    "clicks": 351,
+    "tx": 4,
+    "revenue": 134.44,
+    "commission": 20.16
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-10",
+    "clicks": 607,
+    "tx": 4,
+    "revenue": 66.36,
+    "commission": 14.16
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-11",
+    "clicks": 541,
+    "tx": 7,
+    "revenue": 417.15,
+    "commission": 65.51
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-12",
+    "clicks": 667,
+    "tx": 5,
+    "revenue": 188.89,
+    "commission": 33.37
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-13",
+    "clicks": 453,
+    "tx": 6,
+    "revenue": 313.83,
+    "commission": 47.07
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-14",
+    "clicks": 673,
+    "tx": 3,
+    "revenue": 170.61,
+    "commission": 29.91
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-15",
+    "clicks": 596,
+    "tx": 2,
+    "revenue": 54.61,
+    "commission": 8.19
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-16",
+    "clicks": 520,
+    "tx": 4,
+    "revenue": 196.61,
+    "commission": 29.49
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-17",
+    "clicks": 804,
+    "tx": 5,
+    "revenue": 188.19,
+    "commission": 30.49
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-18",
+    "clicks": 527,
+    "tx": 7,
+    "revenue": 285.66,
+    "commission": 42.84
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-19",
+    "clicks": 674,
+    "tx": 9,
+    "revenue": 320.11,
+    "commission": 51.93
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-20",
+    "clicks": 609,
+    "tx": 2,
+    "revenue": 112.8,
+    "commission": 16.92
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-21",
+    "clicks": 584,
+    "tx": 5,
+    "revenue": 235.27,
+    "commission": 40.96
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-22",
+    "clicks": 621,
+    "tx": 6,
+    "revenue": 249.95,
+    "commission": 38.81
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-23",
+    "clicks": 641,
+    "tx": 4,
+    "revenue": 134.42,
+    "commission": 20.16
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-24",
+    "clicks": 510,
+    "tx": 2,
+    "revenue": 44.1,
+    "commission": 8.51
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-25",
+    "clicks": 455,
+    "tx": 1,
+    "revenue": 127.73,
+    "commission": 31.93
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-26",
+    "clicks": 571,
+    "tx": 1,
+    "revenue": 29.4,
+    "commission": 4.41
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-27",
+    "clicks": 411,
+    "tx": 6,
+    "revenue": 297.39,
+    "commission": 46.88
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-28",
+    "clicks": 284,
+    "tx": 1,
+    "revenue": 29.4,
+    "commission": 4.41
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-29",
+    "clicks": 442,
+    "tx": 6,
+    "revenue": 268.43,
+    "commission": 50.1
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-30",
+    "clicks": 376,
+    "tx": 3,
+    "revenue": 110.47,
+    "commission": 19.22
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-03-31",
+    "clicks": 560,
+    "tx": 3,
+    "revenue": 105.01,
+    "commission": 18.27
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-01",
+    "clicks": 372,
+    "tx": 2,
+    "revenue": 50.41,
+    "commission": 7.56
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-02",
+    "clicks": 292,
+    "tx": 7,
+    "revenue": 498.26,
+    "commission": 114.37
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-03",
+    "clicks": 491,
+    "tx": 5,
+    "revenue": 206.78,
+    "commission": 34.37
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-04",
+    "clicks": 319,
+    "tx": 3,
+    "revenue": 180.39,
+    "commission": 27.06
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-05",
+    "clicks": 318,
+    "tx": 1,
+    "revenue": 45.37,
+    "commission": 6.81
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-06",
+    "clicks": 390,
+    "tx": 2,
+    "revenue": 92.42,
+    "commission": 18.06
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-07",
+    "clicks": 249,
+    "tx": 1,
+    "revenue": 131.09,
+    "commission": 19.66
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-08",
+    "clicks": 380,
+    "tx": 3,
+    "revenue": 93.88,
+    "commission": 14.08
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-09",
+    "clicks": 396,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-10",
+    "clicks": 402,
+    "tx": 4,
+    "revenue": 68.87,
+    "commission": 11.73
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-11",
+    "clicks": 479,
+    "tx": 4,
+    "revenue": 111.72,
+    "commission": 16.76
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-12",
+    "clicks": 399,
+    "tx": 3,
+    "revenue": 91.79,
+    "commission": 17.76
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-13",
+    "clicks": 428,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-14",
+    "clicks": 463,
+    "tx": 1,
+    "revenue": 33.61,
+    "commission": 5.04
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-15",
+    "clicks": 461,
+    "tx": 2,
+    "revenue": 54.61,
+    "commission": 8.19
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-16",
+    "clicks": 301,
+    "tx": 3,
+    "revenue": 145.78,
+    "commission": 26.4
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-17",
+    "clicks": 247,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-18",
+    "clicks": 148,
+    "tx": 2,
+    "revenue": 55.45,
+    "commission": 8.32
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-19",
+    "clicks": 297,
+    "tx": 2,
+    "revenue": 121,
+    "commission": 18.15
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-20",
+    "clicks": 299,
+    "tx": 1,
+    "revenue": 31.08,
+    "commission": 4.66
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-21",
+    "clicks": 632,
+    "tx": 4,
+    "revenue": 198.63,
+    "commission": 29.79
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-22",
+    "clicks": 743,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-23",
+    "clicks": 1202,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-24",
+    "clicks": 381,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-25",
+    "clicks": 442,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-26",
+    "clicks": 920,
+    "tx": 2,
+    "revenue": 63.56,
+    "commission": 9.54
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-27",
+    "clicks": 596,
+    "tx": 6,
+    "revenue": 184.67,
+    "commission": 35.26
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-28",
+    "clicks": 1410,
+    "tx": 6,
+    "revenue": 178.94,
+    "commission": 33.64
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-29",
+    "clicks": 1493,
+    "tx": 3,
+    "revenue": 306.64,
+    "commission": 45.99
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-04-30",
+    "clicks": 611,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-01",
+    "clicks": 627,
+    "tx": 2,
+    "revenue": 132.34,
+    "commission": 33.09
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-02",
+    "clicks": 764,
+    "tx": 1,
+    "revenue": 25.2,
+    "commission": 3.78
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-03",
+    "clicks": 1024,
+    "tx": 3,
+    "revenue": 180.65,
+    "commission": 27.1
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-04",
+    "clicks": 769,
+    "tx": 1,
+    "revenue": 67.22,
+    "commission": 10.08
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-05",
+    "clicks": 1059,
+    "tx": 3,
+    "revenue": 75.61,
+    "commission": 11.34
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-06",
+    "clicks": 1023,
+    "tx": 4,
+    "revenue": 104,
+    "commission": 20.64
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-07",
+    "clicks": 813,
+    "tx": 3,
+    "revenue": 205.86,
+    "commission": 44.74
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-08",
+    "clicks": 598,
+    "tx": 3,
+    "revenue": 157.96,
+    "commission": 28.23
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-09",
+    "clicks": 486,
+    "tx": 4,
+    "revenue": 158.79,
+    "commission": 28.35
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-10",
+    "clicks": 514,
+    "tx": 2,
+    "revenue": 71.1,
+    "commission": 14.41
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-11",
+    "clicks": 655,
+    "tx": 3,
+    "revenue": 95.92,
+    "commission": 14.39
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-12",
+    "clicks": 701,
+    "tx": 4,
+    "revenue": 159.8,
+    "commission": 24.81
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-13",
+    "clicks": 1125,
+    "tx": 3,
+    "revenue": 153.76,
+    "commission": 32.14
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-14",
+    "clicks": 733,
+    "tx": 8,
+    "revenue": 309.59,
+    "commission": 54.17
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-15",
+    "clicks": 520,
+    "tx": 3,
+    "revenue": 98.71,
+    "commission": 17.25
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-16",
+    "clicks": 455,
+    "tx": 1,
+    "revenue": 117.64,
+    "commission": 17.65
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-17",
+    "clicks": 482,
+    "tx": 3,
+    "revenue": 225.19,
+    "commission": 33.77
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-18",
+    "clicks": 725,
+    "tx": 5,
+    "revenue": 169.15,
+    "commission": 31.22
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-19",
+    "clicks": 521,
+    "tx": 2,
+    "revenue": 128.56,
+    "commission": 23.82
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-20",
+    "clicks": 463,
+    "tx": 4,
+    "revenue": 157.11,
+    "commission": 39.28
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-21",
+    "clicks": 548,
+    "tx": 2,
+    "revenue": 75.61,
+    "commission": 13.86
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-22",
+    "clicks": 332,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-23",
+    "clicks": 254,
+    "tx": 1,
+    "revenue": 79.99,
+    "commission": 20
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-24",
+    "clicks": 319,
+    "tx": 3,
+    "revenue": 113.42,
+    "commission": 18.69
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-25",
+    "clicks": 297,
+    "tx": 3,
+    "revenue": 86.99,
+    "commission": 17.25
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-26",
+    "clicks": 438,
+    "tx": 1,
+    "revenue": 79.99,
+    "commission": 12
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-27",
+    "clicks": 541,
+    "tx": 3,
+    "revenue": 67.79,
+    "commission": 13.59
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-28",
+    "clicks": 500,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-29",
+    "clicks": 551,
+    "tx": 3,
+    "revenue": 159.65,
+    "commission": 31.51
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-30",
+    "clicks": 376,
+    "tx": 1,
+    "revenue": 67.22,
+    "commission": 10.08
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-05-31",
+    "clicks": 495,
+    "tx": 1,
+    "revenue": 33.61,
+    "commission": 8.4
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-01",
+    "clicks": 403,
+    "tx": 5,
+    "revenue": 205.93,
+    "commission": 41.19
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-02",
+    "clicks": 610,
+    "tx": 3,
+    "revenue": 174.43,
+    "commission": 31.2
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-03",
+    "clicks": 727,
+    "tx": 1,
+    "revenue": 24.99,
+    "commission": 6.25
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-04",
+    "clicks": 686,
+    "tx": 4,
+    "revenue": 131.07,
+    "commission": 26.88
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-05",
+    "clicks": 648,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-06",
+    "clicks": 613,
+    "tx": 1,
+    "revenue": 30.24,
+    "commission": 7.56
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-07",
+    "clicks": 728,
+    "tx": 2,
+    "revenue": 37.8,
+    "commission": 5.67
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-08",
+    "clicks": 531,
+    "tx": 1,
+    "revenue": 84.03,
+    "commission": 16.81
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-09",
+    "clicks": 760,
+    "tx": 4,
+    "revenue": 93.79,
+    "commission": 17.57
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-10",
+    "clicks": 617,
+    "tx": 4,
+    "revenue": 134.42,
+    "commission": 26.04
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-11",
+    "clicks": 698,
+    "tx": 2,
+    "revenue": 67.22,
+    "commission": 10.08
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-12",
+    "clicks": 958,
+    "tx": 1,
+    "revenue": 13.44,
+    "commission": 3.36
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-13",
+    "clicks": 780,
+    "tx": 6,
+    "revenue": 201.64,
+    "commission": 39.48
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-14",
+    "clicks": 855,
+    "tx": 4,
+    "revenue": 76.18,
+    "commission": 14.43
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-15",
+    "clicks": 691,
+    "tx": 3,
+    "revenue": 114.01,
+    "commission": 20.46
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-16",
+    "clicks": 1082,
+    "tx": 5,
+    "revenue": 187.01,
+    "commission": 37.51
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-17",
+    "clicks": 897,
+    "tx": 4,
+    "revenue": 173.16,
+    "commission": 30.06
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-18",
+    "clicks": 772,
+    "tx": 1,
+    "revenue": 25.2,
+    "commission": 3.78
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-19",
+    "clicks": 744,
+    "tx": 1,
+    "revenue": 52.98,
+    "commission": 13.25
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-20",
+    "clicks": 830,
+    "tx": 3,
+    "revenue": 176.78,
+    "commission": 42.52
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-21",
+    "clicks": 557,
+    "tx": 4,
+    "revenue": 319.29,
+    "commission": 60.91
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-22",
+    "clicks": 821,
+    "tx": 3,
+    "revenue": 111,
+    "commission": 19.17
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-23",
+    "clicks": 881,
+    "tx": 3,
+    "revenue": 93.08,
+    "commission": 18.23
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-24",
+    "clicks": 584,
+    "tx": 3,
+    "revenue": 71.4,
+    "commission": 10.71
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-25",
+    "clicks": 616,
+    "tx": 4,
+    "revenue": 176.44,
+    "commission": 31.92
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-26",
+    "clicks": 435,
+    "tx": 1,
+    "revenue": 30.25,
+    "commission": 7.56
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-27",
+    "clicks": 639,
+    "tx": 3,
+    "revenue": 67.21,
+    "commission": 11.76
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-28",
+    "clicks": 543,
+    "tx": 2,
+    "revenue": 155.45,
+    "commission": 35.08
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-29",
+    "clicks": 575,
+    "tx": 2,
+    "revenue": 54.61,
+    "commission": 11.97
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-06-30",
+    "clicks": 2929,
+    "tx": 1,
+    "revenue": 83.19,
+    "commission": 16.64
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-01",
+    "clicks": 1421,
+    "tx": 4,
+    "revenue": 138.62,
+    "commission": 27.73
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-02",
+    "clicks": 1157,
+    "tx": 2,
+    "revenue": 176.46,
+    "commission": 29.83
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-03",
+    "clicks": 668,
+    "tx": 1,
+    "revenue": 25.2,
+    "commission": 6.3
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-04",
+    "clicks": 314,
+    "tx": 1,
+    "revenue": 25.2,
+    "commission": 3.78
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-05",
+    "clicks": 504,
+    "tx": 3,
+    "revenue": 92.42,
+    "commission": 19.74
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-06",
+    "clicks": 700,
+    "tx": 1,
+    "revenue": 36.12,
+    "commission": 9.03
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-07",
+    "clicks": 547,
+    "tx": 2,
+    "revenue": 94.94,
+    "commission": 19.28
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-08",
+    "clicks": 549,
+    "tx": 4,
+    "revenue": 207.56,
+    "commission": 41.92
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-09",
+    "clicks": 444,
+    "tx": 6,
+    "revenue": 272.07,
+    "commission": 56.3
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-10",
+    "clicks": 428,
+    "tx": 2,
+    "revenue": 71.42,
+    "commission": 14.07
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-11",
+    "clicks": 545,
+    "tx": 3,
+    "revenue": 106.65,
+    "commission": 17.65
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-12",
+    "clicks": 561,
+    "tx": 2,
+    "revenue": 97.47,
+    "commission": 21.35
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-13",
+    "clicks": 567,
+    "tx": 1,
+    "revenue": 31.65,
+    "commission": 6.33
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-14",
+    "clicks": 744,
+    "tx": 4,
+    "revenue": 113.42,
+    "commission": 26.33
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-15",
+    "clicks": 707,
+    "tx": 3,
+    "revenue": 92.41,
+    "commission": 15
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-16",
+    "clicks": 625,
+    "tx": 2,
+    "revenue": 50.4,
+    "commission": 10.08
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-17",
+    "clicks": 512,
+    "tx": 4,
+    "revenue": 120.96,
+    "commission": 19.29
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-18",
+    "clicks": 669,
+    "tx": 3,
+    "revenue": 73.09,
+    "commission": 12.1
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-19",
+    "clicks": 632,
+    "tx": 5,
+    "revenue": 86.51,
+    "commission": 17.93
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-20",
+    "clicks": 756,
+    "tx": 3,
+    "revenue": 100.81,
+    "commission": 20.16
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-21",
+    "clicks": 924,
+    "tx": 1,
+    "revenue": 16.8,
+    "commission": 4.2
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-22",
+    "clicks": 839,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-23",
+    "clicks": 695,
+    "tx": 1,
+    "revenue": 59.75,
+    "commission": 8.96
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-24",
+    "clicks": 725,
+    "tx": 4,
+    "revenue": 125.18,
+    "commission": 22.56
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-25",
+    "clicks": 592,
+    "tx": 2,
+    "revenue": 76.04,
+    "commission": 17.31
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-26",
+    "clicks": 607,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-27",
+    "clicks": 933,
+    "tx": 1,
+    "revenue": 33.61,
+    "commission": 5.04
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-28",
+    "clicks": 876,
+    "tx": 3,
+    "revenue": 147.88,
+    "commission": 23.69
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-29",
+    "clicks": 2472,
+    "tx": 3,
+    "revenue": 201.67,
+    "commission": 47.05
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-30",
+    "clicks": 1349,
+    "tx": 1,
+    "revenue": 29.99,
+    "commission": 7.5
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-07-31",
+    "clicks": 495,
+    "tx": 5,
+    "revenue": 186.53,
+    "commission": 32.01
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-01",
+    "clicks": 608,
+    "tx": 1,
+    "revenue": 84.03,
+    "commission": 21.01
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-02",
+    "clicks": 643,
+    "tx": 2,
+    "revenue": 83.17,
+    "commission": 16.63
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-03",
+    "clicks": 617,
+    "tx": 1,
+    "revenue": 67.23,
+    "commission": 10.08
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-04",
+    "clicks": 1252,
+    "tx": 4,
+    "revenue": 138.62,
+    "commission": 26.25
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-05",
+    "clicks": 1155,
+    "tx": 6,
+    "revenue": 244.5,
+    "commission": 41.46
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-06",
+    "clicks": 807,
+    "tx": 2,
+    "revenue": 54.61,
+    "commission": 8.19
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-07",
+    "clicks": 541,
+    "tx": 3,
+    "revenue": 237.53,
+    "commission": 31.49
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-08",
+    "clicks": 690,
+    "tx": 3,
+    "revenue": 117.63,
+    "commission": 17.64
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-09",
+    "clicks": 699,
+    "tx": 3,
+    "revenue": 120.99,
+    "commission": 18.15
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-10",
+    "clicks": 1019,
+    "tx": 2,
+    "revenue": 83.18,
+    "commission": 14.74
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-11",
+    "clicks": 1187,
+    "tx": 4,
+    "revenue": 100.81,
+    "commission": 65.12
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-12",
+    "clicks": 710,
+    "tx": 11,
+    "revenue": 390.37,
+    "commission": 81.41
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-13",
+    "clicks": 867,
+    "tx": 5,
+    "revenue": 152.91,
+    "commission": 25.96
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-14",
+    "clicks": 806,
+    "tx": 4,
+    "revenue": 217.53,
+    "commission": 38.91
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-15",
+    "clicks": 1161,
+    "tx": 5,
+    "revenue": 227.7,
+    "commission": 46.35
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-16",
+    "clicks": 856,
+    "tx": 5,
+    "revenue": 176.43,
+    "commission": 33.18
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-17",
+    "clicks": 888,
+    "tx": 3,
+    "revenue": 71.4,
+    "commission": 13.23
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-18",
+    "clicks": 1146,
+    "tx": 5,
+    "revenue": 262.15,
+    "commission": 47.47
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-19",
+    "clicks": 836,
+    "tx": 3,
+    "revenue": 131.16,
+    "commission": 28.97
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-20",
+    "clicks": 857,
+    "tx": 6,
+    "revenue": 243.23,
+    "commission": 39.42
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-21",
+    "clicks": 893,
+    "tx": 5,
+    "revenue": 219.05,
+    "commission": 42.08
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-22",
+    "clicks": 700,
+    "tx": 3,
+    "revenue": 93.67,
+    "commission": 15
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-23",
+    "clicks": 749,
+    "tx": 4,
+    "revenue": 117.62,
+    "commission": 23.94
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-24",
+    "clicks": 853,
+    "tx": 2,
+    "revenue": 50.4,
+    "commission": 7.56
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-25",
+    "clicks": 915,
+    "tx": 3,
+    "revenue": 207.56,
+    "commission": 46.01
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-26",
+    "clicks": 715,
+    "tx": 2,
+    "revenue": 125.2,
+    "commission": 21.68
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-27",
+    "clicks": 636,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-28",
+    "clicks": 469,
+    "tx": 3,
+    "revenue": 84.01,
+    "commission": 12.6
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-29",
+    "clicks": 554,
+    "tx": 0,
+    "revenue": 0,
+    "commission": 0
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-30",
+    "clicks": 640,
+    "tx": 9,
+    "revenue": 298.04,
+    "commission": 55.41
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-08-31",
+    "clicks": 865,
+    "tx": 5,
+    "revenue": 269.71,
+    "commission": 42.97
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-01",
+    "clicks": 921,
+    "tx": 1,
+    "revenue": 33.61,
+    "commission": 5.04
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-02",
+    "clicks": 736,
+    "tx": 4,
+    "revenue": 197.24,
+    "commission": 29.58
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-03",
+    "clicks": 696,
+    "tx": 2,
+    "revenue": 122.67,
+    "commission": 19.54
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-04",
+    "clicks": 545,
+    "tx": 2,
+    "revenue": 46.2,
+    "commission": 6.93
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-05",
+    "clicks": 657,
+    "tx": 4,
+    "revenue": 215.93,
+    "commission": 38.68
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-06",
+    "clicks": 584,
+    "tx": 4,
+    "revenue": 90.72,
+    "commission": 13.61
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-07",
+    "clicks": 565,
+    "tx": 4,
+    "revenue": 730.16,
+    "commission": 112.91
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-08",
+    "clicks": 935,
+    "tx": 4,
+    "revenue": 472.07,
+    "commission": 70.82
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-09",
+    "clicks": 1204,
+    "tx": 9,
+    "revenue": 371.97,
+    "commission": 55.79
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-10",
+    "clicks": 866,
+    "tx": 6,
+    "revenue": 372.39,
+    "commission": 65.16
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-11",
+    "clicks": 798,
+    "tx": 4,
+    "revenue": 159.63,
+    "commission": 28.56
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-12",
+    "clicks": 877,
+    "tx": 5,
+    "revenue": 306.68,
+    "commission": 61.12
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-13",
+    "clicks": 572,
+    "tx": 3,
+    "revenue": 146.62,
+    "commission": 24.07
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-14",
+    "clicks": 770,
+    "tx": 6,
+    "revenue": 347.5,
+    "commission": 60.07
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-15",
+    "clicks": 812,
+    "tx": 3,
+    "revenue": 121.82,
+    "commission": 20.37
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-16",
+    "clicks": 892,
+    "tx": 6,
+    "revenue": 226.86,
+    "commission": 38.19
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-17",
+    "clicks": 888,
+    "tx": 1,
+    "revenue": 22.68,
+    "commission": 4.54
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-18",
+    "clicks": 736,
+    "tx": 2,
+    "revenue": 92.42,
+    "commission": 13.86
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-19",
+    "clicks": 830,
+    "tx": 3,
+    "revenue": 221.41,
+    "commission": 35.3
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-20",
+    "clicks": 780,
+    "tx": 8,
+    "revenue": 355.4,
+    "commission": 59.02
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-21",
+    "clicks": 812,
+    "tx": 3,
+    "revenue": 295.68,
+    "commission": 44.35
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-22",
+    "clicks": 2960,
+    "tx": 6,
+    "revenue": 224.33,
+    "commission": 34.9
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-23",
+    "clicks": 2723,
+    "tx": 5,
+    "revenue": 355.43,
+    "commission": 53.31
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-24",
+    "clicks": 2472,
+    "tx": 1,
+    "revenue": 33.61,
+    "commission": 5.04
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-25",
+    "clicks": 2320,
+    "tx": 4,
+    "revenue": 294.65,
+    "commission": 61.06
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-26",
+    "clicks": 2573,
+    "tx": 2,
+    "revenue": 144.53,
+    "commission": 24.7
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-27",
+    "clicks": 1629,
+    "tx": 4,
+    "revenue": 117.34,
+    "commission": 20.76
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-28",
+    "clicks": 1121,
+    "tx": 7,
+    "revenue": 591.98,
+    "commission": 88.57
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-29",
+    "clicks": 1024,
+    "tx": 7,
+    "revenue": 302.47,
+    "commission": 49.35
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-09-30",
+    "clicks": 1006,
+    "tx": 7,
+    "revenue": 297.86,
+    "commission": 46.38
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-01",
+    "clicks": 863,
+    "tx": 8,
+    "revenue": 255.64,
+    "commission": 39.48
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-02",
+    "clicks": 960,
+    "tx": 6,
+    "revenue": 246.94,
+    "commission": 40.27
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-03",
+    "clicks": 729,
+    "tx": 5,
+    "revenue": 628.7,
+    "commission": 94.3
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-04",
+    "clicks": 760,
+    "tx": 4,
+    "revenue": 105.86,
+    "commission": 17.39
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-05",
+    "clicks": 902,
+    "tx": 8,
+    "revenue": 431.9,
+    "commission": 67.81
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-06",
+    "clicks": 965,
+    "tx": 3,
+    "revenue": 117.21,
+    "commission": 17.58
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-07",
+    "clicks": 995,
+    "tx": 4,
+    "revenue": 367.7,
+    "commission": 60.69
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-08",
+    "clicks": 1136,
+    "tx": 4,
+    "revenue": 218.74,
+    "commission": 32.81
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-09",
+    "clicks": 954,
+    "tx": 4,
+    "revenue": 200.48,
+    "commission": 34.38
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-10",
+    "clicks": 785,
+    "tx": 4,
+    "revenue": 182.75,
+    "commission": 34.98
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-11",
+    "clicks": 752,
+    "tx": 9,
+    "revenue": 1443.83,
+    "commission": 216.56
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-12",
+    "clicks": 826,
+    "tx": 1,
+    "revenue": 29.99,
+    "commission": 4.5
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-13",
+    "clicks": 820,
+    "tx": 4,
+    "revenue": 152.91,
+    "commission": 28.27
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-14",
+    "clicks": 737,
+    "tx": 7,
+    "revenue": 278.9,
+    "commission": 41.84
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-15",
+    "clicks": 583,
+    "tx": 2,
+    "revenue": 71.42,
+    "commission": 14.07
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-16",
+    "clicks": 625,
+    "tx": 2,
+    "revenue": 52.51,
+    "commission": 7.88
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-17",
+    "clicks": 618,
+    "tx": 2,
+    "revenue": 109.23,
+    "commission": 16.38
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-18",
+    "clicks": 569,
+    "tx": 2,
+    "revenue": 91.59,
+    "commission": 13.74
+  },
+  {
+    "program": "Magix DACH",
+    "date": "2026-10-19",
+    "clicks": 819,
+    "tx": 4,
+    "revenue": 391.05,
+    "commission": 58.65
+  }
+]
