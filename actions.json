@@ -1153,5 +1153,41 @@
       false,
       true
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "Shopclever Aktion",
+    "partner": "Shopclever",
+    "periods": [
+      {
+        "start": "2026-10-26",
+        "end": "2026-11-09"
+      },
+      {
+        "start": "2026-12-01",
+        "end": "2026-12-08"
+      },
+      {
+        "start": "2026-12-17",
+        "end": "2026-12-21"
+      }
+    ],
+    "start": "2026-10-26",
+    "end": "2026-11-09",
+    "code": "Antelopestart10",
+    "uplift": "+2% (also 9%)",
+    "notes": "",
+    "checklist": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false,
+      true
+    ]
   }
 ]
