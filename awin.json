@@ -3868,7 +3868,7 @@
     ]
   },
   {
-    "id": "1792494247284",
+    "id": "1792494295493",
     "customer": "Magix",
     "program": "Magix DACH",
     "programId": "11395",
@@ -3877,7 +3877,7 @@
     "periodTo": "2026-10-20",
     "downloadDate": "2026-10-20",
     "fileName": "11395-publisher-performance.csv",
-    "importedAt": "2026-10-20T11:04:07.284Z",
+    "importedAt": "2026-10-20T11:04:55.493Z",
     "rows": [
       {
         "name": "OPTIMHUB",
