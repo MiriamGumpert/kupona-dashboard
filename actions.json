@@ -1225,5 +1225,33 @@
       false,
       true
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "customer",
+    "name": "Blackweek",
+    "partner": "",
+    "periods": [
+      {
+        "start": "2026-11-18",
+        "end": "2026-12-01"
+      }
+    ],
+    "start": "2026-11-18",
+    "end": "2026-12-01",
+    "code": "",
+    "uplift": "",
+    "notes": "weitere Details folgen",
+    "checklist": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
   }
 ]
