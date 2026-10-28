@@ -1253,5 +1253,33 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "customer",
+    "name": "TankTop 299 € statt 399 €",
+    "partner": "",
+    "periods": [
+      {
+        "start": "2026-10-26",
+        "end": "2026-11-15"
+      }
+    ],
+    "start": "2026-10-26",
+    "end": "2026-11-15",
+    "code": "TANKTOP26",
+    "uplift": "",
+    "notes": "",
+    "checklist": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      false,
+      true
+    ]
   }
 ]
