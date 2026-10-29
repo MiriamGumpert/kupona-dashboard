@@ -1281,5 +1281,33 @@
       false,
       true
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "Mehrwerk Aktion",
+    "partner": "Mehrwerk",
+    "periods": [
+      {
+        "start": "2027-02-09",
+        "end": "2027-02-23"
+      }
+    ],
+    "start": "2027-02-09",
+    "end": "2027-02-23",
+    "code": "",
+    "uplift": "+2% (also 9%)",
+    "notes": "Grafiken noch offen, Provisionserhöhung, Awin- und Aktionsliste",
+    "checklist": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
   }
 ]
