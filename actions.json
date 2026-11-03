@@ -1341,5 +1341,33 @@
       false,
       true
     ]
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "customer",
+    "name": "Black Friday Deals",
+    "partner": "",
+    "periods": [
+      {
+        "start": "2026-11-03",
+        "end": "2026-11-29"
+      }
+    ],
+    "start": "2026-11-03",
+    "end": "2026-11-29",
+    "code": "",
+    "uplift": "",
+    "notes": "Rabatte bis 61%",
+    "checklist": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      true,
+      false,
+      true
+    ]
   }
 ]
