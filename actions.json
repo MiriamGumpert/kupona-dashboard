@@ -1369,5 +1369,33 @@
       false,
       true
     ]
+  },
+  {
+    "customer": "Magix FR",
+    "actionType": "customer",
+    "name": "Black Friday Deals",
+    "partner": "",
+    "periods": [
+      {
+        "start": "2026-11-03",
+        "end": "2026-11-29"
+      }
+    ],
+    "start": "2026-11-03",
+    "end": "2026-11-29",
+    "code": "",
+    "uplift": "",
+    "notes": "",
+    "checklist": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
   }
 ]
