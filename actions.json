@@ -1453,5 +1453,33 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "partner",
+    "name": "FutureBens Loyaltystart",
+    "partner": "FutureBens",
+    "periods": [
+      {
+        "start": "2026-11-03",
+        "end": "2026-12-31"
+      }
+    ],
+    "start": "2026-11-03",
+    "end": "2026-12-31",
+    "code": "A10AKTION14",
+    "uplift": "",
+    "notes": "10% Rabattcode",
+    "checklist": [
+      true,
+      true,
+      false,
+      true,
+      true,
+      false,
+      false,
+      true,
+      true
+    ]
   }
 ]
