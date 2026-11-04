@@ -1565,5 +1565,33 @@
       false,
       true
     ]
+  },
+  {
+    "customer": "Magix IT",
+    "actionType": "customer",
+    "name": "Black friday",
+    "partner": "",
+    "periods": [
+      {
+        "start": "2026-11-27",
+        "end": "2026-11-29"
+      }
+    ],
+    "start": "2026-11-27",
+    "end": "2026-11-29",
+    "code": "",
+    "uplift": "",
+    "notes": "10% Rabatt",
+    "checklist": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      true
+    ]
   }
 ]
