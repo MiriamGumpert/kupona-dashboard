@@ -1481,5 +1481,61 @@
       true,
       true
     ]
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "customer",
+    "name": "Singles Day Aktion",
+    "partner": "",
+    "periods": [
+      {
+        "start": "2026-11-11",
+        "end": "2026-11-11"
+      }
+    ],
+    "start": "2026-11-11",
+    "end": "2026-11-11",
+    "code": "SINGLES11",
+    "uplift": "",
+    "notes": "",
+    "checklist": [
+      true,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "customer",
+    "name": "Black friday",
+    "partner": "",
+    "periods": [
+      {
+        "start": "2026-11-27",
+        "end": "2026-11-29"
+      }
+    ],
+    "start": "2026-11-27",
+    "end": "2026-11-29",
+    "code": "BLACK10",
+    "uplift": "",
+    "notes": "10%Rabatt",
+    "checklist": [
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      true
+    ]
   }
 ]
