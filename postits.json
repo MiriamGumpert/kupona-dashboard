@@ -39,6 +39,7 @@
     "source": "waiting",
     "side": "left",
     "color": "#B7FF7A",
-    "text": "WARTEN AUF\nAntelope Reporting\nWiedervorlage: Morgen"
+    "text": "WARTEN AUF\nAntelope Reporting\nWiedervorlage: Morgen",
+    "collapsed": true
   }
 ]
