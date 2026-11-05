@@ -22,7 +22,8 @@
     "source": "waiting",
     "side": "left",
     "color": "#B7FF7A",
-    "text": "WARTEN AUF\nAdvanced store Provisionserhöhungen NOV+DEZ\nWarten auf: Provision einstellen bei A+M"
+    "text": "WARTEN AUF\nAdvanced store Provisionserhöhungen NOV+DEZ\nWarten auf: Provision einstellen bei A+M",
+    "collapsed": true
   },
   {
     "id": 1793872368565,
