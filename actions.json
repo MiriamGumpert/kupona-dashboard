@@ -1621,5 +1621,33 @@
       false,
       true
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "advanced store Aktionspush",
+    "partner": "advanced store",
+    "periods": [
+      {
+        "start": "2026-11-06",
+        "end": "2026-12-31"
+      }
+    ],
+    "start": "2026-11-06",
+    "end": "2026-12-31",
+    "code": "",
+    "uplift": "+2% (also 9%)",
+    "notes": "",
+    "checklist": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      true
+    ]
   }
 ]
