@@ -9074,16 +9074,16 @@
     ]
   },
   {
-    "id": "1793967540767",
+    "id": "1793968030364",
     "customer": "Magix",
     "program": "Magix DACH",
     "programId": "11395",
     "periodType": "custom",
-    "periodFrom": "2026-09-01",
-    "periodTo": "2026-09-30",
+    "periodFrom": "2026-10-01",
+    "periodTo": "2026-10-31",
     "downloadDate": "2026-11-06",
-    "fileName": "11395-publisher-performance (2).csv",
-    "importedAt": "2026-11-06T12:19:00.767Z",
+    "fileName": "11395-publisher-performance (4).csv",
+    "importedAt": "2026-11-06T12:27:10.364Z",
     "rows": [
       {
         "name": "OPTIMHUB",
@@ -12056,16 +12056,16 @@
     ]
   },
   {
-    "id": "1793968030364",
+    "id": "1793968161040",
     "customer": "Magix",
     "program": "Magix DACH",
     "programId": "11395",
     "periodType": "custom",
-    "periodFrom": "2026-10-01",
-    "periodTo": "2026-10-31",
+    "periodFrom": "2026-09-01",
+    "periodTo": "2026-09-30",
     "downloadDate": "2026-11-06",
     "fileName": "11395-publisher-performance (4).csv",
-    "importedAt": "2026-11-06T12:27:10.364Z",
+    "importedAt": "2026-11-06T12:29:21.040Z",
     "rows": [
       {
         "name": "OPTIMHUB",
