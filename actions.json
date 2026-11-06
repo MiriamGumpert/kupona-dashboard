@@ -1667,14 +1667,14 @@
     "uplift": "+5% Provisionserhöhung (also 20%)",
     "notes": "",
     "checklist": [
-      false,
-      false,
-      false,
+      true,
       false,
       false,
       false,
       true,
       false,
+      true,
+      true,
       true
     ]
   }
