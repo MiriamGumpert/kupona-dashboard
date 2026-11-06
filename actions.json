@@ -1639,14 +1639,14 @@
     "uplift": "+2% (also 9%)",
     "notes": "",
     "checklist": [
-      false,
-      false,
-      false,
+      true,
       false,
       false,
       false,
       true,
       false,
+      true,
+      true,
       true
     ]
   },
