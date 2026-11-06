@@ -1649,5 +1649,33 @@
       false,
       true
     ]
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "partner",
+    "name": "advanced store Aktionspush",
+    "partner": "advancedstore",
+    "periods": [
+      {
+        "start": "2026-11-06",
+        "end": "2026-12-31"
+      }
+    ],
+    "start": "2026-11-06",
+    "end": "2026-12-31",
+    "code": "",
+    "uplift": "+5% Provisionserhöhung (also 20%)",
+    "notes": "",
+    "checklist": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      true
+    ]
   }
 ]
