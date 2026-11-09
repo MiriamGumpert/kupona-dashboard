@@ -770,7 +770,7 @@
     "customer": "Antelope DE",
     "actionType": "partner",
     "name": "Gutscheinsammler Aktion",
-    "partner": "Coupons.de",
+    "partner": "Gutscheinsammler",
     "periods": [
       {
         "start": "2026-11-23",
@@ -784,12 +784,11 @@
     "notes": "15% Rabattcode",
     "checklist": [
       true,
-      false,
       true,
-      false,
       false,
       true,
       true,
+      false,
       false,
       false,
       false
