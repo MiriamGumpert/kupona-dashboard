@@ -1733,5 +1733,33 @@
       false,
       true
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "Gutscheinsammler Aktion",
+    "partner": "Gutscheinsammler",
+    "periods": [
+      {
+        "start": "2026-11-18",
+        "end": "2026-12-01"
+      }
+    ],
+    "start": "2026-11-18",
+    "end": "2026-12-01",
+    "code": "GSBLACK26",
+    "uplift": "",
+    "notes": "22% Rabatt",
+    "checklist": [
+      true,
+      false,
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      true
+    ]
   }
 ]
