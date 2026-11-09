@@ -1239,19 +1239,19 @@
     ],
     "start": "2026-11-18",
     "end": "2026-12-01",
-    "code": "",
+    "code": "BLACK26",
     "uplift": "",
-    "notes": "weitere Details folgen",
+    "notes": "20% für alle",
     "checklist": [
+      true,
+      false,
+      false,
+      true,
       false,
       false,
       false,
       false,
-      false,
-      false,
-      false,
-      false,
-      false
+      true
     ]
   },
   {
