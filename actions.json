@@ -1750,13 +1750,13 @@
     "notes": "22% Rabatt",
     "checklist": [
       true,
-      false,
-      false,
-      false,
       true,
       false,
       true,
+      true,
       false,
+      true,
+      true,
       true
     ]
   }
