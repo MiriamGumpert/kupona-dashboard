@@ -1677,5 +1677,33 @@
       true,
       true
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "LLG Media Aktionspush",
+    "partner": "LLG Media",
+    "periods": [
+      {
+        "start": "2026-11-18",
+        "end": "2026-12-01"
+      }
+    ],
+    "start": "2026-11-18",
+    "end": "2026-12-01",
+    "code": "RAUSCHBLACK",
+    "uplift": "",
+    "notes": "22% Rabatt",
+    "checklist": [
+      true,
+      false,
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      true
+    ]
   }
 ]
