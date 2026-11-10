@@ -16,5 +16,13 @@
     "color": "#B7FF7A",
     "text": "WARTEN AUF\nAntelope Gutschein Verlängerungen\nWarten auf: Verlängerung in Awin\nRückfrage ob Partner ausgeschieden sind offen, danach verlängern der relevanten Partner\nWiedervorlage: In 5 Tagen · 10.11.2026",
     "collapsed": true
+  },
+  {
+    "id": 1794315459118,
+    "waitingId": "waiting-1794315458339-a39222",
+    "source": "waiting",
+    "side": "left",
+    "color": "#B7FF7A",
+    "text": "WARTEN AUF\nAntelope Feed Update\nWarten auf: Reminder Awin Publisher in 1W alten Feed deaktivieren\nWiedervorlage: Wiedervorlage · 24.11.2026"
   }
 ]
