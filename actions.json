@@ -1903,5 +1903,33 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "partner",
+    "name": "Redbrain Aktion",
+    "partner": "Redbrain",
+    "periods": [
+      {
+        "start": "2026-11-01",
+        "end": "2026-11-15"
+      }
+    ],
+    "start": "2026-11-01",
+    "end": "2026-11-15",
+    "code": "",
+    "uplift": "",
+    "notes": "",
+    "checklist": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
   }
 ]
