@@ -1787,5 +1787,33 @@
       false,
       true
     ]
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "partner",
+    "name": "Checkout Charlie Aktion",
+    "partner": "Checkout Charlie",
+    "periods": [
+      {
+        "start": "2026-03-11",
+        "end": "2026-04-05"
+      }
+    ],
+    "start": "2026-03-11",
+    "end": "2026-04-05",
+    "code": "A10AKTION03",
+    "uplift": "",
+    "notes": "",
+    "checklist": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
   }
 ]
