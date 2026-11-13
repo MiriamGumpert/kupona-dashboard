@@ -1875,5 +1875,33 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "partner",
+    "name": "Savoo Aktion",
+    "partner": "Savoo",
+    "periods": [
+      {
+        "start": "2026-04-28",
+        "end": "2026-05-17"
+      }
+    ],
+    "start": "2026-04-28",
+    "end": "2026-05-17",
+    "code": "10%",
+    "uplift": "",
+    "notes": "",
+    "checklist": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
   }
 ]
