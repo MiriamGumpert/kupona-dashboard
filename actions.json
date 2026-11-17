@@ -2071,5 +2071,33 @@
       false,
       true
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "Shopback Blackweek",
+    "partner": "Shopback",
+    "periods": [
+      {
+        "start": "2026-11-18",
+        "end": "2026-12-01"
+      }
+    ],
+    "start": "2026-11-18",
+    "end": "2026-12-01",
+    "code": "SHOPBLACK26",
+    "uplift": "",
+    "notes": "22% Rabatt",
+    "checklist": [
+      true,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
   }
 ]
