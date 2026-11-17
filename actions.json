@@ -2043,5 +2043,33 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "FutureBens Blackweek",
+    "partner": "FutureBens",
+    "periods": [
+      {
+        "start": "2026-11-18",
+        "end": "2026-12-01"
+      }
+    ],
+    "start": "2026-11-18",
+    "end": "2026-12-01",
+    "code": "FUTUREBLACK26",
+    "uplift": "",
+    "notes": "22% Rabattcode",
+    "checklist": [
+      true,
+      false,
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true
+    ]
   }
 ]
