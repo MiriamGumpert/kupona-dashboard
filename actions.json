@@ -2155,5 +2155,33 @@
       false,
       true
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "Rewardoo Aktion",
+    "partner": "Rewardoo",
+    "periods": [
+      {
+        "start": "2026-11-19",
+        "end": "2026-12-31"
+      }
+    ],
+    "start": "2026-11-19",
+    "end": "2026-12-31",
+    "code": "",
+    "uplift": "+2% (also 9%)",
+    "notes": "Storefront – Dedicated brand visibility on Rewardoo.\n\nNewsletter Feature – Additional exposure through our newsletter.\n\n2 Featured Promotions – Highlighting the BF offer and other promotions.",
+    "checklist": [
+      true,
+      false,
+      false,
+      false,
+      true,
+      false,
+      true,
+      false,
+      true
+    ]
   }
 ]
