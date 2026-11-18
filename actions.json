@@ -2183,5 +2183,33 @@
       false,
       true
     ]
+  },
+  {
+    "customer": "Magix DACH",
+    "actionType": "partner",
+    "name": "BIGFRIDAY",
+    "partner": "Magix",
+    "periods": [
+      {
+        "start": "2026-11-20",
+        "end": "2026-11-22"
+      }
+    ],
+    "start": "2026-11-20",
+    "end": "2026-11-22",
+    "code": "BIGFRIDAY",
+    "uplift": "+5% Rabatt on Top",
+    "notes": "",
+    "checklist": [
+      true,
+      true,
+      false,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true
+    ]
   }
 ]
