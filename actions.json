@@ -2099,5 +2099,33 @@
       false,
       true
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "Mycashbacks Aktion",
+    "partner": "Mycashbacks",
+    "periods": [
+      {
+        "start": "2026-11-18",
+        "end": "2026-12-31"
+      }
+    ],
+    "start": "2026-11-18",
+    "end": "2026-12-31",
+    "code": "10% Rabatt auf alles im Shop!",
+    "uplift": "+3% (also 10%)",
+    "notes": "",
+    "checklist": [
+      true,
+      true,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false,
+      true
+    ]
   }
 ]
