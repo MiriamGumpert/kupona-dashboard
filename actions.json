@@ -2211,5 +2211,41 @@
       true,
       true
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "Checkout Charlie Aktion",
+    "partner": "Checkout Charlie",
+    "periods": [
+      {
+        "start": "2027-01-11",
+        "end": "2027-01-24"
+      },
+      {
+        "start": "2027-02-01",
+        "end": "2027-02-14"
+      },
+      {
+        "start": "2027-03-08",
+        "end": "2027-03-21"
+      }
+    ],
+    "start": "2027-01-11",
+    "end": "2027-01-24",
+    "code": "",
+    "uplift": "+2% (also 9%)",
+    "notes": "Gutscheincode noch nachreichen",
+    "checklist": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
   }
 ]
