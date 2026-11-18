@@ -2186,9 +2186,9 @@
   },
   {
     "customer": "Magix DACH",
-    "actionType": "partner",
+    "actionType": "customer",
     "name": "BIGFRIDAY",
-    "partner": "Magix",
+    "partner": "",
     "periods": [
       {
         "start": "2026-11-20",
