@@ -2247,5 +2247,33 @@
       false,
       false
     ]
+  },
+  {
+    "customer": "Antelope DE",
+    "actionType": "partner",
+    "name": "Grabatt Black friday Push",
+    "partner": "Grabatt",
+    "periods": [
+      {
+        "start": "2026-11-19",
+        "end": "2026-12-01"
+      }
+    ],
+    "start": "2026-11-19",
+    "end": "2026-12-01",
+    "code": "BLACK26",
+    "uplift": "+2% (also 9%)",
+    "notes": "allgemeiner BF Gutschein",
+    "checklist": [
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true
+    ]
   }
 ]
